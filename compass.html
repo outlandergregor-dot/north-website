@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Dynamic OG tags — updated by JS below -->
+    <meta property="og:title" content="NORTH Compass — A Life Reflection">
+    <meta property="og:description" content="Someone shared their NORTH Compass with you. See their goals, wins, challenges, and lessons — then create your own.">
+    <meta property="og:image" content="https://yournorth.app/assets/og-image.png">
+    <meta property="og:url" content="https://yournorth.app/compass">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NORTH Compass — A Life Reflection">
+    <meta name="twitter:description" content="Someone shared their NORTH Compass with you. Create your own on NORTH.">
+    <meta name="twitter:image" content="https://yournorth.app/assets/og-image.png">
+
+    <title>NORTH Compass — Shared Reflection</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --navy: #0D1B2A;
+            --navy-surface: #1A2B3C;
+            --navy-border: #2A3B4C;
+            --gold: #C9A84C;
+            --gold-light: rgba(201, 168, 76, 0.15);
+            --gold-border: rgba(201, 168, 76, 0.35);
+            --white: #ECEDEE;
+            --muted: #8A9BAC;
+            --font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: var(--navy);
+            color: var(--white);
+            font-family: var(--font);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Gold top bar */
+        .gold-bar { width: 100%; height: 4px; background: var(--gold); flex-shrink: 0; }
+
+        /* Header */
+        .header {
+            width: 100%;
+            max-width: 480px;
+            padding: 20px 24px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .logo-icon {
+            width: 36px; height: 36px;
+            background: var(--gold);
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 18px;
+        }
+        .logo-text { font-size: 18px; font-weight: 800; color: var(--white); letter-spacing: 2px; }
+
+        /* Main content */
+        .container {
+            width: 100%;
+            max-width: 480px;
+            padding: 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Intro */
+        .intro {
+            text-align: center;
+            padding: 8px 0 4px;
+        }
+        .intro-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .intro-name {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 4px;
+        }
+        .intro-sub {
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        /* Compass card */
+        .compass-card {
+            background: var(--navy-surface);
+            border: 2px solid var(--gold-border);
+            border-radius: 20px;
+            padding: 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .compass-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .compass-card-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 1.5px;
+        }
+        .compass-card-date {
+            font-size: 12px;
+            color: var(--muted);
+        }
+        .compass-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .compass-icon { font-size: 20px; margin-top: 1px; flex-shrink: 0; }
+        .compass-content { flex: 1; }
+        .compass-label {
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 1.5px;
+            margin-bottom: 4px;
+        }
+        .compass-text {
+            font-size: 14px;
+            color: var(--white);
+            line-height: 1.5;
+        }
+        .compass-empty {
+            font-size: 13px;
+            color: var(--muted);
+            font-style: italic;
+        }
+
+        /* CTA section */
+        .cta-section {
+            background: var(--navy-surface);
+            border: 1px solid var(--navy-border);
+            border-radius: 18px;
+            padding: 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: center;
+        }
+        .cta-emoji { font-size: 36px; }
+        .cta-title { font-size: 20px; font-weight: 800; color: var(--white); }
+        .cta-sub { font-size: 14px; color: var(--muted); line-height: 1.5; max-width: 320px; }
+        .cta-btn {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--navy);
+            font-size: 16px;
+            font-weight: 800;
+            padding: 16px 36px;
+            border-radius: 14px;
+            text-decoration: none;
+            letter-spacing: 0.3px;
+            transition: opacity 0.15s;
+            width: 100%;
+            max-width: 320px;
+        }
+        .cta-btn:hover { opacity: 0.88; }
+
+        /* App store badges */
+        .badges {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 10px;
+            padding: 10px 16px;
+            text-decoration: none;
+            color: var(--white);
+            font-size: 13px;
+            font-weight: 600;
+            transition: background 0.15s;
+        }
+        .badge:hover { background: rgba(255,255,255,0.1); }
+        .badge-icon { font-size: 18px; }
+
+        /* Footer */
+        .footer {
+            width: 100%;
+            max-width: 480px;
+            padding: 16px 24px 32px;
+            text-align: center;
+        }
+        .footer-text { font-size: 12px; color: var(--muted); }
+        .footer-link { color: var(--gold); text-decoration: none; }
+
+        /* Loading state */
+        .loading {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* No-data state */
+        .no-data {
+            background: var(--navy-surface);
+            border: 1px solid var(--navy-border);
+            border-radius: 18px;
+            padding: 32px 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        .no-data-icon { font-size: 40px; }
+        .no-data-title { font-size: 18px; font-weight: 700; color: var(--white); }
+        .no-data-sub { font-size: 14px; color: var(--muted); line-height: 1.5; }
+    </style>
+</head>
+<body>
+    <div class="gold-bar"></div>
+
+    <div class="header">
+        <a href="https://yournorth.app" class="logo">
+            <div class="logo-icon">🧭</div>
+            <span class="logo-text">NORTH</span>
+        </a>
+    </div>
+
+    <div class="container" id="main-content">
+        <div class="loading">Loading compass...</div>
+    </div>
+
+    <div class="footer">
+        <p class="footer-text">
+            <a href="https://yournorth.app" class="footer-link">yournorth.app</a>
+            &nbsp;·&nbsp;
+            <a href="https://yournorth.app/privacy.html" class="footer-link">Privacy</a>
+            &nbsp;·&nbsp;
+            <a href="https://yournorth.app/support.html" class="footer-link">Support</a>
+        </p>
+    </div>
+
+    <script>
+        // Parse URL params
+        const params = new URLSearchParams(window.location.search);
+        const ref = params.get('ref') || '';
+        const date = params.get('date') || '';
+
+        // Format display name from ref slug (e.g. "ivonei" → "Ivonei")
+        function formatName(slug) {
+            if (!slug) return 'A NORTH Captain';
+            return slug.charAt(0).toUpperCase() + slug.slice(1);
+        }
+
+        // Format date (e.g. "2026-03-04" → "Mar 4, 2026")
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            try {
+                const d = new Date(dateStr + 'T12:00:00');
+                return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+            } catch { return dateStr; }
+        }
+
+        const displayName = formatName(ref);
+        const displayDate = formatDate(date);
+
+        // Update page title and OG tags dynamically
+        document.title = `${displayName}'s NORTH Compass — Shared Reflection`;
+
+        // Render the page
+        const container = document.getElementById('main-content');
+
+        container.innerHTML = `
+            <div class="intro">
+                <div class="intro-label">🧭 Shared Compass</div>
+                <div class="intro-name">${escapeHtml(displayName)}</div>
+                <div class="intro-sub">shared their NORTH Compass with you${displayDate ? ` · ${displayDate}` : ''}</div>
+            </div>
+
+            <div class="compass-card">
+                <div class="compass-card-header">
+                    <span class="compass-card-title">⚓ NORTH COMPASS</span>
+                    ${displayDate ? `<span class="compass-card-date">${displayDate}</span>` : ''}
+                </div>
+
+                <div class="compass-row">
+                    <span class="compass-icon">🧭</span>
+                    <div class="compass-content">
+                        <div class="compass-label">NORTH — GOALS</div>
+                        <div class="compass-text compass-empty">This captain's goals are set in the app</div>
+                    </div>
+                </div>
+
+                <div class="compass-row">
+                    <span class="compass-icon">⚡</span>
+                    <div class="compass-content">
+                        <div class="compass-label">EAST — WINS</div>
+                        <div class="compass-text compass-empty">Their wins are recorded privately</div>
+                    </div>
+                </div>
+
+                <div class="compass-row">
+                    <span class="compass-icon">📉</span>
+                    <div class="compass-content">
+                        <div class="compass-label">SOUTH — CHALLENGES</div>
+                        <div class="compass-text compass-empty">Challenges stay private in the app</div>
+                    </div>
+                </div>
+
+                <div class="compass-row">
+                    <span class="compass-icon">🌊</span>
+                    <div class="compass-content">
+                        <div class="compass-label">WEST — LESSONS</div>
+                        <div class="compass-text compass-empty">Lessons are stored securely</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <div class="cta-emoji">✦</div>
+                <div class="cta-title">Create Your Own Compass</div>
+                <div class="cta-sub">
+                    ${escapeHtml(displayName)} uses NORTH to stay aligned with what matters.
+                    Join them — your compass takes 5 minutes to complete.
+                </div>
+                <a href="https://yournorth.app" class="cta-btn">
+                    Start Your NORTH Journey →
+                </a>
+                <div class="badges">
+                    <a href="https://apps.apple.com/app/north/id6738798530" class="badge">
+                        <span class="badge-icon">🍎</span> App Store
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=space.manus.north.app" class="badge">
+                        <span class="badge-icon">▶</span> Google Play
+                    </a>
+                </div>
+            </div>
+        `;
+
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.appendChild(document.createTextNode(str));
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>
