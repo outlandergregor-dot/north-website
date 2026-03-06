@@ -3,347 +3,462 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NORTH Privacy Policy - How we collect, use, and protect your data.">
-    <title>Privacy Policy - NORTH</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>Privacy Policy — NORTH | AI Life Operating System</title>
+    <meta name="description" content="NORTH Privacy Policy — How we collect, use, and protect your data. We never sell your personal information. Your privacy matters.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.yournorth.app/privacy.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Privacy Policy — NORTH | AI Life Operating System">
+    <meta property="og:description" content="NORTH Privacy Policy — How we collect, use, and protect your data. We never sell your personal information.">
+    <meta property="og:url" content="https://www.yournorth.app/privacy.html">
+    <meta property="og:image" content="https://www.yournorth.app/assets/icons/north-icon.png">
+    <meta property="og:site_name" content="NORTH — AI Life Operating System">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Privacy Policy — NORTH">
+    <meta name="twitter:description" content="NORTH Privacy Policy — We never sell your personal information.">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/north-icon.png">
+    <meta name="theme-color" content="#050F1A">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        .legal-page {
-            padding: 120px 0 80px;
-            background: var(--white);
-            margin-top: 72px;
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --navy-deep: #050F1A;
+            --navy-base: #081A2B;
+            --navy-mid: #0F243A;
+            --navy-surface: #132D47;
+            --gold: #D4AF37;
+            --gold-light: #F0D060;
+            --gold-glow: rgba(212,175,55,0.35);
+            --gold-border: rgba(212,175,55,0.18);
+            --white: #FFFFFF;
+            --white-80: rgba(255,255,255,0.80);
+            --white-60: rgba(255,255,255,0.60);
+            --white-30: rgba(255,255,255,0.30);
+            --transition: 0.22s ease;
         }
-
-        .legal-container {
-            max-width: 900px;
-            margin: 0 auto;
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--navy-deep);
+            color: var(--white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
         }
+        a { color: inherit; text-decoration: none; }
+        .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
 
-        .legal-header {
+        /* Nav */
+        .nav {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(5,15,26,0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--gold-border);
+        }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+        .nav-logo { display: flex; align-items: center; gap: 10px; }
+        .nav-logo img { width: 36px; height: 36px; border-radius: 8px; }
+        .nav-logo span { font-size: 18px; font-weight: 800; color: var(--white); letter-spacing: 1.5px; }
+        .nav-links { display: flex; align-items: center; gap: 32px; }
+        .nav-links a { color: var(--white-60); font-size: 14px; font-weight: 500; transition: color var(--transition); }
+        .nav-links a:hover { color: var(--white); }
+        .nav-cta {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+            color: var(--navy-deep) !important; font-weight: 700 !important;
+            padding: 9px 22px; border-radius: 50px;
+            transition: box-shadow var(--transition), transform var(--transition) !important;
+        }
+        .nav-cta:hover { box-shadow: 0 0 20px var(--gold-glow); transform: translateY(-1px); }
+        .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+        .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--white-80); margin: 5px 0; border-radius: 2px; }
+
+        /* Page Hero */
+        .page-hero {
+            padding: 72px 0 52px;
+            background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(212,175,55,0.07) 0%, transparent 70%), var(--navy-deep);
             text-align: center;
-            margin-bottom: 48px;
+            border-bottom: 1px solid var(--gold-border);
         }
+        .breadcrumb { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 20px; font-size: 13px; color: var(--white-60); }
+        .breadcrumb a { color: var(--gold); }
+        .breadcrumb span { color: var(--white-30); }
+        .page-hero h1 { font-size: clamp(32px,5vw,52px); font-weight: 900; color: var(--white); margin-bottom: 12px; }
+        .page-hero .last-updated { font-size: 14px; color: var(--white-30); }
 
-        .legal-header h1 {
-            font-size: 48px;
-            font-weight: 800;
-            color: var(--navy);
-            margin-bottom: 16px;
-        }
-
-        .legal-header p {
-            font-size: 18px;
-            color: var(--gray-600);
-        }
-
-        .legal-content h2 {
-            font-size: 32px;
-            font-weight: 700;
-            color: var(--navy);
-            margin-top: 48px;
-            margin-bottom: 16px;
-        }
-
-        .legal-content h3 {
-            font-size: 24px;
-            font-weight: 600;
-            color: var(--navy);
-            margin-top: 32px;
-            margin-bottom: 12px;
-        }
-
-        .legal-content p {
-            font-size: 17px;
-            line-height: 1.8;
-            color: var(--gray-600);
-            margin-bottom: 16px;
-        }
-
-        .legal-content ul {
-            margin-bottom: 16px;
-            padding-left: 24px;
-        }
-
-        .legal-content li {
-            font-size: 17px;
-            line-height: 1.8;
-            color: var(--gray-600);
-            margin-bottom: 8px;
-        }
-
-        .legal-content a {
-            color: var(--gold);
-            text-decoration: none;
-        }
-
-        .legal-content a:hover {
-            text-decoration: underline;
-        }
-
+        /* Highlight box */
         .highlight-box {
-            background: var(--gray-50);
-            border-left: 4px solid var(--gold);
-            padding: 24px;
-            margin: 24px 0;
-            border-radius: 8px;
+            background: linear-gradient(135deg, rgba(212,175,55,0.10), rgba(212,175,55,0.04));
+            border: 1px solid var(--gold-border);
+            border-left: 3px solid var(--gold);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 32px 0;
         }
+        .highlight-box p { font-size: 15px; color: var(--white-80); line-height: 1.7; margin: 0; }
+        .highlight-box strong { color: var(--gold); }
 
-        .highlight-box p {
-            margin-bottom: 0;
+        /* Legal Content */
+        .legal-section { padding: 72px 0 80px; background: var(--navy-deep); }
+        .legal-layout { display: grid; grid-template-columns: 220px 1fr; gap: 60px; align-items: start; max-width: 1000px; margin: 0 auto; }
+
+        /* TOC Sidebar */
+        .toc {
+            position: sticky; top: 84px;
+            background: var(--navy-surface);
+            border: 1px solid var(--gold-border);
+            border-radius: 16px;
+            padding: 24px 20px;
+        }
+        .toc h4 { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+        .toc ul { list-style: none; }
+        .toc ul li { margin-bottom: 8px; }
+        .toc ul li a { font-size: 13px; color: var(--white-60); transition: color var(--transition); display: block; padding: 3px 0; }
+        .toc ul li a:hover { color: var(--gold); }
+
+        /* Legal body */
+        .legal-body h2 {
+            font-size: 26px; font-weight: 800; color: var(--white);
+            margin-top: 52px; margin-bottom: 16px;
+            padding-top: 52px; border-top: 1px solid var(--gold-border);
+        }
+        .legal-body h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+        .legal-body h3 { font-size: 18px; font-weight: 700; color: var(--white-80); margin-top: 28px; margin-bottom: 10px; }
+        .legal-body p { font-size: 15px; line-height: 1.8; color: var(--white-60); margin-bottom: 14px; }
+        .legal-body ul { margin-bottom: 14px; padding-left: 20px; }
+        .legal-body li { font-size: 15px; line-height: 1.8; color: var(--white-60); margin-bottom: 6px; }
+        .legal-body strong { color: var(--white-80); }
+        .legal-body a { color: var(--gold); text-decoration: underline; }
+        .legal-body a:hover { color: var(--gold-light); }
+
+        /* Footer */
+        .footer { background: var(--navy-base); border-top: 1px solid var(--gold-border); padding: 60px 0 0; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 48px; }
+        .footer-brand .logo-row { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+        .footer-brand .logo-row img { width: 32px; height: 32px; border-radius: 7px; }
+        .footer-brand .logo-name { font-size: 16px; font-weight: 800; letter-spacing: 1.5px; color: var(--white); }
+        .footer-brand p { font-size: 13px; color: var(--white-60); line-height: 1.6; margin-bottom: 20px; }
+        .social-links { display: flex; gap: 12px; }
+        .social-link { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--gold-border); display: flex; align-items: center; justify-content: center; transition: border-color var(--transition), background var(--transition); }
+        .social-link:hover { border-color: var(--gold); background: rgba(212,175,55,0.1); }
+        .social-link svg { width: 15px; height: 15px; fill: var(--white-60); }
+        .social-link:hover svg { fill: var(--gold); }
+        .footer-col h4 { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul li a { font-size: 13px; color: var(--white-60); transition: color var(--transition); }
+        .footer-col ul li a:hover { color: var(--white); }
+        .footer-bottom { border-top: 1px solid var(--gold-border); padding: 20px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+        .footer-bottom p { font-size: 12px; color: var(--white-30); }
+
+        /* Mobile */
+        .mobile-nav { display: none; position: fixed; inset: 0; background: rgba(5,15,26,0.97); z-index: 200; flex-direction: column; align-items: center; justify-content: center; gap: 32px; }
+        .mobile-nav.open { display: flex; }
+        .mobile-nav a { font-size: 22px; font-weight: 700; color: var(--white-80); }
+        .mobile-nav .close-btn { position: absolute; top: 20px; right: 24px; background: none; border: none; color: var(--white-60); font-size: 28px; cursor: pointer; }
+        @media (max-width: 900px) {
+            .legal-layout { grid-template-columns: 1fr; }
+            .toc { display: none; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .nav-hamburger { display: block; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .footer-brand { grid-column: 1 / -1; }
+        }
+        @media (max-width: 480px) {
+            .footer-grid { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; text-align: center; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <path d="M16 4L4 10L16 16L28 10L16 4Z" fill="#D4AF37"/>
-                        <path d="M4 16L16 22L28 16" stroke="#D4AF37" stroke-width="2"/>
-                        <path d="M4 22L16 28L28 22" stroke="#D4AF37" stroke-width="2"/>
-                    </svg>
-                    <span>NORTH</span>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobileNav">
+    <button class="close-btn" onclick="document.getElementById('mobileNav').classList.remove('open')">&#x2715;</button>
+    <a href="index.html">Home</a>
+    <a href="index.html#features">Features</a>
+    <a href="support.html">Support</a>
+    <a href="https://apps.apple.com/app/north/id6742574901" target="_blank" rel="noopener" style="color:var(--gold)">Download</a>
+</nav>
+
+<!-- Navigation -->
+<header class="nav">
+    <div class="container">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/icons/north-icon.png" alt="NORTH App Icon" width="36" height="36" loading="eager">
+                <span>NORTH</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#features">Features</a>
+                <a href="support.html">Support</a>
+                <a href="https://apps.apple.com/app/north/id6742574901" class="nav-cta" target="_blank" rel="noopener">Download</a>
+            </nav>
+            <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.add('open')" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="page-hero">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>&rsaquo;</span>
+            <span>Privacy Policy</span>
+        </div>
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: March 2, 2026</p>
+    </div>
+</section>
+
+<!-- Legal Content -->
+<section class="legal-section">
+    <div class="container">
+        <div class="legal-layout">
+
+            <!-- Table of Contents Sidebar -->
+            <aside class="toc">
+                <h4>Contents</h4>
+                <ul>
+                    <li><a href="#intro">1. Introduction</a></li>
+                    <li><a href="#collect">2. Information We Collect</a></li>
+                    <li><a href="#use">3. How We Use It</a></li>
+                    <li><a href="#share">4. How We Share It</a></li>
+                    <li><a href="#security">5. Data Security</a></li>
+                    <li><a href="#rights">6. Your Rights</a></li>
+                    <li><a href="#retention">7. Data Retention</a></li>
+                    <li><a href="#children">8. Children's Privacy</a></li>
+                    <li><a href="#international">9. International Transfers</a></li>
+                    <li><a href="#thirdparty">10. Third-Party Links</a></li>
+                    <li><a href="#changes">11. Policy Changes</a></li>
+                    <li><a href="#contact">12. Contact Us</a></li>
+                </ul>
+            </aside>
+
+            <!-- Legal Body -->
+            <div class="legal-body">
+
+                <div class="highlight-box">
+                    <p><strong>Your Privacy Matters:</strong> NORTH is committed to protecting your privacy. We collect only the data necessary to provide you with a personalized, productive experience. We never sell your personal information to third parties.</p>
                 </div>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="index.html#features">Features</a>
-                    <a href="support.html">Support</a>
-                    <a href="index.html#download" class="btn-primary-small">Download</a>
+
+                <h2 id="intro">1. Introduction</h2>
+                <p>Welcome to NORTH ("we," "our," or "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website (collectively, the "Service"). By using NORTH, you agree to the collection and use of information in accordance with this policy.</p>
+
+                <h2 id="collect">2. Information We Collect</h2>
+                <h3>2.1 Information You Provide</h3>
+                <p>When you use NORTH, you may provide us with the following information:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> Name, email address, and password when you create an account</li>
+                    <li><strong>Task Data:</strong> Tasks, goals, notes, and completion status you enter into the app</li>
+                    <li><strong>Financial Information:</strong> Monthly expenses and Safe Number data you choose to track</li>
+                    <li><strong>Calendar Data:</strong> Calendar events and availability when you connect your Google Calendar</li>
+                    <li><strong>Voice Data:</strong> Voice commands when you use the Voice Assistant or Driving Mode</li>
+                    <li><strong>Language Preference:</strong> Your selected app language from the 14 supported languages</li>
+                    <li><strong>Optimization Track:</strong> Your chosen track (Focus, Career, Money, Health, or Balance)</li>
+                    <li><strong>Reflection Data:</strong> Daily check-in responses, Win Log entries, and Sunday Compass reflections</li>
+                    <li><strong>Communications:</strong> Messages you send to our support team</li>
+                </ul>
+
+                <h3>2.2 Automatically Collected Information</h3>
+                <p>When you use our Service, we automatically collect certain information:</p>
+                <ul>
+                    <li><strong>Device Information:</strong> Device type, operating system, unique device identifiers</li>
+                    <li><strong>Usage Data:</strong> Features used, time spent, interaction patterns</li>
+                    <li><strong>Log Data:</strong> IP address, access times, pages viewed, app crashes</li>
+                    <li><strong>Performance Data:</strong> App performance metrics to improve stability</li>
+                </ul>
+
+                <h3>2.3 Third-Party Services</h3>
+                <p>When you connect third-party services to NORTH, we may receive:</p>
+                <ul>
+                    <li><strong>Google Calendar:</strong> Calendar events, availability, and event details</li>
+                    <li><strong>Email Services:</strong> Email metadata for task parsing (with your explicit permission)</li>
+                </ul>
+
+                <h2 id="use">3. How We Use Your Information</h2>
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li><strong>Provide the Service:</strong> Enable core features like task management, calendar sync, and voice commands</li>
+                    <li><strong>Personalization:</strong> Customize your experience with The Captain based on your Optimization Track and usage patterns</li>
+                    <li><strong>Smart Features:</strong> Provide intelligent time suggestions, energy pattern analysis, and task prioritization</li>
+                    <li><strong>Communication:</strong> Send daily/weekly email summaries, push notifications, and important updates</li>
+                    <li><strong>Improvement:</strong> Analyze usage patterns to improve features and fix bugs</li>
+                    <li><strong>Security:</strong> Detect and prevent fraud, abuse, and security incidents</li>
+                    <li><strong>Legal Compliance:</strong> Comply with legal obligations and enforce our Terms of Service</li>
+                </ul>
+
+                <h2 id="share">4. How We Share Your Information</h2>
+                <p>We do not sell your personal information. We may share your information only in the following circumstances:</p>
+
+                <h3>4.1 Service Providers</h3>
+                <p>We share information with trusted third-party service providers who assist us in operating the Service:</p>
+                <ul>
+                    <li><strong>RevenueCat:</strong> Subscription management and billing (see <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>)</li>
+                    <li><strong>Google Cloud:</strong> Speech-to-Text API for voice recognition (see <a href="https://cloud.google.com/privacy" target="_blank" rel="noopener">Google Cloud Privacy Policy</a>)</li>
+                    <li><strong>SendGrid:</strong> Email delivery for summaries and notifications (see <a href="https://www.twilio.com/legal/privacy" target="_blank" rel="noopener">SendGrid Privacy Policy</a>)</li>
+                    <li><strong>Cloud Hosting:</strong> Secure data storage and infrastructure</li>
+                </ul>
+
+                <h3>4.2 Legal Requirements</h3>
+                <p>We may disclose your information if required to do so by law or in response to valid requests by public authorities (e.g., court orders, subpoenas).</p>
+
+                <h3>4.3 Business Transfers</h3>
+                <p>If NORTH is involved in a merger, acquisition, or sale of assets, your information may be transferred. We will notify you before your information becomes subject to a different privacy policy.</p>
+
+                <h2 id="security">5. Data Security</h2>
+                <p>We implement industry-standard security measures to protect your information:</p>
+                <ul>
+                    <li><strong>Encryption:</strong> Data is encrypted in transit (TLS/SSL) and at rest (AES-256)</li>
+                    <li><strong>Authentication:</strong> Secure OAuth 2.0 for third-party integrations</li>
+                    <li><strong>Access Controls:</strong> Strict internal access policies and role-based permissions</li>
+                    <li><strong>Regular Audits:</strong> Security assessments and vulnerability testing</li>
+                </ul>
+                <p>However, no method of transmission over the internet is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.</p>
+
+                <h2 id="rights">6. Your Privacy Rights</h2>
+                <p>Depending on your location, you may have the following rights:</p>
+
+                <h3>6.1 Access and Portability</h3>
+                <p>You have the right to access your personal data and request a copy in a portable format. Contact us at <a href="mailto:privacy@yournorth.app">privacy@yournorth.app</a> to request your data.</p>
+
+                <h3>6.2 Correction</h3>
+                <p>You can update your account information and task data directly in the app. For other corrections, contact us at <a href="mailto:support@yournorth.app">support@yournorth.app</a>.</p>
+
+                <h3>6.3 Deletion</h3>
+                <p>You can delete your account and all associated data at any time through Settings &#8594; Account &#8594; Delete Account. This action is permanent and cannot be undone.</p>
+
+                <h3>6.4 Opt-Out</h3>
+                <p>You can opt out of marketing emails by clicking "Unsubscribe" in any email. You can disable push notifications in your device settings. Note that transactional emails (e.g., account security) cannot be disabled.</p>
+
+                <h3>6.5 GDPR Rights (EU/EEA Residents)</h3>
+                <p>If you are located in the European Union or European Economic Area, you have additional rights under GDPR, including the right to object to processing and the right to lodge a complaint with your local supervisory authority.</p>
+
+                <h3>6.6 CCPA Rights (California Residents)</h3>
+                <p>California residents have the right to know what personal information we collect, the right to delete personal information, and the right to opt-out of the sale of personal information (we do not sell personal information).</p>
+
+                <h2 id="retention">7. Data Retention</h2>
+                <p>We retain your personal information for as long as your account is active or as needed to provide you services. If you delete your account, we will delete your personal data within 30 days, except where we are required to retain it for legal purposes.</p>
+                <p>Anonymized, aggregated data may be retained indefinitely for analytics and service improvement purposes.</p>
+
+                <h2 id="children">8. Children's Privacy</h2>
+                <p>NORTH is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected information from a child under 13, please contact us at <a href="mailto:privacy@yournorth.app">privacy@yournorth.app</a>, and we will delete the information.</p>
+
+                <h2 id="international">9. International Data Transfers</h2>
+                <p>Your information may be transferred to and processed in countries other than your country of residence. These countries may have different data protection laws. When we transfer your data internationally, we ensure appropriate safeguards are in place, such as Standard Contractual Clauses approved by the European Commission.</p>
+
+                <h2 id="thirdparty">10. Third-Party Links</h2>
+                <p>The Service may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to review their privacy policies before providing any information.</p>
+
+                <h2 id="changes">11. Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
+                <ul>
+                    <li>Posting the new Privacy Policy in the app and on our website</li>
+                    <li>Sending you an email notification</li>
+                    <li>Displaying an in-app notification</li>
+                </ul>
+                <p>Your continued use of the Service after changes become effective constitutes your acceptance of the revised Privacy Policy.</p>
+
+                <h2 id="contact">12. Contact Us</h2>
+                <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:privacy@yournorth.app">privacy@yournorth.app</a></li>
+                    <li><strong>Support:</strong> <a href="mailto:support@yournorth.app">support@yournorth.app</a></li>
+                    <li><strong>Website:</strong> <a href="support.html">yournorth.app/support</a></li>
+                </ul>
+
+                <div class="highlight-box" style="margin-top:48px;">
+                    <p><strong>Summary:</strong> We collect data to provide you with a personalized productivity experience. We protect your data with encryption and never sell it to third parties. You have full control over your data and can delete your account at any time. For questions, contact us at <a href="mailto:privacy@yournorth.app">privacy@yournorth.app</a>.</p>
                 </div>
+
+                <div style="display:flex;gap:16px;margin-top:48px;flex-wrap:wrap;">
+                    <a href="terms.html" style="display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-size:14px;font-weight:600;border:1px solid var(--gold-border);padding:10px 20px;border-radius:50px;">
+                        Terms of Service &rarr;
+                    </a>
+                    <a href="support.html" style="display:inline-flex;align-items:center;gap:8px;color:var(--white-60);font-size:14px;font-weight:600;border:1px solid var(--gold-border);padding:10px 20px;border-radius:50px;">
+                        Help Center &rarr;
+                    </a>
+                </div>
+
             </div>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <!-- Legal Content -->
-    <section class="legal-page">
-        <div class="container">
-            <div class="legal-container">
-                <div class="legal-header">
-                    <h1>Privacy Policy</h1>
-                    <p>Last Updated: March 2, 2026</p>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-row">
+                    <img src="assets/icons/north-icon.png" alt="NORTH" width="32" height="32" loading="lazy">
+                    <span class="logo-name">NORTH</span>
                 </div>
-
-                <div class="legal-content">
-                    <div class="highlight-box">
-                        <p><strong>Your Privacy Matters:</strong> NORTH is committed to protecting your privacy. We collect only the data necessary to provide you with a personalized, productive experience. We never sell your personal information to third parties.</p>
-                    </div>
-
-                    <h2>1. Introduction</h2>
-                    <p>Welcome to NORTH ("we," "our," or "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website (collectively, the "Service"). By using NORTH, you agree to the collection and use of information in accordance with this policy.</p>
-
-                    <h2>2. Information We Collect</h2>
-                    
-                    <h3>2.1 Information You Provide</h3>
-                    <p>When you use NORTH, you may provide us with the following information:</p>
-                    <ul>
-                        <li><strong>Account Information:</strong> Name, email address, and password when you create an account</li>
-                        <li><strong>Task Data:</strong> Tasks, goals, notes, and completion status you enter into the app</li>
-                        <li><strong>Financial Information:</strong> Monthly expenses and Safe Number data you choose to track</li>
-                        <li><strong>Calendar Data:</strong> Calendar events and availability when you connect your Google Calendar</li>
-                        <li><strong>Voice Data:</strong> Voice commands when you use the Voice Assistant or Driving Mode</li>
-                        <li><strong>Language Preference:</strong> Your selected app language from the 14 supported languages</li>
-                        <li><strong>Optimization Track:</strong> Your chosen track (Focus, Career, Money, Health, or Balance)</li>
-                        <li><strong>Reflection Data:</strong> Daily check-in responses, Win Log entries, and Sunday Compass reflections</li>
-                        <li><strong>Communications:</strong> Messages you send to our support team</li>
-                    </ul>
-
-                    <h3>2.2 Information Collected Automatically</h3>
-                    <p>When you use NORTH, we automatically collect certain information:</p>
-                    <ul>
-                        <li><strong>Usage Data:</strong> Features used, tasks completed, session duration, and interaction patterns</li>
-                        <li><strong>Device Information:</strong> Device type, operating system, app version, and unique device identifiers</li>
-                        <li><strong>Log Data:</strong> IP address, access times, and error logs</li>
-                        <li><strong>Analytics Data:</strong> Aggregated usage statistics to improve the Service</li>
-                    </ul>
-
-                    <h3>2.3 Information from Third-Party Services</h3>
-                    <p>When you connect third-party services to NORTH, we may receive:</p>
-                    <ul>
-                        <li><strong>Google Calendar:</strong> Calendar events, availability, and event details</li>
-                        <li><strong>Email Services:</strong> Email metadata for task parsing (with your explicit permission)</li>
-                    </ul>
-
-                    <h2>3. How We Use Your Information</h2>
-                    <p>We use the information we collect to:</p>
-                    <ul>
-                        <li><strong>Provide the Service:</strong> Enable core features like task management, calendar sync, and voice commands</li>
-                        <li><strong>Personalization:</strong> Customize your experience with The Captain based on your Optimization Track and usage patterns</li>
-                        <li><strong>Smart Features:</strong> Provide intelligent time suggestions, energy pattern analysis, and task prioritization</li>
-                        <li><strong>Communication:</strong> Send daily/weekly email summaries, push notifications, and important updates</li>
-                        <li><strong>Improvement:</strong> Analyze usage patterns to improve features and fix bugs</li>
-                        <li><strong>Security:</strong> Detect and prevent fraud, abuse, and security incidents</li>
-                        <li><strong>Legal Compliance:</strong> Comply with legal obligations and enforce our Terms of Service</li>
-                    </ul>
-
-                    <h2>4. How We Share Your Information</h2>
-                    <p>We do not sell your personal information. We may share your information only in the following circumstances:</p>
-
-                    <h3>4.1 Service Providers</h3>
-                    <p>We share information with trusted third-party service providers who assist us in operating the Service:</p>
-                    <ul>
-                        <li><strong>RevenueCat:</strong> Subscription management and billing (see <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a>)</li>
-                        <li><strong>Google Cloud:</strong> Speech-to-Text API for voice recognition (see <a href="https://cloud.google.com/privacy" target="_blank">Google Cloud Privacy Policy</a>)</li>
-                        <li><strong>SendGrid:</strong> Email delivery for summaries and notifications (see <a href="https://www.twilio.com/legal/privacy" target="_blank">SendGrid Privacy Policy</a>)</li>
-                        <li><strong>Cloud Hosting:</strong> Secure data storage and infrastructure</li>
-                    </ul>
-
-                    <h3>4.2 Legal Requirements</h3>
-                    <p>We may disclose your information if required to do so by law or in response to valid requests by public authorities (e.g., court orders, subpoenas).</p>
-
-                    <h3>4.3 Business Transfers</h3>
-                    <p>If NORTH is involved in a merger, acquisition, or sale of assets, your information may be transferred. We will notify you before your information becomes subject to a different privacy policy.</p>
-
-                    <h2>5. Data Security</h2>
-                    <p>We implement industry-standard security measures to protect your information:</p>
-                    <ul>
-                        <li><strong>Encryption:</strong> Data is encrypted in transit (TLS/SSL) and at rest (AES-256)</li>
-                        <li><strong>Authentication:</strong> Secure OAuth 2.0 for third-party integrations</li>
-                        <li><strong>Access Controls:</strong> Strict internal access policies and role-based permissions</li>
-                        <li><strong>Regular Audits:</strong> Security assessments and vulnerability testing</li>
-                    </ul>
-                    <p>However, no method of transmission over the internet is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.</p>
-
-                    <h2>6. Your Privacy Rights</h2>
-                    <p>Depending on your location, you may have the following rights:</p>
-
-                    <h3>6.1 Access and Portability</h3>
-                    <p>You have the right to access your personal data and request a copy in a portable format. Contact us at <a href="mailto:privacy@yournorth.app">privacy@yournorth.app</a> to request your data.</p>
-
-                    <h3>6.2 Correction</h3>
-                    <p>You can update your account information and task data directly in the app. For other corrections, contact us at <a href="mailto:support@yournorth.app">support@yournorth.app</a>.</p>
-
-                    <h3>6.3 Deletion</h3>
-                    <p>You can delete your account and all associated data at any time through Settings → Account → Delete Account. This action is permanent and cannot be undone.</p>
-
-                    <h3>6.4 Opt-Out</h3>
-                    <p>You can opt out of:</p>
-                    <ul>
-                        <li><strong>Email Summaries:</strong> Disable in Settings → Email Summaries</li>
-                        <li><strong>Push Notifications:</strong> Disable in device settings</li>
-                        <li><strong>Analytics:</strong> Contact us to opt out of usage analytics</li>
-                    </ul>
-
-                    <h3>6.5 GDPR Rights (European Users)</h3>
-                    <p>If you are located in the European Economic Area (EEA), you have additional rights under the General Data Protection Regulation (GDPR):</p>
-                    <ul>
-                        <li>Right to object to processing</li>
-                        <li>Right to restrict processing</li>
-                        <li>Right to lodge a complaint with a supervisory authority</li>
-                    </ul>
-
-                    <h3>6.6 CCPA Rights (California Users)</h3>
-                    <p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA):</p>
-                    <ul>
-                        <li>Right to know what personal information is collected</li>
-                        <li>Right to know whether personal information is sold or disclosed</li>
-                        <li>Right to say no to the sale of personal information (we do not sell your data)</li>
-                        <li>Right to deletion</li>
-                        <li>Right to non-discrimination for exercising your rights</li>
-                    </ul>
-
-                    <h2>7. Data Retention</h2>
-                    <p>We retain your information for as long as your account is active or as needed to provide the Service. Specifically:</p>
-                    <ul>
-                        <li><strong>Account Data:</strong> Retained until you delete your account</li>
-                        <li><strong>Task and Win Data:</strong> Retained until you delete your account</li>
-                        <li><strong>Voice Recordings:</strong> Processed in real-time and not stored permanently</li>
-                        <li><strong>Usage Logs:</strong> Retained for 90 days for security and debugging purposes</li>
-                        <li><strong>Backup Data:</strong> Deleted within 30 days after account deletion</li>
-                    </ul>
-
-                    <h2>8. Children's Privacy</h2>
-                    <p>NORTH is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:privacy@yournorth.app">privacy@yournorth.app</a>, and we will delete the information.</p>
-
-                    <h2>9. International Data Transfers</h2>
-                    <p>Your information may be transferred to and processed in countries other than your country of residence. These countries may have different data protection laws. When we transfer your data internationally, we ensure appropriate safeguards are in place, such as Standard Contractual Clauses approved by the European Commission.</p>
-
-                    <h2>10. Third-Party Links</h2>
-                    <p>The Service may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to review their privacy policies before providing any information.</p>
-
-                    <h2>11. Changes to This Privacy Policy</h2>
-                    <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
-                    <ul>
-                        <li>Posting the new Privacy Policy in the app and on our website</li>
-                        <li>Sending you an email notification</li>
-                        <li>Displaying an in-app notification</li>
-                    </ul>
-                    <p>Your continued use of the Service after changes become effective constitutes your acceptance of the revised Privacy Policy.</p>
-
-                    <h2>12. Contact Us</h2>
-                    <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
-                    <ul>
-                        <li><strong>Email:</strong> <a href="mailto:privacy@yournorth.app">privacy@yournorth.app</a></li>
-                        <li><strong>Support:</strong> <a href="mailto:support@yournorth.app">support@yournorth.app</a></li>
-                        <li><strong>Website:</strong> <a href="https://yournorth.app/support">yournorth.app/support</a></li>
-                    </ul>
-
-                    <div class="highlight-box" style="margin-top: 48px;">
-                        <p><strong>Summary:</strong> We collect data to provide you with a personalized productivity experience. We protect your data with encryption and never sell it to third parties. You have full control over your data and can delete your account at any time. For questions, contact us at <a href="mailto:privacy@yournorth.app">privacy@yournorth.app</a>.</p>
-                    </div>
+                <p>Your AI Life Operating System.<br>Plan. Focus. Build Momentum.</p>
+                <div class="social-links">
+                    <a href="https://www.tiktok.com/@yournorthapp" class="social-link" target="_blank" rel="noopener" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/yournorthapp" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <a href="https://www.youtube.com/@yournorthapp" class="social-link" target="_blank" rel="noopener" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a href="https://x.com/yournorthapp" class="social-link" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
                 </div>
+            </div>
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#showcase">How It Works</a></li>
+                    <li><a href="index.html#reviews">Reviews</a></li>
+                    <li><a href="index.html#download">Download</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="ai-daily-planner.html">AI Daily Planner</a></li>
+                    <li><a href="1-3-5-productivity-method.html">1-3-5 Method</a></li>
+                    <li><a href="freedom-number-calculator.html">Freedom Calculator</a></li>
+                    <li><a href="find-your-direction.html">Find Your Direction</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="support.html">Help Center</a></li>
+                    <li><a href="support.html#contact">Contact Us</a></li>
+                    <li><a href="support.html#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="mailto:hello@yournorth.app">hello@yournorth.app</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
-                            <path d="M16 4L4 10L16 16L28 10L16 4Z" fill="#D4AF37"/>
-                            <path d="M4 16L16 22L28 16" stroke="#D4AF37" stroke-width="2"/>
-                            <path d="M4 22L16 28L28 22" stroke="#D4AF37" stroke-width="2"/>
-                        </svg>
-                        <span>NORTH</span>
-                    </div>
-                    <p class="footer-tagline">Your Life, Simplified</p>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="index.html#features">Features</a></li>
-                        <li><a href="index.html#how-it-works">How It Works</a></li>
-                        <li><a href="index.html#download">Download</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="support.html">Help Center</a></li>
-                        <li><a href="support.html#contact">Contact Us</a></li>
-                        <li><a href="support.html#faq">FAQ</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="mailto:hello@yournorth.app">hello@yournorth.app</a></li>
-                        <li><a href="mailto:support@yournorth.app">support@yournorth.app</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 NORTH. All rights reserved.</p>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NORTH. All rights reserved.</p>
+            <p>Available on iOS &amp; Android &middot; 14 Languages &middot; 174 Countries</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
