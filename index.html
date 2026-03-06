@@ -904,6 +904,61 @@
             font-size: 28px;
             cursor: pointer;
         }
+
+        /* ── Demo Video Section ── */
+        .demo-video-section { background: var(--navy-deep); padding: 100px 0; }
+        .video-container {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 64px;
+            align-items: center;
+            justify-content: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .video-phone-frame {
+            position: relative;
+            width: 260px;
+            flex-shrink: 0;
+        }
+        .video-phone-frame video {
+            width: 100%;
+            border-radius: 36px;
+            display: block;
+            box-shadow: 0 0 0 2px rgba(230,193,90,0.25), 0 40px 80px rgba(0,0,0,0.7);
+        }
+        .video-glow {
+            position: absolute;
+            inset: -20px;
+            background: radial-gradient(ellipse at center, rgba(230,193,90,0.18) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        .video-cta { display: flex; flex-direction: column; }
+        .video-badges { display: flex; flex-direction: column; gap: 20px; }
+        .video-badge {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 20px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 14px;
+            transition: border-color 0.2s;
+        }
+        .video-badge:hover { border-color: rgba(230,193,90,0.3); }
+        .video-badge-icon { font-size: 28px; line-height: 1; }
+        .video-badge-title { font-size: 15px; font-weight: 600; color: var(--white); margin-bottom: 2px; }
+        .video-badge-sub { font-size: 13px; color: var(--white-60); }
+        @media (max-width: 768px) {
+            .video-container {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                gap: 40px;
+            }
+            .video-phone-frame { width: 220px; }
+            .video-cta { width: 100%; }
+        }
     </style>
 </head>
 <body>
@@ -1211,6 +1266,72 @@
                 <div class="step-num">3</div>
                 <h3>Execute &amp; Build Momentum</h3>
                 <p>Complete tasks, log wins, and review your week with the Sunday Compass. Watch your momentum compound over time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Demo Video -->
+<section class="demo-video-section" id="demo">
+    <div class="container">
+        <div class="section-header centered">
+            <div class="section-eyebrow">✦ See It In Action</div>
+            <h2 class="section-title">Watch NORTH <span class="gold">Plan Your Day</span></h2>
+            <p class="section-sub">See how Captain AI, the 1-3-5 system, and your Safe Number work together in 16 seconds.</p>
+        </div>
+        <div class="video-container">
+            <div class="video-phone-frame">
+                <video
+                    id="northDemoVideo"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="assets/screenshots/ss-02-captain.webp"
+                    aria-label="NORTH app demo video showing Captain AI planning the day"
+                >
+                    <source src="videos/north-demo.mp4" type="video/mp4">
+                    <!-- Fallback for browsers that don't support video -->
+                    <img src="assets/screenshots/ss-02-captain.webp" alt="NORTH app Captain AI screen" loading="lazy">
+                </video>
+                <div class="video-glow"></div>
+            </div>
+            <div class="video-cta">
+                <div class="video-badges">
+                    <div class="video-badge">
+                        <div class="video-badge-icon">🧭</div>
+                        <div>
+                            <div class="video-badge-title">Captain AI</div>
+                            <div class="video-badge-sub">Generates your perfect day</div>
+                        </div>
+                    </div>
+                    <div class="video-badge">
+                        <div class="video-badge-icon">🎯</div>
+                        <div>
+                            <div class="video-badge-title">1-3-5 System</div>
+                            <div class="video-badge-sub">One big thing, every day</div>
+                        </div>
+                    </div>
+                    <div class="video-badge">
+                        <div class="video-badge-icon">💰</div>
+                        <div>
+                            <div class="video-badge-title">Safe Number</div>
+                            <div class="video-badge-sub">Know your freedom target</div>
+                        </div>
+                    </div>
+                    <div class="video-badge">
+                        <div class="video-badge-icon">📈</div>
+                        <div>
+                            <div class="video-badge-title">Momentum</div>
+                            <div class="video-badge-sub">Track wins, build streaks</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://apps.apple.com/app/north/id6742574901" class="btn-gold" target="_blank" rel="noopener" style="margin-top: 32px; display: inline-flex; align-items: center; gap: 8px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    Start Your Free Trial
+                </a>
             </div>
         </div>
     </div>
