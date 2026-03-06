@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Freedom Number Calculator — NORTH</title>
+    <meta name="description" content="Calculate your financial freedom number — the monthly income that covers your essential needs and gives you peace of mind. Free interactive calculator.">
+    <meta name="keywords" content="financial freedom number calculator, freedom number, safe number calculator, financial independence calculator, monthly income goal, financial freedom calculator">
+    <link rel="canonical" href="https://www.yournorth.app/freedom-number-calculator">
+    <meta property="og:title" content="Financial Freedom Number Calculator — NORTH">
+    <meta property="og:description" content="Calculate your financial freedom number — the monthly income that covers your essential needs and gives you peace of mind.">
+    <meta property="og:image" content="https://www.yournorth.app/assets/og-image.png">
+    <meta property="og:url" content="https://www.yournorth.app/freedom-number-calculator">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="apple-touch-icon" href="assets/icons/north-icon.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Financial Freedom Number Calculator",
+      "description": "Calculate your financial freedom number — the monthly income that covers your essential needs and gives you peace of mind.",
+      "url": "https://www.yournorth.app/freedom-number-calculator",
+      "applicationCategory": "FinanceApplication",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+    </script>
+    <style>
+        :root {
+            --navy-deep: #050F1A; --navy-base: #081A2B; --navy-mid: #0F243A;
+            --gold: #D4AF37; --gold-light: #E6C15A;
+            --gold-dim: rgba(212,175,55,0.12); --gold-border: rgba(212,175,55,0.25);
+            --gold-glow: rgba(212,175,55,0.35);
+            --white: #fff; --white-80: rgba(255,255,255,0.80); --white-60: rgba(255,255,255,0.60);
+            --success: #22C55E;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif; background: var(--navy-deep); color: var(--white); line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+        .nav { position: sticky; top: 0; z-index: 100; background: rgba(5,15,26,0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--gold-border); }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+        .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .nav-logo img { width: 32px; height: 32px; border-radius: 7px; }
+        .nav-logo span { font-size: 17px; font-weight: 800; color: var(--white); letter-spacing: 1.5px; }
+        .nav-back { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 14px; font-weight: 500; }
+        .nav-back:hover { color: var(--gold); }
+        .btn-gold { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-deep); font-size: 14px; font-weight: 700; padding: 10px 22px; border-radius: 50px; text-decoration: none; transition: box-shadow 0.25s, transform 0.25s; }
+        .btn-gold:hover { box-shadow: 0 0 24px var(--gold-glow); transform: translateY(-1px); }
+        .btn-outline { display: inline-flex; align-items: center; gap: 8px; background: transparent; border: 1.5px solid var(--gold-border); color: var(--white-80); font-size: 14px; font-weight: 600; padding: 10px 22px; border-radius: 50px; text-decoration: none; transition: all 0.25s; }
+        .btn-outline:hover { border-color: var(--gold); color: var(--gold-light); background: var(--gold-dim); }
+        .eyebrow { display: inline-flex; align-items: center; gap: 6px; background: var(--gold-dim); border: 1px solid var(--gold-border); color: var(--gold-light); font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 50px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px; }
+        .page-hero { padding: 80px 0 60px; background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(212,175,55,0.07) 0%, transparent 70%); }
+        .page-hero h1 { font-size: clamp(32px, 4.5vw, 52px); font-weight: 800; letter-spacing: -1px; line-height: 1.1; margin-bottom: 20px; }
+        .page-hero h1 .gold { color: var(--gold); }
+        .page-hero .lead { font-size: 18px; color: var(--white-60); max-width: 640px; line-height: 1.7; margin-bottom: 0; }
+        /* Calculator */
+        .calc-section { padding: 60px 0 80px; }
+        .calc-card { background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%); border: 1px solid rgba(255,255,255,0.1); border-radius: 28px; padding: 48px; max-width: 720px; margin: 0 auto; }
+        .calc-title { font-size: 22px; font-weight: 800; color: var(--white); margin-bottom: 8px; }
+        .calc-sub { font-size: 14px; color: var(--white-60); margin-bottom: 36px; }
+        .calc-group { margin-bottom: 28px; }
+        .calc-group label { display: block; font-size: 14px; font-weight: 600; color: var(--white-80); margin-bottom: 8px; }
+        .calc-group .hint { font-size: 12px; color: var(--white-60); margin-bottom: 8px; }
+        .input-row { display: flex; align-items: center; gap: 0; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; overflow: hidden; transition: border-color 0.2s; }
+        .input-row:focus-within { border-color: var(--gold-border); }
+        .input-prefix { padding: 14px 16px; color: var(--gold); font-weight: 700; font-size: 16px; background: rgba(212,175,55,0.08); border-right: 1px solid rgba(255,255,255,0.08); }
+        .input-row input { flex: 1; background: transparent; border: none; outline: none; color: var(--white); font-size: 16px; font-weight: 600; padding: 14px 16px; font-family: inherit; }
+        .input-row input::placeholder { color: rgba(255,255,255,0.3); font-weight: 400; }
+        .calc-divider { display: flex; align-items: center; gap: 16px; margin: 32px 0; }
+        .calc-divider::before, .calc-divider::after { content: ''; flex: 1; height: 1px; background: rgba(255,255,255,0.08); }
+        .calc-divider span { color: var(--white-40); font-size: 12px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
+        .calc-btn { width: 100%; padding: 16px; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-deep); font-size: 16px; font-weight: 800; border: none; border-radius: 14px; cursor: pointer; transition: box-shadow 0.25s, transform 0.25s; font-family: inherit; }
+        .calc-btn:hover { box-shadow: 0 0 28px var(--gold-glow); transform: translateY(-1px); }
+        /* Result */
+        .result-card { display: none; background: linear-gradient(135deg, rgba(212,175,55,0.1) 0%, rgba(8,26,43,0.8) 100%); border: 1px solid var(--gold-border); border-radius: 24px; padding: 40px; margin-top: 32px; text-align: center; }
+        .result-card.visible { display: block; }
+        .result-label { font-size: 13px; font-weight: 700; color: var(--gold); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+        .result-number { font-size: 56px; font-weight: 900; color: var(--gold); letter-spacing: -2px; line-height: 1; margin-bottom: 8px; }
+        .result-sub { font-size: 14px; color: var(--white-60); margin-bottom: 24px; }
+        .result-breakdown { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 24px 0; }
+        .breakdown-item { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 16px; text-align: center; }
+        .breakdown-num { font-size: 20px; font-weight: 800; color: var(--white); }
+        .breakdown-label { font-size: 11px; color: var(--white-60); margin-top: 4px; }
+        .result-cta { margin-top: 24px; }
+        .result-cta p { font-size: 14px; color: var(--white-60); margin-bottom: 16px; }
+        .result-cta .btns { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+        /* Content */
+        .content { padding: 60px 0 80px; background: var(--navy-base); }
+        .content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+        .phone-wrap { display: flex; justify-content: center; position: relative; }
+        .phone-wrap::before { content: ''; position: absolute; width: 260px; height: 260px; background: radial-gradient(circle, rgba(212,175,55,0.1) 0%, transparent 70%); border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+        .phone-img { width: 220px; border-radius: 28px; box-shadow: 0 24px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.08); position: relative; z-index: 1; }
+        .content-text h2 { font-size: clamp(22px, 2.5vw, 30px); font-weight: 800; color: var(--white); letter-spacing: -0.5px; margin-bottom: 14px; line-height: 1.2; }
+        .content-text p { font-size: 15px; color: var(--white-60); line-height: 1.75; margin-bottom: 16px; }
+        .bullet-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+        .bullet-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--white-80); }
+        .bullet-list li::before { content: '◆'; color: var(--gold); font-size: 8px; margin-top: 5px; flex-shrink: 0; }
+        /* Article */
+        .article { max-width: 720px; margin: 0 auto; padding: 80px 0; }
+        .article h2 { font-size: 26px; font-weight: 800; color: var(--white); margin: 48px 0 16px; }
+        .article h3 { font-size: 20px; font-weight: 700; color: var(--gold-light); margin: 32px 0 12px; }
+        .article p { font-size: 16px; color: var(--white-60); line-height: 1.8; margin-bottom: 16px; }
+        .article ul { list-style: none; padding: 0; margin-bottom: 16px; }
+        .article ul li { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; color: var(--white-80); margin-bottom: 10px; }
+        .article ul li::before { content: '◆'; color: var(--gold); font-size: 8px; margin-top: 6px; flex-shrink: 0; }
+        .footer { background: var(--navy-base); border-top: 1px solid var(--gold-border); padding: 40px 0 24px; }
+        .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+        .footer-inner p { font-size: 13px; color: rgba(255,255,255,0.4); }
+        .footer-links { display: flex; gap: 20px; }
+        .footer-links a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--gold); }
+        @media (max-width: 768px) {
+            .calc-card { padding: 28px 20px; }
+            .result-breakdown { grid-template-columns: 1fr 1fr; }
+            .content-grid { grid-template-columns: 1fr; gap: 40px; }
+            .phone-img { width: 180px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="nav">
+    <div class="container">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">
+                <img src="assets/icons/north-icon.png" alt="NORTH" width="32" height="32">
+                <span>NORTH</span>
+            </a>
+            <a href="/" class="nav-back">← Back to Home</a>
+            <a href="https://apps.apple.com/app/north/id6742574901" class="btn-gold" target="_blank" rel="noopener">Download Free</a>
+        </div>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <div class="eyebrow">✦ Financial Freedom</div>
+        <h1>Your <span class="gold">Freedom Number</span> Calculator</h1>
+        <p class="lead">Your Freedom Number is the monthly income that covers your essential needs and gives you peace of mind. Calculate yours in 60 seconds — then use NORTH to track your progress toward it.</p>
+    </div>
+</section>
+
+<section class="calc-section">
+    <div class="container">
+        <div class="calc-card">
+            <h2 class="calc-title">Calculate Your Freedom Number</h2>
+            <p class="calc-sub">Enter your monthly essential expenses below. We'll calculate the income you need to feel financially free.</p>
+
+            <div class="calc-group">
+                <label>Housing (rent/mortgage)</label>
+                <div class="input-row">
+                    <span class="input-prefix">$</span>
+                    <input type="number" id="housing" placeholder="1,500" min="0">
+                </div>
+            </div>
+
+            <div class="calc-group">
+                <label>Food &amp; Groceries</label>
+                <div class="input-row">
+                    <span class="input-prefix">$</span>
+                    <input type="number" id="food" placeholder="400" min="0">
+                </div>
+            </div>
+
+            <div class="calc-group">
+                <label>Transportation</label>
+                <div class="input-row">
+                    <span class="input-prefix">$</span>
+                    <input type="number" id="transport" placeholder="300" min="0">
+                </div>
+            </div>
+
+            <div class="calc-group">
+                <label>Utilities &amp; Bills</label>
+                <div class="input-row">
+                    <span class="input-prefix">$</span>
+                    <input type="number" id="utilities" placeholder="200" min="0">
+                </div>
+            </div>
+
+            <div class="calc-group">
+                <label>Health &amp; Insurance</label>
+                <div class="input-row">
+                    <span class="input-prefix">$</span>
+                    <input type="number" id="health" placeholder="150" min="0">
+                </div>
+            </div>
+
+            <div class="calc-group">
+                <label>Other Essential Expenses</label>
+                <div class="input-row">
+                    <span class="input-prefix">$</span>
+                    <input type="number" id="other" placeholder="200" min="0">
+                </div>
+            </div>
+
+            <div class="calc-divider"><span>Optional</span></div>
+
+            <div class="calc-group">
+                <label>Monthly Savings Goal</label>
+                <div class="hint">How much do you want to save each month?</div>
+                <div class="input-row">
+                    <span class="input-prefix">$</span>
+                    <input type="number" id="savings" placeholder="500" min="0">
+                </div>
+            </div>
+
+            <button class="calc-btn" onclick="calculate()">Calculate My Freedom Number →</button>
+
+            <div class="result-card" id="result">
+                <div class="result-label">Your Monthly Freedom Number</div>
+                <div class="result-number" id="resultNum">$0</div>
+                <div class="result-sub" id="resultSub">This is the monthly income that gives you financial peace of mind.</div>
+                <div class="result-breakdown">
+                    <div class="breakdown-item">
+                        <div class="breakdown-num" id="essentialsNum">$0</div>
+                        <div class="breakdown-label">Essential Expenses</div>
+                    </div>
+                    <div class="breakdown-item">
+                        <div class="breakdown-num" id="savingsNum">$0</div>
+                        <div class="breakdown-label">Monthly Savings</div>
+                    </div>
+                    <div class="breakdown-item">
+                        <div class="breakdown-num" id="annualNum">$0</div>
+                        <div class="breakdown-label">Annual Income Needed</div>
+                    </div>
+                </div>
+                <div class="result-cta">
+                    <p>Track your progress toward your Freedom Number with NORTH's Safe Number feature. 7-day free trial, no credit card required.</p>
+                    <div class="btns">
+                        <a href="https://apps.apple.com/app/north/id6742574901" class="btn-gold" target="_blank" rel="noopener">Track with NORTH — Free</a>
+                        <a href="https://play.google.com/store/apps/details?id=space.manus.north.app.t20260116202930" class="btn-outline" target="_blank" rel="noopener">Get it on Google Play</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="container">
+        <div class="content-grid">
+            <div class="phone-wrap">
+                <img src="assets/screenshots/ss-03-safe-number.webp" alt="NORTH Safe Number feature" class="phone-img" loading="lazy">
+            </div>
+            <div class="content-text">
+                <div class="eyebrow">💰 Safe Number in NORTH</div>
+                <h2>Track Your Freedom Number in NORTH</h2>
+                <p>Once you know your Freedom Number, NORTH helps you track your progress toward it with the Safe Number feature. Set your target, log your income sources, and watch your progress grow.</p>
+                <p>NORTH's runway calculator shows you exactly how many months of financial runway you have — and a visual freedom timeline showing when you'll reach your goal.</p>
+                <ul class="bullet-list">
+                    <li>Set your personal Safe Number target</li>
+                    <li>Track multiple income sources</li>
+                    <li>Visual progress tree (seed → tree)</li>
+                    <li>Runway calculator and freedom timeline</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <article class="article">
+        <h2>What Is a Financial Freedom Number?</h2>
+        <p>Your financial freedom number (also called your "Safe Number" or "freedom number") is the monthly income amount that covers all your essential expenses and gives you peace of mind. It's the number that, once reached, means you're no longer financially stressed.</p>
+        <p>Unlike the concept of "financial independence" (which typically requires enough assets to never work again), your freedom number is a more achievable, near-term goal. It's the income level that unlocks options — the ability to be selective about your work, take risks, and pursue what matters most.</p>
+
+        <h3>How to Calculate Your Freedom Number</h3>
+        <p>Your freedom number is calculated by adding up all your essential monthly expenses:</p>
+        <ul>
+            <li>Housing (rent or mortgage)</li>
+            <li>Food and groceries</li>
+            <li>Transportation</li>
+            <li>Utilities and bills</li>
+            <li>Health and insurance</li>
+            <li>Any other essential expenses</li>
+        </ul>
+        <p>Add your monthly savings goal to this total, and you have your Freedom Number. The calculator above does this automatically.</p>
+
+        <h3>Why Your Freedom Number Matters</h3>
+        <p>Most people have a vague sense that they want to "make more money" or "be financially secure." But without a specific number, this goal is impossible to track or achieve.</p>
+        <p>Your Freedom Number transforms a vague aspiration into a concrete, trackable goal. When you know your number, you can:</p>
+        <ul>
+            <li>Make better decisions about your career and income streams</li>
+            <li>Track your progress with clarity and motivation</li>
+            <li>Know exactly when you've achieved financial peace of mind</li>
+            <li>Set meaningful milestones on the path to your goal</li>
+        </ul>
+
+        <h3>How NORTH Helps You Reach Your Freedom Number</h3>
+        <p>NORTH's Safe Number feature is built specifically to help you track and reach your Freedom Number. You set your target, log your income sources, and NORTH shows you your progress with a visual runway calculator and freedom timeline.</p>
+        <p>Captain AI also incorporates your financial goals into your daily planning, suggesting tasks and actions that move you toward your Freedom Number alongside your other life goals.</p>
+    </article>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <p>&copy; 2026 NORTH. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="support.html">Support</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+function fmt(n) {
+    return '$' + Math.round(n).toLocaleString('en-US');
+}
+
+function calculate() {
+    const housing   = parseFloat(document.getElementById('housing').value)   || 0;
+    const food      = parseFloat(document.getElementById('food').value)      || 0;
+    const transport = parseFloat(document.getElementById('transport').value) || 0;
+    const utilities = parseFloat(document.getElementById('utilities').value) || 0;
+    const health    = parseFloat(document.getElementById('health').value)    || 0;
+    const other     = parseFloat(document.getElementById('other').value)     || 0;
+    const savings   = parseFloat(document.getElementById('savings').value)   || 0;
+
+    const essentials = housing + food + transport + utilities + health + other;
+    const total = essentials + savings;
+    const annual = total * 12;
+
+    document.getElementById('resultNum').textContent = fmt(total);
+    document.getElementById('essentialsNum').textContent = fmt(essentials);
+    document.getElementById('savingsNum').textContent = fmt(savings);
+    document.getElementById('annualNum').textContent = fmt(annual);
+
+    let sub = '';
+    if (total < 2000) sub = 'A lean but achievable freedom number. Focus on building income streams.';
+    else if (total < 4000) sub = 'A solid foundation for financial peace of mind. Track your progress with NORTH.';
+    else if (total < 7000) sub = 'A comfortable freedom number. NORTH can help you build toward it systematically.';
+    else sub = 'An ambitious freedom number. Break it into milestones and track each one with NORTH.';
+    document.getElementById('resultSub').textContent = sub;
+
+    const resultCard = document.getElementById('result');
+    resultCard.classList.add('visible');
+    resultCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// Allow Enter key to trigger calculation
+document.querySelectorAll('input[type="number"]').forEach(input => {
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') calculate(); });
+});
+</script>
+</body>
+</html>

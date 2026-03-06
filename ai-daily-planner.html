@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best AI Daily Planner App — NORTH</title>
+    <meta name="description" content="NORTH is the best AI daily planner app. Plan your day with Captain AI, the 1-3-5 system, and intelligent scheduling. Available on iOS and Android.">
+    <meta name="keywords" content="AI daily planner, best daily planner app, AI planner app, daily planning app, AI productivity planner, smart daily planner">
+    <link rel="canonical" href="https://www.yournorth.app/ai-daily-planner">
+    <meta property="og:title" content="Best AI Daily Planner App — NORTH">
+    <meta property="og:description" content="Plan your day with Captain AI, the 1-3-5 system, and intelligent scheduling. Available on iOS and Android.">
+    <meta property="og:image" content="https://www.yournorth.app/assets/og-image.png">
+    <meta property="og:url" content="https://www.yournorth.app/ai-daily-planner">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="apple-touch-icon" href="assets/icons/north-icon.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Best AI Daily Planner App",
+      "description": "NORTH is the best AI daily planner app. Plan your day with Captain AI, the 1-3-5 system, and intelligent scheduling.",
+      "url": "https://www.yournorth.app/ai-daily-planner",
+      "author": { "@type": "Organization", "name": "NORTH" },
+      "publisher": { "@type": "Organization", "name": "NORTH", "url": "https://www.yournorth.app" }
+    }
+    </script>
+    <style>
+        :root {
+            --navy-deep: #050F1A; --navy-base: #081A2B; --navy-mid: #0F243A;
+            --gold: #D4AF37; --gold-light: #E6C15A;
+            --gold-dim: rgba(212,175,55,0.12); --gold-border: rgba(212,175,55,0.25);
+            --gold-glow: rgba(212,175,55,0.35);
+            --white: #fff; --white-80: rgba(255,255,255,0.80); --white-60: rgba(255,255,255,0.60);
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif; background: var(--navy-deep); color: var(--white); line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+        /* Nav */
+        .nav { position: sticky; top: 0; z-index: 100; background: rgba(5,15,26,0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--gold-border); }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+        .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .nav-logo img { width: 32px; height: 32px; border-radius: 7px; }
+        .nav-logo span { font-size: 17px; font-weight: 800; color: var(--white); letter-spacing: 1.5px; }
+        .nav-back { color: var(--white-60); text-decoration: none; font-size: 14px; font-weight: 500; display: flex; align-items: center; gap: 6px; }
+        .nav-back:hover { color: var(--gold); }
+        .btn-gold { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-deep); font-size: 14px; font-weight: 700; padding: 10px 22px; border-radius: 50px; text-decoration: none; transition: box-shadow 0.25s, transform 0.25s; }
+        .btn-gold:hover { box-shadow: 0 0 24px var(--gold-glow); transform: translateY(-1px); }
+        /* Hero */
+        .page-hero { padding: 80px 0 60px; background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(212,175,55,0.07) 0%, transparent 70%); }
+        .eyebrow { display: inline-flex; align-items: center; gap: 6px; background: var(--gold-dim); border: 1px solid var(--gold-border); color: var(--gold-light); font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 50px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px; }
+        .page-hero h1 { font-size: clamp(32px, 4.5vw, 52px); font-weight: 800; letter-spacing: -1px; line-height: 1.1; margin-bottom: 20px; }
+        .page-hero h1 .gold { color: var(--gold); }
+        .page-hero .lead { font-size: 18px; color: var(--white-60); max-width: 640px; line-height: 1.7; margin-bottom: 36px; }
+        .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+        .btn-outline { display: inline-flex; align-items: center; gap: 8px; background: transparent; border: 1.5px solid var(--gold-border); color: var(--white-80); font-size: 14px; font-weight: 600; padding: 10px 22px; border-radius: 50px; text-decoration: none; transition: all 0.25s; }
+        .btn-outline:hover { border-color: var(--gold); color: var(--gold-light); background: var(--gold-dim); }
+        /* Content */
+        .content { padding: 80px 0; }
+        .content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; margin-bottom: 80px; }
+        .content-grid.reverse { direction: rtl; }
+        .content-grid.reverse > * { direction: ltr; }
+        .phone-wrap { display: flex; justify-content: center; position: relative; }
+        .phone-wrap::before { content: ''; position: absolute; width: 260px; height: 260px; background: radial-gradient(circle, rgba(212,175,55,0.1) 0%, transparent 70%); border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+        .phone-img { width: 220px; border-radius: 28px; box-shadow: 0 24px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.08); position: relative; z-index: 1; }
+        .content-text h2 { font-size: clamp(22px, 2.5vw, 30px); font-weight: 800; color: var(--white); letter-spacing: -0.5px; margin-bottom: 14px; line-height: 1.2; }
+        .content-text p { font-size: 15px; color: var(--white-60); line-height: 1.75; margin-bottom: 16px; }
+        .bullet-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+        .bullet-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--white-80); }
+        .bullet-list li::before { content: '◆'; color: var(--gold); font-size: 8px; margin-top: 5px; flex-shrink: 0; }
+        /* Article */
+        .article { max-width: 720px; margin: 0 auto; padding: 0 0 80px; }
+        .article h2 { font-size: 26px; font-weight: 800; color: var(--white); margin: 48px 0 16px; }
+        .article h3 { font-size: 20px; font-weight: 700; color: var(--gold-light); margin: 32px 0 12px; }
+        .article p { font-size: 16px; color: var(--white-60); line-height: 1.8; margin-bottom: 16px; }
+        .article ul { list-style: none; padding: 0; margin-bottom: 16px; }
+        .article ul li { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; color: var(--white-80); margin-bottom: 10px; }
+        .article ul li::before { content: '◆'; color: var(--gold); font-size: 8px; margin-top: 6px; flex-shrink: 0; }
+        /* CTA Block */
+        .cta-block { background: linear-gradient(135deg, rgba(212,175,55,0.08) 0%, rgba(8,26,43,0.8) 100%); border: 1px solid var(--gold-border); border-radius: 24px; padding: 48px; text-align: center; margin: 60px 0; }
+        .cta-block h2 { font-size: 28px; font-weight: 800; margin-bottom: 12px; }
+        .cta-block p { color: var(--white-60); margin-bottom: 28px; font-size: 16px; }
+        .cta-block .btns { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+        /* Footer */
+        .footer { background: var(--navy-base); border-top: 1px solid var(--gold-border); padding: 40px 0 24px; }
+        .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+        .footer-inner p { font-size: 13px; color: rgba(255,255,255,0.4); }
+        .footer-links { display: flex; gap: 20px; }
+        .footer-links a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--gold); }
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; gap: 40px; }
+            .content-grid.reverse { direction: ltr; }
+            .phone-img { width: 180px; }
+            .cta-block { padding: 32px 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="nav">
+    <div class="container">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">
+                <img src="assets/icons/north-icon.png" alt="NORTH" width="32" height="32">
+                <span>NORTH</span>
+            </a>
+            <a href="/" class="nav-back">← Back to Home</a>
+            <a href="https://apps.apple.com/app/north/id6742574901" class="btn-gold" target="_blank" rel="noopener">Download Free</a>
+        </div>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <div class="eyebrow">✦ AI Daily Planner</div>
+        <h1>The Best <span class="gold">AI Daily Planner</span> App</h1>
+        <p class="lead">Stop starting your day without a plan. NORTH uses Captain AI to help you identify your most important work, structure your day with the 1-3-5 system, and build unstoppable momentum — in your language.</p>
+        <div class="hero-btns">
+            <a href="https://apps.apple.com/app/north/id6742574901" class="btn-gold" target="_blank" rel="noopener">Download on App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=space.manus.north.app.t20260116202930" class="btn-outline" target="_blank" rel="noopener">Get it on Google Play</a>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="container">
+        <div class="content-grid">
+            <div class="phone-wrap">
+                <img src="assets/screenshots/ss-02-captain.webp" alt="Captain AI daily planner" class="phone-img" loading="lazy">
+            </div>
+            <div class="content-text">
+                <div class="eyebrow">🤖 Captain AI</div>
+                <h2>Your Personal AI Planning Assistant</h2>
+                <p>Most productivity apps give you a blank canvas and expect you to figure out the rest. NORTH is different. Captain AI actively helps you plan your day — every single morning.</p>
+                <p>Tell Captain your biggest goal, and it will suggest your Big Thing for today, recommend supporting tasks, and help you structure your hours for maximum impact.</p>
+                <ul class="bullet-list">
+                    <li>Morning briefings with personalized daily plans</li>
+                    <li>Smart task suggestions based on your goals</li>
+                    <li>Energy-aware scheduling (low, medium, high energy modes)</li>
+                    <li>Available in 14 languages</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-grid reverse">
+            <div class="phone-wrap">
+                <img src="assets/screenshots/ss-04-daily-plan.webp" alt="1-3-5 daily planning system" class="phone-img" loading="lazy">
+            </div>
+            <div class="content-text">
+                <div class="eyebrow">🎯 1-3-5 System</div>
+                <h2>The Proven Daily Planning Framework</h2>
+                <p>The 1-3-5 method is used by high performers worldwide. It's simple: every day, you commit to one Big Thing, three medium tasks, and five quick wins.</p>
+                <p>NORTH implements this framework automatically. You never start your day wondering what to work on.</p>
+                <ul class="bullet-list">
+                    <li>One Big Thing: your most important goal today</li>
+                    <li>Three medium tasks that support your Big Thing</li>
+                    <li>Five quick wins to build momentum</li>
+                    <li>Swipe to complete, log wins, track streaks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <article class="article">
+        <h2>Why Most Daily Planners Fail (And What NORTH Does Differently)</h2>
+        <p>Most daily planner apps have the same problem: they're passive. They wait for you to add tasks. They don't help you decide what matters most. They don't adapt to your energy or goals. They're just digital to-do lists.</p>
+        <p>NORTH is built on a different philosophy. Instead of asking you to manage a list, NORTH acts as an active partner in your day. Captain AI analyzes your goals, your current momentum, and your energy level to suggest the best path forward — every single day.</p>
+
+        <h3>What Makes an AI Daily Planner Effective?</h3>
+        <p>The best AI daily planner apps share three characteristics:</p>
+        <ul>
+            <li>They help you identify your most important work — not just capture everything</li>
+            <li>They adapt to your energy and context — not just your schedule</li>
+            <li>They build momentum over time — not just track tasks</li>
+        </ul>
+        <p>NORTH delivers all three through the combination of Captain AI, the 1-3-5 system, and momentum tracking.</p>
+
+        <h3>The 1-3-5 Method: Why It Works</h3>
+        <p>The 1-3-5 productivity method was designed to solve the most common planning mistake: trying to do too much. When you have 20 tasks on your list, you spend your day context-switching and end up feeling busy but unproductive.</p>
+        <p>The 1-3-5 method forces you to prioritize. By committing to one Big Thing, three medium tasks, and five quick wins, you create a realistic, achievable plan that builds momentum throughout the day.</p>
+
+        <h3>How Captain AI Enhances Daily Planning</h3>
+        <p>Captain AI doesn't just help you plan — it helps you plan better over time. As you use NORTH, Captain learns your patterns, your goals, and what types of tasks drain or energize you. Over time, its suggestions become increasingly personalized and accurate.</p>
+        <p>Every morning, Captain AI delivers a personalized briefing that includes your suggested Big Thing for the day, recommended supporting tasks, and a motivational nudge to get you started. It's like having a personal productivity coach in your pocket.</p>
+
+        <div class="cta-block">
+            <h2>Start Planning Smarter Today</h2>
+            <p>Download NORTH free and experience the difference an AI daily planner makes. 7-day free trial, no credit card required.</p>
+            <div class="btns">
+                <a href="https://apps.apple.com/app/north/id6742574901" class="btn-gold" target="_blank" rel="noopener">Download on App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=space.manus.north.app.t20260116202930" class="btn-outline" target="_blank" rel="noopener">Get it on Google Play</a>
+            </div>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+        <h3>Is NORTH the best AI daily planner app?</h3>
+        <p>NORTH is designed specifically for high-achievers who want more than a task list. With Captain AI, the 1-3-5 system, and momentum tracking, it's one of the most comprehensive AI daily planning apps available on iOS and Android.</p>
+
+        <h3>Does NORTH work offline?</h3>
+        <p>Yes. Core planning features work offline. Captain AI suggestions require an internet connection, but your tasks, wins, and daily plans are always available.</p>
+
+        <h3>What languages does NORTH support?</h3>
+        <p>NORTH is available in 14 languages: English, Spanish, Portuguese, French, German, Italian, Dutch, Swedish, Norwegian, Polish, Turkish, Arabic, Japanese, and Korean. Captain AI responds in your chosen language.</p>
+
+        <h3>Is there a free trial?</h3>
+        <p>Yes. NORTH offers a 7-day free trial with full access to all features. No credit card required to start.</p>
+    </article>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <p>&copy; 2026 NORTH. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="support.html">Support</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
