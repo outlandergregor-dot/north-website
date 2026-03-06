@@ -1,4 +1,21 @@
+# NORTH — robots.txt
+# https://www.yournorth.app
+
+# Allow all search engine crawlers
 User-agent: *
 Allow: /
 
+# Allow Google Image Bot (for screenshot indexing)
+User-agent: Googlebot-Image
+Allow: /assets/
+
+# Allow Google Video Bot (for demo video indexing)
+User-agent: Googlebot-Video
+Allow: /assets/
+
+# Block irrelevant query strings
+Disallow: /?q=
+Disallow: /cdn-cgi/
+
+# Sitemap
 Sitemap: https://www.yournorth.app/sitemap.xml
