@@ -1,3 +1,111 @@
+
+/
+manus  where is the  North landing page chat here so we can implement the Apple Store app link to go live in the landing page . ?
+The NORTH landing page (yournorth.app) is hosted on Namecheap — it is not a Manus project, so I cannot edit it directly from here. However, I can help you in two ways:
+Option A — I write the exact HTML code snippet you paste into your Namecheap file manager (the App Store button code, ready to drop into your existing index.html)
+Option B — You share the landing page files with me — download your index.html (and any CSS files) from Namecheap cPanel → File Manager, attach them here, and I will add the App Store button directly into the code and give you the updated file to re-upload.
+Which do you prefer?
+Also — do you have your App Store link ready? It looks like:
+https://apps.apple.com/app/north/id[YOUR-APP-ID]
+You can find it in App Store Connect → Your App → App Information → Apple ID. Once I have that, I can build the button with the correct URL.
+https://apps.apple.com/us/app/north-find-your-north/id6757988392    =>  https://www.yournorth.app/  in all Apple buttons LIVE ( I GOT APPROVAL LAST NITH) 
+CONGRATULATIONS! 🎉 That is huge — NORTH is LIVE on the App Store! Let me navigate to your landing page right now and see exactly where the Apple buttons are so I can give you the precise code to update them.
+I've identified the Apple Store buttons on your site and will provide the exact code snippets for each. Next, I’ll prepare the HTML to update the links with your App Store URL.
+
+I confirmed multiple "Download on App Store" buttons without current links. Next, I'll extract each button's code to update with the correct App Store URL.
+
+I can see the landing page clearly. There are multiple "Download on App Store" buttons across the page — in the hero section, the solution section, and the bottom CTA. The buttons currently have no real App Store link (they likely point to # or nothing). Since the page is on Namecheap and I cannot edit it directly, here is the exact find-and-replace you need to do in your index.html file.
+Step 1 — Open Namecheap cPanel → File Manager → public_html → index.html → Edit
+Step 2 — Use Find & Replace (Ctrl+H) to replace ALL occurrences of the old App Store href with the live link.
+The current placeholder is likely one of these patterns. Replace all of them:
+Find (old)
+Replace with (new)
+href="#" on any App Store button
+href="https://apps.apple.com/us/app/north-find-your-north/id6757988392"
+href="https://apps.apple.com"
+href="https://apps.apple.com/us/app/north-find-your-north/id6757988392"
+The safest way — do a global search in the file for Download on App Store and update the href on the <a> tag wrapping it. It will look like this:
+HTML
+<!-- BEFORE (placeholder ) -->
+<a href="#" class="...">
+  <img src="..." alt="App Store"> Download on App Store
+</a>
+
+<!-- AFTER (live link) -->
+<a href="https://apps.apple.com/us/app/north-find-your-north/id6757988392" 
+   target="_blank" rel="noopener noreferrer" class="...">
+  <img src="..." alt="App Store"> Download on App Store
+</a>
+Would you like me to download the index.html file from your site, make all the changes automatically, and give you the updated file to re-upload? That would be faster and error-free — just confirm and I will do it right now.
+WHERE do find the   Open Namecheap cPanel → File Manager → public_html → index.html → Edit  in there?
+I can see the issue — your yournorth.app domain is set up as a redirect to https://www.yournorth.app/, which means the actual website files are hosted somewhere else (likely a separate hosting platform, not Namecheap's shared hosting ). There is no cPanel/File Manager here because Namecheap is only managing the domain name, not the hosting.
+Where is your landing page actually hosted? Looking at the screenshots, I can see a few clues. Let me check the DNS to find out where the files live.
+Found the site redirects to an external host; unable to access files directly. Will need hosting details to proceed with updating the App Store button links.
+
+Found it! Your landing page is hosted on Vercel — not Namecheap. The Namecheap domain just points to Vercel. Here is exactly how to update the App Store buttons:
+Step 1 — Go to Vercel
+Open vercel.com and log in. You should see your yournorth.app project there.
+Step 2 — Find the project source
+Your Vercel project is connected to a GitHub repository. Go to the project → click Settings → Git to see which GitHub repo it is connected to.
+Step 3 — Edit the file in GitHub
+Open that GitHub repo → find index.html (or whatever the main file is) → click the pencil ✏️ edit icon → do a Ctrl+F search for Download on App Store → update the href on that <a> tag to:
+Plain Text
+https://apps.apple.com/us/app/north-find-your-north/id6757988392
+Commit the change → Vercel auto-deploys in ~30 seconds.
+OR — even faster:
+Share your Vercel project name or GitHub repo link here and I will make the change directly and give you the exact updated file to push.
+Which GitHub repo hosts the landing page? If you are not sure, go to vercel.com/dashboard, click on the yournorth.app project, and tell me the repo name shown there.
+https://vercel.com/vogueversevbe?repo=https://github.com/outlandergregor-dot/north-website
+Got it! The repo is outlandergregor-dot/north-website on GitHub. Let me download the current index.html directly from the repo, update all the App Store links, and give you the exact file to push.
+Found them all. There are 5 App Store button links plus 2 schema/meta links — all currently pointing to the old App ID id6742574901 (and one schema entry with id6738286600). The correct live ID is id6757988392. Updating all of them now...
+I've identified and retrieved the current App Store links in the code, all pointing to the old ID. Next, I will update them to the correct ID `id6757988392`.
+
+All 7 occurrences updated perfectly. Every App Store link now points to https://apps.apple.com/us/app/north-find-your-north/id6757988392.
+Now you need to push this to GitHub so Vercel auto-deploys it. Here is the exact step-by-step:
+Option A — Upload directly in GitHub (easiest, no coding needed ):
+Go to github.com/outlandergregor-dot/north-website
+Click on index.html
+Click the pencil icon (Edit this file) in the top right
+Press Ctrl+A to select all → delete → paste the updated file content
+Scroll down → click Commit changes
+Vercel deploys automatically in ~30 seconds ✓
+Option B — I give you the updated file to drag-and-drop into GitHub:
+The updated index.html is attached below — download it, go to your GitHub repo, click Add file → Upload files, drag the file in, and commit.
+Which option do you prefer? I can also attach the file right now.
+WHERW IS the  the updated file content ? so i can past there 
+Here is the updated index.html file. Follow these steps:
+Go to github.com/outlandergregor-dot/north-website
+Click on index.html
+Click the pencil icon (Edit this file) top right
+Press Ctrl+A to select all the existing content → delete it
+Open the attached index.html file in a text editor (Notepad, TextEdit, VS Code) → Ctrl+A → Ctrl+C to copy everything
+Paste it into the GitHub editor → Ctrl+V
+Scroll down → click Commit changes → Commit changes again
+Vercel deploys in ~30 seconds and all 5 App Store buttons on your landing page go live pointing to your real app
+Done — NORTH will be downloadable directly from your landing page!
+index.html
+Code · 100.51 KB
+View all files in this task
+Task completed
+How was this result?
+Suggested follow-ups
+
+
+My Browser
+
+Publish
+
+NORTH
+
+8:33
+Preview on your phone
+
+https://manus.im/app-preview/ReBodchdPHmaSrmxR9DEsB?sessionId=eZyMvHEaokCaZzyLm7z3CP
+Who can preview this app
+
+Some features aren't available in your browser. For the full experience, preview your app on your phone using the Expo GO app.
+
+index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,8 +229,8 @@
       "applicationSubCategory": "LifestyleApplication",
       "description": "NORTH is your AI Life Operating System. Plan your day with Captain AI, focus with the proven 1-3-5 system, know your Safe Number, and build unstoppable momentum — in 14 languages.",
       "url": "https://www.yournorth.app",
-      "downloadUrl": "https://apps.apple.com/app/north/id6738286600",
-      "installUrl": "https://apps.apple.com/app/north/id6738286600",
+      "downloadUrl": "https://apps.apple.com/us/app/north-find-your-north/id6757988392",
+      "installUrl": "https://apps.apple.com/us/app/north-find-your-north/id6757988392",
       "datePublished": "2024-01-01",
       "dateModified": "2026-03-06",
       "inLanguage": ["en","es","pt","fr","de","it","nl","sv","no","pl","tr","ar","ja","ko"],
@@ -1599,7 +1707,7 @@
                 <p class="hero-body">Plan your day. Focus on what matters. Build unstoppable momentum.</p>
                 <div class="hero-actions">
                     <div class="hero-btns">
-                        <a href="https://apps.apple.com/app/north/id6742574901" class="btn-gold" target="_blank" rel="noopener">
+                        <a href="https://apps.apple.com/us/app/north-find-your-north/id6757988392" class="btn-gold" target="_blank" rel="noopener">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                             Download on App Store
                         </a>
@@ -1699,7 +1807,7 @@
                     <li><span class="check-mark">✓</span> Weekly Compass realigns you every Sunday</li>
                     <li><span class="check-mark">✓</span> Momentum tracking builds unstoppable streaks</li>
                 </ul>
-                <a href="https://apps.apple.com/app/north/id6742574901" class="btn-gold" target="_blank" rel="noopener" style="margin-top: 32px; display: inline-flex; align-items: center; gap: 8px;">
+                <a href="https://apps.apple.com/us/app/north-find-your-north/id6757988392" class="btn-gold" target="_blank" rel="noopener" style="margin-top: 32px; display: inline-flex; align-items: center; gap: 8px;">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                     Start Free — No Card Needed
                 </a>
@@ -2049,7 +2157,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://apps.apple.com/app/north/id6742574901" class="btn-gold" target="_blank" rel="noopener" style="margin-top: 32px; display: inline-flex; align-items: center; gap: 8px;">
+                <a href="https://apps.apple.com/us/app/north-find-your-north/id6757988392" class="btn-gold" target="_blank" rel="noopener" style="margin-top: 32px; display: inline-flex; align-items: center; gap: 8px;">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                     Start Your Free Trial
                 </a>
@@ -2116,7 +2224,7 @@
         <h2>Ready to Find Your <span class="gold">North?</span></h2>
         <p>Download NORTH today and start focusing on what truly matters — in your language, on your terms.</p>
         <div class="download-btns">
-            <a href="https://apps.apple.com/app/north/id6742574901" class="btn-gold" target="_blank" rel="noopener">
+            <a href="https://apps.apple.com/us/app/north-find-your-north/id6757988392" class="btn-gold" target="_blank" rel="noopener">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                 Download on App Store
             </a>
@@ -2205,7 +2313,7 @@
 <!-- Sticky Mobile CTA -->
 <div class="sticky-cta">
     <div class="sticky-cta-inner">
-        <a href="https://apps.apple.com/app/north/id6742574901" class="btn-gold" target="_blank" rel="noopener">App Store</a>
+        <a href="https://apps.apple.com/us/app/north-find-your-north/id6757988392" class="btn-gold" target="_blank" rel="noopener">App Store</a>
         <a href="https://play.google.com/store/apps/details?id=space.manus.north.app.t20260116202930" class="btn-outline" target="_blank" rel="noopener">Google Play</a>
     </div>
 </div>
@@ -2333,3 +2441,4 @@ if ('IntersectionObserver' in window) {
 </script>
 </body>
 </html>
+NORTH APP - Manus
