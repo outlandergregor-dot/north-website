@@ -6,7 +6,13 @@
     { "source": "/ai-daily-planner", "destination": "/ai-daily-planner.html" },
     { "source": "/1-3-5-productivity-method", "destination": "/1-3-5-productivity-method.html" },
     { "source": "/freedom-number-calculator", "destination": "/freedom-number-calculator.html" },
-    { "source": "/find-your-direction", "destination": "/find-your-direction.html" }
+    { "source": "/find-your-direction", "destination": "/find-your-direction.html" },
+    { "source": "/library", "destination": "/library.html" },
+    { "source": "/library/free-tools", "destination": "/library-free-tools.html" },
+    { "source": "/library/resources", "destination": "/library-resources.html" },
+    { "source": "/library/programs", "destination": "/library-programs.html" },
+    { "source": "/library/books", "destination": "/library-books.html" },
+    { "source": "/library/item", "destination": "/library-item.html" }
   ],
   "headers": [
     {
