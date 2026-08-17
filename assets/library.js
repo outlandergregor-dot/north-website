@@ -120,16 +120,16 @@
         </article>
         <article class="tool" id="daily-page"><div class="tool-header"><div><span class="eyebrow">Daily planning</span><h2>1-3-5 Daily Page</h2><p>Make today smaller: one priority, three supporting tasks, and five quick wins.</p></div></div>
           <div class="planner-grid print-target" id="dailyPrint"><div class="planner-block"><h3>One Big Thing</h3><input class="text-input" aria-label="One Big Thing" placeholder="The one task that would make today meaningful"></div><div class="planner-block"><h3>Three supporting tasks</h3>${dailyRows('medium', 3, 'Supporting task')}</div><div class="planner-block"><h3>Five quick wins</h3>${dailyRows('quick', 5, 'Quick win')}</div></div>
-          <div class="tool-controls"><button class="button print" type="button" data-print-target="dailyPrint">Print my Daily Page</button><a class="button secondary" href="/library/item?product=1-3-5-daily-page">See tool details</a></div>
+          <div class="tool-controls"><button class="button print" type="button" data-print-target="dailyPrint">Print my Daily Page</button><button class="button secondary" type="button" data-clear-target="daily-page">Clear my Daily Page</button><a class="button secondary" href="/library/item?product=1-3-5-daily-page">See tool details</a></div>
         </article>
         <article class="tool" id="weekly-compass"><div class="tool-header"><div><span class="eyebrow">Weekly reset</span><h2>Weekly Compass Preview</h2><p>A quiet ten-minute pause for noting what worked, what felt difficult, and what you want to bring into the next week.</p></div></div>
           <div class="reflection-grid print-target" id="compassPrint"><div><label for="compass-win">One thing that moved forward</label><textarea class="text-area" id="compass-win" placeholder="A win, a lesson, or a moment worth noticing"></textarea></div><div><label for="compass-friction">One source of friction</label><textarea class="text-area" id="compass-friction" placeholder="What made the week harder than it needed to be?"></textarea></div><div><label for="compass-next">One intention for next week</label><textarea class="text-area" id="compass-next" placeholder="A simple direction—not a promise of perfection"></textarea></div></div>
-          <div class="tool-controls"><button class="button print" type="button" data-print-target="compassPrint">Print my Weekly Compass</button><a class="button secondary" href="/library/item?product=weekly-compass-preview">See tool details</a></div>
+          <div class="tool-controls"><button class="button print" type="button" data-print-target="compassPrint">Print my Weekly Compass</button><button class="button secondary" type="button" data-clear-target="weekly-compass">Clear my Weekly Compass</button><a class="button secondary" href="/library/item?product=weekly-compass-preview">See tool details</a></div>
         </article>
         <article class="tool" id="safe-number"><div class="tool-header"><div><span class="eyebrow">Money organization</span><h2>Safe Number Starter Sheet</h2><p>Make a private list of recurring essentials you want to review. The total is only the sum of figures you enter—it is not advice, a forecast, or a recommendation.</p></div></div>
           <div class="notice money"><strong>General education and organization only.</strong> This sheet does not provide financial, tax, investment, credit, lending, insurance, legal, or debt advice. For advice tailored to you, speak with a qualified professional.</div>
           <div class="expense-grid print-target" id="safeNumberPrint" style="margin-top:18px;">${['Housing', 'Utilities', 'Food', 'Transportation', 'Health', 'Insurance', 'Debt minimums', 'Other essentials'].map((item) => `<div class="expense-row"><label for="expense-${item.toLowerCase().replace(/[^a-z]+/g, '-')}">${item}</label><input class="money-input expense-input" id="expense-${item.toLowerCase().replace(/[^a-z]+/g, '-')}" inputmode="decimal" type="number" min="0" step="0.01" placeholder="0.00" aria-label="${item} monthly amount"></div>`).join('')}</div>
-          <div class="total-box"><span>Entered monthly total</span><strong id="expenseTotal">$0.00</strong></div><div class="tool-controls"><button class="button print" type="button" data-print-target="safeNumberPrint">Print my Starter Sheet</button><a class="button secondary" href="/library/item?product=safe-number-starter-sheet">See tool details</a></div>
+          <div class="total-box"><span>Entered monthly total</span><strong id="expenseTotal">$0.00</strong></div><div class="tool-controls"><button class="button print" type="button" data-print-target="safeNumberPrint">Print my Starter Sheet</button><button class="button secondary" type="button" data-clear-target="safe-number">Clear my Starter Sheet</button><a class="button secondary" href="/library/item?product=safe-number-starter-sheet">See tool details</a></div>
         </article>
       </div></div></section></main>`);
 
@@ -142,7 +142,8 @@
       northTrack('free_tool_start', { tool_slug: tool.id, route: '/library/free-tools' });
     }, { once: false }));
 
-    document.getElementById('snapshotForm').addEventListener('submit', (event) => {
+    const snapshotForm = document.getElementById('snapshotForm');
+    snapshotForm.addEventListener('submit', (event) => {
       event.preventDefault();
       const selection = document.querySelector('input[name="north-area"]:checked');
       const result = document.getElementById('snapshotResult');
@@ -154,10 +155,16 @@
         routine: ['Use one day as a reset. The 1-3-5 Daily Page gives you a realistic structure without trying to rebuild everything at once.', '/library/free-tools#daily-page', 'Open the Daily Page']
       };
       const [copy, href, label] = paths[selection.value];
-      result.innerHTML = `<p><strong>Your next step</strong></p><p>${copy}</p><a class="button secondary" href="${href}" data-recommendation="${selection.value}">${label}</a>`;
+      result.innerHTML = `<p><strong>Your next step</strong></p><p>${copy}</p><div class="tool-controls"><a class="button secondary" href="${href}" data-recommendation="${selection.value}">${label}</a><button class="button secondary" type="button" data-snapshot-reset>Start again</button></div>`;
       result.classList.add('show');
       northTrack('free_tool_complete', { tool_slug: 'find-your-north-snapshot', route: '/library/free-tools' });
-      document.querySelector('[data-recommendation]').addEventListener('click', () => northTrack('free_tool_recommendation', { tool_slug: 'find-your-north-snapshot', recommendation_slug: selection.value }));
+      result.querySelector('[data-recommendation]').addEventListener('click', () => northTrack('free_tool_recommendation', { tool_slug: 'find-your-north-snapshot', recommendation_slug: selection.value }));
+      result.querySelector('[data-snapshot-reset]').addEventListener('click', () => {
+        snapshotForm.reset();
+        result.classList.remove('show');
+        result.replaceChildren();
+        snapshotForm.querySelector('input[name="north-area"]').focus();
+      });
     });
 
     document.querySelectorAll('[data-print-target]').forEach((button) => button.addEventListener('click', () => {
@@ -166,6 +173,15 @@
       const toolSlug = button.closest('.tool').id;
       northTrack('free_tool_complete', { tool_slug: toolSlug, route: '/library/free-tools' });
       window.print();
+    }));
+    document.querySelectorAll('[data-clear-target]').forEach((button) => button.addEventListener('click', () => {
+      const tool = document.getElementById(button.dataset.clearTarget);
+      tool.querySelectorAll('input, textarea').forEach((field) => {
+        field.value = '';
+        field.dispatchEvent(new Event('input', { bubbles: true }));
+      });
+      const firstField = tool.querySelector('input, textarea');
+      if (firstField) firstField.focus();
     }));
     document.querySelectorAll('.expense-input').forEach((input) => input.addEventListener('input', () => {
       const total = Array.from(document.querySelectorAll('.expense-input')).reduce((sum, item) => sum + (Number.parseFloat(item.value) || 0), 0);

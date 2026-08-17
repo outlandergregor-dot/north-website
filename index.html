@@ -1527,8 +1527,8 @@
 <body>
 
 <!-- Mobile Nav Overlay -->
-<nav class="mobile-nav" id="mobileNav">
-    <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" onclick="closeMobileNav()" aria-label="Close menu">✕</button>
     <a href="#features" onclick="closeMobileNav()">Features</a>
     <a href="#showcase" onclick="closeMobileNav()">How It Works</a>
     <a href="#use-cases" onclick="closeMobileNav()">Who It’s For</a>
@@ -1553,7 +1553,7 @@
                 <a href="support.html">Support</a>
                 <a href="#download" class="nav-cta">Download</a>
             </nav>
-            <button class="nav-hamburger" onclick="openMobileNav()" aria-label="Open menu">
+            <button class="nav-hamburger" onclick="openMobileNav()" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -2127,13 +2127,24 @@ resetAuto();
 
 // ── Mobile Nav ──
 function openMobileNav() {
-    document.getElementById('mobileNav').classList.add('open');
+    const nav = document.getElementById('mobileNav');
+    const trigger = document.querySelector('.nav-hamburger');
+    nav.classList.add('open');
+    trigger.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
+    nav.querySelector('.mobile-nav-close').focus();
 }
 function closeMobileNav() {
-    document.getElementById('mobileNav').classList.remove('open');
+    const nav = document.getElementById('mobileNav');
+    const trigger = document.querySelector('.nav-hamburger');
+    nav.classList.remove('open');
+    trigger.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+    trigger.focus();
 }
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && document.getElementById('mobileNav').classList.contains('open')) closeMobileNav();
+});
 
 // ── Newsletter capture intentionally disabled in Phase 1 ──
 
