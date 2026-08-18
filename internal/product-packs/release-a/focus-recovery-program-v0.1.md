@@ -1,7 +1,7 @@
 # Focus Recovery Program — Release A Production Pack v0.1
 
-> **Internal draft. Not a completed program, clinical protocol, treatment, or approved product.**  
-> **Registry ID:** `north.release-a.focus-recovery-program`  
+> **Internal draft. Not a completed program, clinical protocol, treatment, or approved product.**
+> **Registry ID:** `north.release-a.focus-recovery-program`
 > **Current gate:** `in_production` — original curriculum, lesson manuscripts, workbook, scope review, delivery, support, refund policy, and merchant approval remain required.
 
 ## Product promise

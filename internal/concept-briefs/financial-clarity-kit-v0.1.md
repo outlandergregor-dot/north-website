@@ -1,7 +1,7 @@
 # Financial Clarity Kit — Concept Brief v0.1
 
-> **Internal concept only. Not a completed kit, not financial advice, and not approved for sale.**  
-> **Registry ID:** `north.release-b.financial-clarity-kit`  
+> **Internal concept only. Not a completed kit, not financial advice, and not approved for sale.**
+> **Registry ID:** `north.release-b.financial-clarity-kit`
 > **Current gate:** `review_required`
 
 ## Intended outcome

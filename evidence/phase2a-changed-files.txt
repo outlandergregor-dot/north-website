@@ -1,9 +1,12 @@
 A	assets/product-studio-config.js
 A	assets/product-studio.css
 A	assets/product-studio.js
+A	evidence/NORTH_Phase2A_Private_Evidence.zip
 A	evidence/PHASE2A_ACCEPTANCE_RECORD.md
 A	evidence/phase2a-browser-qa-result.txt
+A	evidence/phase2a-changed-files.txt
 A	evidence/phase2a-claims-audit.json
+A	evidence/phase2a-commit-record.txt
 A	evidence/phase2a-registry-verification.json
 A	evidence/phase2a-responsive-qa.js
 A	evidence/phase2a-screenshot-capture-result.txt

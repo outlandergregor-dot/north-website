@@ -1,8 +1,8 @@
 # NORTH Web Phase 2A — Private Product Studio Acceptance Record
 
-**Status:** Complete for founder review only. **Not deployed, not public, and not commerce-enabled.**  
-**Branch:** `north-web-phase2a-product-studio`  
-**Baseline:** `e7e81968127f8f7ef7e76c09475312ebda68477b`  
+**Status:** Complete for founder review only. **Not deployed, not public, and not commerce-enabled.**
+**Branch:** `north-web-phase2a-product-studio`
+**Baseline:** `e7e81968127f8f7ef7e76c09475312ebda68477b`
 **Private preview:** `http://localhost:4173/library` and `http://localhost:4173/internal/studio-control.html` within the isolated local QA environment only.
 
 ## 1. Scope delivered

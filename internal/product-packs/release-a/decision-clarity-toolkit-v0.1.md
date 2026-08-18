@@ -1,7 +1,7 @@
 # Decision Clarity Toolkit — Release A Production Pack v0.1
 
-> **Internal draft. Not a completed toolkit, not professional advice, and not approved for sale.**  
-> **Registry ID:** `north.release-a.decision-clarity-toolkit`  
+> **Internal draft. Not a completed toolkit, not professional advice, and not approved for sale.**
+> **Registry ID:** `north.release-a.decision-clarity-toolkit`
 > **Current gate:** `in_production` — founder-approved original content, final layouts, sample approval, delivery, support, refund policy, and merchant approval remain required.
 
 ## Product promise

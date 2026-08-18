@@ -1,7 +1,7 @@
 # NORTH 90-Day Direction Sprint — Concept Brief v0.1
 
-> **Internal concept only. Not a completed workshop, program, workbook, or approved product.**  
-> **Registry ID:** `north.release-c.north-90-day-direction-sprint`  
+> **Internal concept only. Not a completed workshop, program, workbook, or approved product.**
+> **Registry ID:** `north.release-c.north-90-day-direction-sprint`
 > **Current gate:** `concept`
 
 ## Intended outcome

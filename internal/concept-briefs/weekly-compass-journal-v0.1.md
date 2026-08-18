@@ -1,7 +1,7 @@
 # Weekly Compass Journal — Concept Brief v0.1
 
-> **Internal concept only. Not a completed journal and not approved for sale.**  
-> **Registry ID:** `north.release-b.weekly-compass-journal`  
+> **Internal concept only. Not a completed journal and not approved for sale.**
+> **Registry ID:** `north.release-b.weekly-compass-journal`
 > **Current gate:** `concept`
 
 ## Intended outcome

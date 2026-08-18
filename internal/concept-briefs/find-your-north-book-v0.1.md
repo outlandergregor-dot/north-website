@@ -1,7 +1,7 @@
 # Find Your North — Concept Brief v0.1
 
-> **Internal concept only. Not a completed book, preorder, paperback, audiobook, or approved product.**  
-> **Registry ID:** `north.release-c.find-your-north-book`  
+> **Internal concept only. Not a completed book, preorder, paperback, audiobook, or approved product.**
+> **Registry ID:** `north.release-c.find-your-north-book`
 > **Current gate:** `concept`
 
 ## Intended outcome

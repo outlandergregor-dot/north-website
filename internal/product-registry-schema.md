@@ -1,6 +1,6 @@
 # NORTH Product Registry Schema — Phase 2A
 
-> **Canonical implementation:** `assets/product-studio-config.js`  
+> **Canonical implementation:** `assets/product-studio-config.js`
 > **Audience:** Internal founder, production, reviewer, and future commerce operations only.
 
 ## Record schema

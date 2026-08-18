@@ -1,7 +1,7 @@
 # 1-3-5 Execution Planner — Release A Production Pack v0.1
 
-> **Internal draft. Not a completed planner, not a customer download, and not approved for sale.**  
-> **Registry ID:** `north.release-a.execution-planner-14`  
+> **Internal draft. Not a completed planner, not a customer download, and not approved for sale.**
+> **Registry ID:** `north.release-a.execution-planner-14`
 > **Current gate:** `in_production` — founder-approved original content, final editable layouts, print/fillable QA, delivery, support, refund policy, and merchant approval remain required.
 
 ## Product promise
