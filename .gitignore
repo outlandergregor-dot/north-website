@@ -8,3 +8,6 @@
 
 # Temporary Phase 2D commerce-pilot founder-preview credential; never commit.
 .phase2d-preview-password
+
+# Temporary Phase 2E closed-beta founder-preview credential; never commit.
+.phase2e-preview-password

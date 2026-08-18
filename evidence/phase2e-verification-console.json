@@ -1,0 +1,347 @@
+{
+  "phase": "2E",
+  "passed": 68,
+  "total": 68,
+  "checks": [
+    {
+      "check": "editable_english_master",
+      "passed": true,
+      "detail": "internal/commerce-pilot/execution-planner-v1/editable-source/01-execution-planner-customer-master.md"
+    },
+    {
+      "check": "fourteen_daily_pages",
+      "passed": true,
+      "detail": "0 daily headings"
+    },
+    {
+      "check": "two_weekly_reviews",
+      "passed": true,
+      "detail": "2 weekly reset/review sections"
+    },
+    {
+      "check": "fictional_example",
+      "passed": true,
+      "detail": "fictional boundary"
+    },
+    {
+      "check": "core_bundle_html",
+      "passed": true,
+      "detail": "internal/commerce-readiness/core-digital-bundle-candidate/NORTH_1-3-5_Execution_Planner_Core-Digital-v1.0_EN_private-release-candidate.html"
+    },
+    {
+      "check": "core_bundle_private_boundary",
+      "passed": true,
+      "detail": "private boundary text"
+    },
+    {
+      "check": "core_us_letter_pdf",
+      "passed": true,
+      "detail": "internal/commerce-readiness/core-digital-bundle-candidate/NORTH_1-3-5_Execution_Planner_Core-Digital-v1.0_EN-US-Letter_private-release-candidate.pdf"
+    },
+    {
+      "check": "core_a4_pdf",
+      "passed": true,
+      "detail": "internal/commerce-readiness/core-digital-bundle-candidate/NORTH_1-3-5_Execution_Planner_Core-Digital-v1.0_EN-A4_private-release-candidate.pdf"
+    },
+    {
+      "check": "letter_geometry",
+      "passed": true,
+      "detail": "612 x 792 pts (letter)"
+    },
+    {
+      "check": "a4_geometry",
+      "passed": true,
+      "detail": "595.276 x 841.89 pts (A4)"
+    },
+    {
+      "check": "artifact_execution-planner-core-digital-release-spec.md",
+      "passed": true,
+      "detail": "internal/commerce-readiness/execution-planner-core-digital-release-spec.md"
+    },
+    {
+      "check": "artifact_official-merchant-research.md",
+      "passed": true,
+      "detail": "internal/commerce-readiness/official-merchant-research.md"
+    },
+    {
+      "check": "artifact_neutral-merchant-comparison.md",
+      "passed": true,
+      "detail": "internal/commerce-readiness/neutral-merchant-comparison.md"
+    },
+    {
+      "check": "artifact_closed-beta-commerce-operating-system.md",
+      "passed": true,
+      "detail": "internal/commerce-readiness/closed-beta-commerce-operating-system.md"
+    },
+    {
+      "check": "artifact_phase2e-catalog-governance.md",
+      "passed": true,
+      "detail": "internal/commerce-readiness/phase2e-catalog-governance.md"
+    },
+    {
+      "check": "artifact_future-opt-in-sharing-spec.md",
+      "passed": true,
+      "detail": "internal/commerce-readiness/future-opt-in-sharing-spec.md"
+    },
+    {
+      "check": "artifact_phase2e-catalog.js",
+      "passed": true,
+      "detail": "assets/phase2e-catalog.js"
+    },
+    {
+      "check": "artifact_phase2e-roadmap.js",
+      "passed": true,
+      "detail": "assets/phase2e-roadmap.js"
+    },
+    {
+      "check": "artifact_phase2e-roadmap.css",
+      "passed": true,
+      "detail": "assets/phase2e-roadmap.css"
+    },
+    {
+      "check": "artifact_phase2e-operations.js",
+      "passed": true,
+      "detail": "assets/phase2e-operations.js"
+    },
+    {
+      "check": "artifact_phase2e-roadmap.html",
+      "passed": true,
+      "detail": "internal/phase2e-roadmap.html"
+    },
+    {
+      "check": "artifact_phase2e-operations.html",
+      "passed": true,
+      "detail": "internal/phase2e-operations.html"
+    },
+    {
+      "check": "family_financial_clarity",
+      "passed": true,
+      "detail": "Financial Clarity"
+    },
+    {
+      "check": "family_routine_reset",
+      "passed": true,
+      "detail": "Routine Reset"
+    },
+    {
+      "check": "family_focus__execution",
+      "passed": true,
+      "detail": "Focus and Execution"
+    },
+    {
+      "check": "family_direction__motivation",
+      "passed": true,
+      "detail": "Direction and Motivation"
+    },
+    {
+      "check": "family_authority__education",
+      "passed": true,
+      "detail": "Authority and Education"
+    },
+    {
+      "check": "catalog_20_future_product_briefs",
+      "passed": true,
+      "detail": "20 product briefs"
+    },
+    {
+      "check": "north_method_seven_elements",
+      "passed": true,
+      "detail": "all method elements"
+    },
+    {
+      "check": "finance_general_education_boundary",
+      "passed": true,
+      "detail": "financial boundary"
+    },
+    {
+      "check": "pilot_only_core_19",
+      "passed": true,
+      "detail": "pilot specification"
+    },
+    {
+      "check": "catalog_sale_gate_closed",
+      "passed": true,
+      "detail": "closed sale gate"
+    },
+    {
+      "check": "planner_commerce_disabled",
+      "passed": true,
+      "detail": "commercePilot false"
+    },
+    {
+      "check": "planner_merchant_null",
+      "passed": true,
+      "detail": "merchant and checkout null"
+    },
+    {
+      "check": "locale_availability_fields",
+      "passed": true,
+      "detail": "edition availability fields"
+    },
+    {
+      "check": "exact_14_locales",
+      "passed": true,
+      "detail": "14 unique locale codes"
+    },
+    {
+      "check": "no_form_commerce-pilot",
+      "passed": true,
+      "detail": "internal/commerce-pilot.html"
+    },
+    {
+      "check": "no_payment_script_commerce-pilot",
+      "passed": true,
+      "detail": "internal/commerce-pilot.html"
+    },
+    {
+      "check": "no_form_phase2e-roadmap",
+      "passed": true,
+      "detail": "internal/phase2e-roadmap.html"
+    },
+    {
+      "check": "no_payment_script_phase2e-roadmap",
+      "passed": true,
+      "detail": "internal/phase2e-roadmap.html"
+    },
+    {
+      "check": "no_form_phase2e-operations",
+      "passed": true,
+      "detail": "internal/phase2e-operations.html"
+    },
+    {
+      "check": "no_payment_script_phase2e-operations",
+      "passed": true,
+      "detail": "internal/phase2e-operations.html"
+    },
+    {
+      "check": "foundation_index.html",
+      "passed": true,
+      "detail": "index.html"
+    },
+    {
+      "check": "foundation_library.html",
+      "passed": true,
+      "detail": "library.html"
+    },
+    {
+      "check": "foundation_library-free-tools.html",
+      "passed": true,
+      "detail": "library-free-tools.html"
+    },
+    {
+      "check": "foundation_library-resources.html",
+      "passed": true,
+      "detail": "library-resources.html"
+    },
+    {
+      "check": "foundation_library-programs.html",
+      "passed": true,
+      "detail": "library-programs.html"
+    },
+    {
+      "check": "foundation_library-books.html",
+      "passed": true,
+      "detail": "library-books.html"
+    },
+    {
+      "check": "foundation_library-money-education.html",
+      "passed": true,
+      "detail": "library-money-education.html"
+    },
+    {
+      "check": "foundation_library-item.html",
+      "passed": true,
+      "detail": "library-item.html"
+    },
+    {
+      "check": "foundation_about.html",
+      "passed": true,
+      "detail": "about.html"
+    },
+    {
+      "check": "foundation_assets_locale-system.js",
+      "passed": true,
+      "detail": "assets/locale-system.js"
+    },
+    {
+      "check": "foundation_assets_public-site.js",
+      "passed": true,
+      "detail": "assets/public-site.js"
+    },
+    {
+      "check": "foundation_assets_public-site.css",
+      "passed": true,
+      "detail": "assets/public-site.css"
+    },
+    {
+      "check": "locale_route_pt-BR",
+      "passed": true,
+      "detail": "pt-BR"
+    },
+    {
+      "check": "locale_route_es-419",
+      "passed": true,
+      "detail": "es-419"
+    },
+    {
+      "check": "locale_route_fr",
+      "passed": true,
+      "detail": "fr"
+    },
+    {
+      "check": "locale_route_de",
+      "passed": true,
+      "detail": "de"
+    },
+    {
+      "check": "locale_route_it",
+      "passed": true,
+      "detail": "it"
+    },
+    {
+      "check": "locale_route_ja",
+      "passed": true,
+      "detail": "ja"
+    },
+    {
+      "check": "locale_route_ko",
+      "passed": true,
+      "detail": "ko"
+    },
+    {
+      "check": "locale_route_zh-Hans",
+      "passed": true,
+      "detail": "zh-Hans"
+    },
+    {
+      "check": "locale_route_zh-Hant",
+      "passed": true,
+      "detail": "zh-Hant"
+    },
+    {
+      "check": "locale_route_ar",
+      "passed": true,
+      "detail": "ar"
+    },
+    {
+      "check": "locale_route_ru",
+      "passed": true,
+      "detail": "ru"
+    },
+    {
+      "check": "locale_route_pl",
+      "passed": true,
+      "detail": "pl"
+    },
+    {
+      "check": "locale_route_nl",
+      "passed": true,
+      "detail": "nl"
+    },
+    {
+      "check": "no_namecheap_or_vercel_deploy_config",
+      "passed": true,
+      "detail": "no deployment config"
+    }
+  ]
+}

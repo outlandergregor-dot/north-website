@@ -1,0 +1,43 @@
+### Result
+{"passed":7,"total":7,"report":[{"target":{"name":"planner_desktop","path":"/internal/commerce-pilot.html","width":1440,"private":true},"check":{"title":"NORTH 1-3-5 Execution Planner — Private Commerce Pilot","overflow":0,"enabledCommerce":[],"scripts":[],"focusableCount":2,"directions":{"html":"ltr","lang":"en"},"noindex":["noindex,nofollow,noarchive"],"forms":0},"pass":true},{"target":{"name":"planner_mobile","path":"/internal/commerce-pilot.html","width":390,"private":true},"check":{"title":"NORTH 1-3-5 Execution Planner — Private Commerce Pilot","overflow":0,"enabledCommerce":[],"scripts":[],"focusableCount":2,"directions":{"html":"ltr","lang":"en"},"noindex":["noindex,nofollow,noarchive"],"forms":0},"pass":true},{"target":{"name":"roadmap_desktop","path":"/internal/phase2e-roadmap.html","width":1440,"private":true},"check":{"title":"NORTH Phase 2E — Governed Catalog Roadmap","overflow":0,"enabledCommerce":[],"scripts":[],"focusableCount":2,"directions":{"html":"ltr","lang":"en"},"noindex":["noindex,nofollow,noarchive"],"forms":0},"pass":true},{"target":{"name":"roadmap_mobile","path":"/internal/phase2e-roadmap.html","width":390,"private":true},"check":{"title":"NORTH Phase 2E — Governed Catalog Roadmap","overflow":0,"enabledCommerce":[],"scripts":[],"focusableCount":2,"directions":{"html":"ltr","lang":"en"},"noindex":["noindex,nofollow,noarchive"],"forms":0},"pass":true},{"target":{"name":"operations_mobile","path":"/internal/phase2e-operations.html","width":390,"private":true},"check":{"title":"NORTH Phase 2E — Closed Beta Operations","overflow":0,"enabledCommerce":[],"scripts":[],"focusableCount":3,"directions":{"html":"ltr","lang":"en"},"noindex":["noindex,nofollow,noarchive"],"forms":0},"pass":true},{"target":{"name":"public_home","path":"/","width":1440,"private":false},"check":{"title":"NORTH — English","overflow":0,"enabledCommerce":[],"scripts":[],"focusableCount":23,"directions":{"html":"ltr","lang":"en"},"noindex":["index,follow"],"forms":0},"pass":true},{"target":{"name":"arabic_product","path":"/ar/library/item?product=1-3-5-execution-planner","width":390,"private":false},"check":{"title":"Release A Overview — NORTH","overflow":0,"enabledCommerce":[],"scripts":[],"focusableCount":16,"directions":{"html":"rtl","lang":"ar"},"noindex":["index,follow"],"forms":0},"pass":true}]}
+### Ran Playwright code
+```js
+await (async (page) => {
+  const targets = [
+    {name:'planner_desktop', path:'/internal/commerce-pilot.html', width:1440, private:true},
+    {name:'planner_mobile', path:'/internal/commerce-pilot.html', width:390, private:true},
+    {name:'roadmap_desktop', path:'/internal/phase2e-roadmap.html', width:1440, private:true},
+    {name:'roadmap_mobile', path:'/internal/phase2e-roadmap.html', width:390, private:true},
+    {name:'operations_mobile', path:'/internal/phase2e-operations.html', width:390, private:true},
+    {name:'public_home', path:'/', width:1440, private:false},
+    {name:'arabic_product', path:'/ar/library/item?product=1-3-5-execution-planner', width:390, private:false}
+  ];
+  const report = [];
+  for (const target of targets) {
+    await page.setViewportSize({width:target.width,height:900});
+    await page.goto(`http://localhost:4173${target.path}`, {waitUntil:'networkidle'});
+    const check = await page.evaluate(() => {
+      const body=document.body, html=document.documentElement;
+      const enabledCommerce=[...document.querySelectorAll('a,button,form,input,select,textarea')].filter(el=>{
+        const txt=((el.innerText||el.value||el.getAttribute('aria-label')||'')+'').toLowerCase();
+        const href=(el.getAttribute('href')||'').toLowerCase();
+        return /(buy|purchase|checkout|pay now|add to cart|download now|get instant access)/.test(txt) || /(gumroad|checkout|stripe|paypal|lemonsqueezy|shopify)/.test(href);
+      }).filter(el=>!(el.disabled || el.getAttribute('aria-disabled')==='true'));
+      const scripts=[...document.scripts].map(s=>s.src||s.textContent||'').filter(v=>/gumroad|stripe|paypal|lemonsqueezy|shopify/i.test(v));
+      const overflow=Math.max(0, document.documentElement.scrollWidth-window.innerWidth);
+      const focusables=[...document.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled])')];
+      const directions={html:html.getAttribute('dir')||'ltr',lang:html.lang};
+      const noindex=[...document.querySelectorAll('meta[name="robots"]')].map(m=>m.content);
+      return {title:document.title,overflow,enabledCommerce:enabledCommerce.map(x=>x.outerHTML.slice(0,180)),scripts,focusableCount:focusables.length,directions,noindex,forms:document.forms.length};
+    });
+    report.push({target,check,pass:check.overflow===0 && check.enabledCommerce.length===0 && check.scripts.length===0 && check.forms===0 && (target.width!==390 || check.focusableCount>0)});
+  }
+  const arabic=report.find(x=>x.target.name==='arabic_product');
+  if (arabic) arabic.pass = arabic.pass && arabic.check.directions.html==='rtl' && arabic.check.directions.lang==='ar';
+  return {passed:report.filter(x=>x.pass).length,total:report.length,report};
+}
+)(page);
+```
+### Page
+- Page URL: http://localhost:4173/ar/library/item?product=1-3-5-execution-planner
+- Page Title: Release A Overview — NORTH

@@ -1,0 +1,141 @@
+{
+  "phase": "2E",
+  "private_only": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6357,
+      "sha256": "218099dda581d8d02bb75db9491a0d14f32911aae125a0a5b1a589747746184e"
+    },
+    {
+      "path": "planner/CORE_DIGITAL_RELEASE_SPEC.md",
+      "bytes": 5333,
+      "sha256": "9d69929e41b298e88886596ebce191f17c2f7ef04374473c9ff9769cece70552"
+    },
+    {
+      "path": "planner/EDITABLE_ENGLISH_MASTER.md",
+      "bytes": 33106,
+      "sha256": "07ed061120beaed97dac1907f27c86c1f01e9fdc75ebee6a4e66103e7c4d3cf4"
+    },
+    {
+      "path": "planner/NORTH_1-3-5_Execution_Planner_Core-Digital-v1.0_EN-US-Letter_private-release-candidate.pdf",
+      "bytes": 84704,
+      "sha256": "2b88849b096a980b8713f635f91eea8d870305a33085ad58b9c2c3cf385ccfe3"
+    },
+    {
+      "path": "planner/NORTH_1-3-5_Execution_Planner_Core-Digital-v1.0_EN-A4_private-release-candidate.pdf",
+      "bytes": 82798,
+      "sha256": "f02995b9238e82f9127586c63a960632ccadfa994405855e89213600f9aecb04"
+    },
+    {
+      "path": "planner/PERSONAL_USE_LICENSE_DRAFT.md",
+      "bytes": 4314,
+      "sha256": "d68bac86d1e529767c4c8f5f79fbeeb902085385baf18df455efb361eab838b8"
+    },
+    {
+      "path": "planner/SUPPORT_REFUND_DRAFT.md",
+      "bytes": 4302,
+      "sha256": "290a7875e924dd212fdf75750ac5bc8d163d70eadf897a04e2eb8c668d9f9a22"
+    },
+    {
+      "path": "planner/assets/execution-planner-cover-art.png",
+      "bytes": 6570523,
+      "sha256": "d4bc1cea3cd6f6e39f7f8f13ece6baa767a2702ef13a947e4a7766e5bc53ecb6"
+    },
+    {
+      "path": "planner/assets/execution-planner-open-spread.png",
+      "bytes": 5070777,
+      "sha256": "de4dbfeb1180da239918c8dfa7041c34be1ae0775bb3540331b3eda64abec48d"
+    },
+    {
+      "path": "planner/assets/execution-planner-desk-kit.png",
+      "bytes": 5484497,
+      "sha256": "d731e2eabff7ae84b48fe68a8bb76e6e03de16e9caf2d50c2f9d15461d25577b"
+    },
+    {
+      "path": "planner/assets/execution-planner-detail.png",
+      "bytes": 6474235,
+      "sha256": "3277dd5bbdf85863af64e72fb9dcdb0ea5191faa1de6cc9ef5e216519b754d7e"
+    },
+    {
+      "path": "commerce/NEUTRAL_MERCHANT_COMPARISON.md",
+      "bytes": 6756,
+      "sha256": "dd63669af9d6896cf646b927759cb1bb3e84bde50f83235b317f6cda2c92da1e"
+    },
+    {
+      "path": "commerce/OFFICIAL_MERCHANT_RESEARCH.md",
+      "bytes": 2358,
+      "sha256": "2d8707c672c2c0df62b95c3c3a946447b563aabb0780d9c45ef7c850965d06a6"
+    },
+    {
+      "path": "commerce/CLOSED_BETA_OPERATING_SYSTEM.md",
+      "bytes": 6804,
+      "sha256": "a8dd5dd8e82d3c127b5d1a5a843f58c928ccb429c4ebb1c07021456326cb7ee1"
+    },
+    {
+      "path": "commerce/FUTURE_OPT_IN_SHARING_SPEC.md",
+      "bytes": 2625,
+      "sha256": "8029a3977d45cbfbb091de824ab3d40d7ecfd6e38fc41198c93da425167c9d6d"
+    },
+    {
+      "path": "catalog/GOVERNED_CATALOG_ROADMAP.md",
+      "bytes": 5801,
+      "sha256": "1de8e99f3aa06831edec8cc2fe8b9af273d75fad764516e43d60ba88b9032edb"
+    },
+    {
+      "path": "catalog/phase2e-catalog.js",
+      "bytes": 13341,
+      "sha256": "423498d4edf5b510c3fef604d5853fd0379e5b35b0bf0b20f8af369a85dc8dfa"
+    },
+    {
+      "path": "catalog/PLANNER_LOCALE_AVAILABILITY_RECORD.txt",
+      "bytes": 24640,
+      "sha256": "6eca305e7cf168fe11eda98fc85cd0f135879749e4eea85c5842856b1f9b398d"
+    },
+    {
+      "path": "evidence/PHASE2E_ACCEPTANCE_RECORD.md",
+      "bytes": 6357,
+      "sha256": "218099dda581d8d02bb75db9491a0d14f32911aae125a0a5b1a589747746184e"
+    },
+    {
+      "path": "evidence/PHASE2E_PRIVATE_PREVIEW_RECORD.md",
+      "bytes": 1006,
+      "sha256": "44e251371269b72e6341f9c23040dc5119596205aa9c8df69c37e3b0258b650a"
+    },
+    {
+      "path": "evidence/phase2e-verification.json",
+      "bytes": 8707,
+      "sha256": "e19484f50f88e20b452b74da3b7d00a23abfe4e898d4f816da9da2fac496da0e"
+    },
+    {
+      "path": "evidence/phase2e-browser-qa.txt",
+      "bytes": 5303,
+      "sha256": "cc6ba45cbf686ad1c0d03f94a4cf26456695c37c838a97e083c00b95bf482a8d"
+    },
+    {
+      "path": "evidence/phase2e-visual-qa.md",
+      "bytes": 1328,
+      "sha256": "fd0616143b059af13aa215066c2f5fd5351381b45c84da2f82ea29447f607654"
+    },
+    {
+      "path": "evidence/screenshots/planner-private-phase2e-desktop.webp",
+      "bytes": 440456,
+      "sha256": "37f320abb69691aa975a09109ad661d276562cc19a048edad1d22286fb6f1d72"
+    },
+    {
+      "path": "evidence/screenshots/planner-private-phase2e-mobile.png",
+      "bytes": 1214944,
+      "sha256": "72c1f19742774a3863b50ec085b54599b3b56feb63a5496e59b8f4937aff919c"
+    },
+    {
+      "path": "evidence/screenshots/roadmap-private-desktop.png",
+      "bytes": 1447445,
+      "sha256": "a74c7ec559732ae0b1fe818d790442d0600d717d713ca2120311c007d9ddbf1f"
+    },
+    {
+      "path": "evidence/screenshots/operations-private-mobile.png",
+      "bytes": 328295,
+      "sha256": "717df9defb6e7446c8b182000ce81311a393b0f5cdab88c167c587a5689b03a1"
+    }
+  ]
+}
