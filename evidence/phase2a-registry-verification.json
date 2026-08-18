@@ -1,0 +1,9 @@
+{
+  "branch": "north-web-phase2a-product-studio",
+  "source_baseline": "e7e81968127f8f7ef7e76c09475312ebda68477b",
+  "product_record_count": 15,
+  "verified_mobile_app_locale_count": 14,
+  "commercial_eligible_record_count": 0,
+  "result": "PASS",
+  "failures": []
+}

@@ -1,0 +1,19 @@
+{
+  "branch": "north-web-phase2a-product-studio",
+  "source_baseline": "e7e81968127f8f7ef7e76c09475312ebda68477b",
+  "files_scanned": [
+    "library.html",
+    "library-resources.html",
+    "library-programs.html",
+    "library-books.html",
+    "library-item.html",
+    "assets/product-studio.js",
+    "assets/product-studio-config.js",
+    "assets/product-studio.css"
+  ],
+  "prohibited_claim_or_action_hits": {},
+  "registry_approved_for_sale_status_literal_count": 0,
+  "registry_public_visibility_true_count": 0,
+  "money_boundary_markers_missing": [],
+  "result": "PASS"
+}

@@ -1,0 +1,32 @@
+### Result
+{"result":"PASS","screenshotCount":18,"screenshots":[{"name":"library","label":"desktop","output":"/opt/.manus/current/phase2a-screenshots/library-desktop.png","title":"NORTH Library — Useful Tools. Clear Direction."},{"name":"library","label":"mobile","output":"/opt/.manus/current/phase2a-screenshots/library-mobile.png","title":"NORTH Library — Useful Tools. Clear Direction."},{"name":"resources","label":"desktop","output":"/opt/.manus/current/phase2a-screenshots/resources-desktop.png","title":"Resources — NORTH Library"},{"name":"resources","label":"mobile","output":"/opt/.manus/current/phase2a-screenshots/resources-mobile.png","title":"Resources — NORTH Library"},{"name":"programs","label":"desktop","output":"/opt/.manus/current/phase2a-screenshots/programs-desktop.png","title":"Programs — NORTH Library"},{"name":"programs","label":"mobile","output":"/opt/.manus/current/phase2a-screenshots/programs-mobile.png","title":"Programs — NORTH Library"},{"name":"books","label":"desktop","output":"/opt/.manus/current/phase2a-screenshots/books-desktop.png","title":"Books & Audio — NORTH Library"},{"name":"books","label":"mobile","output":"/opt/.manus/current/phase2a-screenshots/books-mobile.png","title":"Books & Audio — NORTH Library"},{"name":"execution-planner","label":"desktop","output":"/opt/.manus/current/phase2a-screenshots/execution-planner-desktop.png","title":"Library Item — NORTH"},{"name":"execution-planner","label":"mobile","output":"/opt/.manus/current/phase2a-screenshots/execution-planner-mobile.png","title":"Library Item — NORTH"},{"name":"decision-toolkit","label":"desktop","output":"/opt/.manus/current/phase2a-screenshots/decision-toolkit-desktop.png","title":"Library Item — NORTH"},{"name":"decision-toolkit","label":"mobile","output":"/opt/.manus/current/phase2a-screenshots/decision-toolkit-mobile.png","title":"Library Item — NORTH"},{"name":"focus-program","label":"desktop","output":"/opt/.manus/current/phase2a-screenshots/focus-program-desktop.png","title":"Library Item — NORTH"},{"name":"focus-program","label":"mobile","output":"/opt/.manus/current/phase2a-screenshots/focus-program-mobile.png","title":"Library Item — NORTH"},{"name":"concept-book","label":"desktop","output":"/opt/.manus/current/phase2a-screenshots/concept-book-desktop.png","title":"Library Item — NORTH"},{"name":"concept-book","label":"mobile","output":"/opt/.manus/current/phase2a-screenshots/concept-book-mobile.png","title":"Library Item — NORTH"},{"name":"readiness-dashboard","label":"desktop","output":"/opt/.manus/current/phase2a-screenshots/readiness-dashboard-desktop.png","title":"Product Studio — NORTH Internal"},{"name":"readiness-dashboard","label":"mobile","output":"/opt/.manus/current/phase2a-screenshots/readiness-dashboard-mobile.png","title":"Product Studio — NORTH Internal"}]}
+### Ran Playwright code
+```js
+await (async (page) => {
+  const pages = [
+    ['library', '/library'],
+    ['resources', '/library/resources'],
+    ['programs', '/library/programs'],
+    ['books', '/library/books'],
+    ['execution-planner', '/library/item?product=1-3-5-execution-planner'],
+    ['decision-toolkit', '/library/item?product=decision-clarity-toolkit'],
+    ['focus-program', '/library/item?product=focus-recovery-program'],
+    ['concept-book', '/library/item?product=find-your-north-book'],
+    ['readiness-dashboard', '/internal/studio-control.html']
+  ];
+  const results = [];
+  for (const [name, route] of pages) {
+    for (const [width, height, label] of [[1440, 1000, 'desktop'], [390, 844, 'mobile']]) {
+      await page.setViewportSize({ width, height });
+      await page.goto('http://localhost:4173' + route, { waitUntil: 'networkidle' });
+      const output = `/opt/.manus/current/phase2a-screenshots/${name}-${label}.png`;
+      await page.screenshot({ path: output, fullPage: true });
+      results.push({ name, label, output, title: await page.title() });
+    }
+  }
+  return { result: 'PASS', screenshotCount: results.length, screenshots: results };
+}
+)(page);
+```
+### Events
+- New console entries: .playwright-mcp/console-2026-08-18T12-39-58-793Z.log#L100-L117

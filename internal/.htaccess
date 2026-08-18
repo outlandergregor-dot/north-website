@@ -1,0 +1,8 @@
+# NORTH Phase 2A internal-only control dashboard.
+# This directory is intentionally unavailable to public shared-hosting visitors.
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+  Deny from all
+</IfModule>
