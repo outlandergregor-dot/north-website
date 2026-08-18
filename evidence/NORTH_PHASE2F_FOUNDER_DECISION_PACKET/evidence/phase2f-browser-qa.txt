@@ -1,0 +1,39 @@
+### Result
+{"passed":5,"total":5,"report":[{"target":{"name":"public_home_desktop","url":"http://localhost:4173/?phase2f=qa","width":1440,"private":false},"check":{"overflow":0,"commerce":0,"scripts":0,"logo":3,"forms":0,"focusable":23,"dir":"ltr","lang":"en","robots":"index,follow"},"pass":true},{"target":{"name":"public_home_mobile","url":"http://localhost:4173/?phase2f=qa","width":390,"private":false},"check":{"overflow":0,"commerce":0,"scripts":0,"logo":3,"forms":0,"focusable":23,"dir":"ltr","lang":"en","robots":"index,follow"},"pass":true},{"target":{"name":"private_planner_desktop","url":"http://localhost:4173/internal/commerce-pilot.html?phase2f=qa","width":1440,"private":true},"check":{"overflow":0,"commerce":0,"scripts":0,"logo":2,"forms":0,"focusable":2,"dir":"","lang":"en","robots":"noindex,nofollow,noarchive"},"pass":true},{"target":{"name":"private_planner_mobile","url":"http://localhost:4173/internal/commerce-pilot.html?phase2f=qa","width":390,"private":true},"check":{"overflow":0,"commerce":0,"scripts":0,"logo":2,"forms":0,"focusable":2,"dir":"","lang":"en","robots":"noindex,nofollow,noarchive"},"pass":true},{"target":{"name":"arabic_product_mobile","url":"http://localhost:4173/ar/library/item?product=1-3-5-execution-planner","width":390,"private":false},"check":{"overflow":0,"commerce":0,"scripts":0,"logo":2,"forms":0,"focusable":16,"dir":"rtl","lang":"ar","robots":"index,follow"},"pass":true}]}
+### Ran Playwright code
+```js
+await (async (page) => {
+  const targets=[
+    {name:'public_home_desktop',url:'http://localhost:4173/?phase2f=qa',width:1440,private:false},
+    {name:'public_home_mobile',url:'http://localhost:4173/?phase2f=qa',width:390,private:false},
+    {name:'private_planner_desktop',url:'http://localhost:4173/internal/commerce-pilot.html?phase2f=qa',width:1440,private:true},
+    {name:'private_planner_mobile',url:'http://localhost:4173/internal/commerce-pilot.html?phase2f=qa',width:390,private:true},
+    {name:'arabic_product_mobile',url:'http://localhost:4173/ar/library/item?product=1-3-5-execution-planner',width:390,private:false}
+  ];
+  const report=[];
+  for(const target of targets){
+    await page.setViewportSize({width:target.width,height:900});
+    await page.goto(target.url,{waitUntil:'networkidle'});
+    const check=await page.evaluate(()=>{
+      const h=document.documentElement;
+      const overflow=Math.max(0,h.scrollWidth-innerWidth);
+      const commerce=[...document.querySelectorAll('a,button,form,input,select,textarea')].filter(el=>{
+        const t=((el.innerText||el.value||el.getAttribute('aria-label')||'')+'').toLowerCase(); const href=(el.getAttribute('href')||'').toLowerCase();
+        return /(buy now|purchase|checkout|pay now|add to cart|download now|get instant access)/.test(t)||/(gumroad|stripe|paypal|lemonsqueezy|shopify)/.test(href);
+      }).filter(el=>!el.disabled && el.getAttribute('aria-disabled')!=='true');
+      const scripts=[...document.scripts].map(x=>x.src||x.textContent||'').filter(x=>/stripe|paypal|gumroad|lemonsqueezy|shopify/i.test(x));
+      const logo=[...document.querySelectorAll('img')].filter(x=>(x.getAttribute('src')||'').includes('north-compass-official-512.png')).length;
+      const forms=document.forms.length; const focusable=[...document.querySelectorAll('a[href],button:not([disabled]),select:not([disabled])')].length;
+      return {overflow,commerce:commerce.length,scripts:scripts.length,logo,forms,focusable,dir:h.dir,lang:h.lang,robots:document.querySelector('meta[name="robots"]')?.content||''};
+    });
+    const pass=check.overflow===0&&check.commerce===0&&check.scripts===0&&check.forms===0&&check.focusable>0&&(!target.private||check.robots.includes('noindex'))&&(target.private||check.logo>=1);
+    report.push({target,check,pass});
+  }
+  const arabic=report.find(r=>r.target.name==='arabic_product_mobile'); if(arabic)arabic.pass=arabic.pass&&arabic.check.dir==='rtl'&&arabic.check.lang==='ar';
+  return {passed:report.filter(r=>r.pass).length,total:report.length,report};
+}
+)(page);
+```
+### Page
+- Page URL: http://localhost:4173/ar/library/item?product=1-3-5-execution-planner
+- Page Title: Release A Overview — NORTH

@@ -1,0 +1,101 @@
+{
+  "phase": "2F",
+  "scope": "Private founder validation only; no commerce activation",
+  "files": [
+    {
+      "file": "evidence/PHASE2F_ACCEPTANCE_RECORD.md",
+      "sha256": "5a8e47e37dd4d112e233bb53134f87320138716577ca3f58306a85646b98e5d1",
+      "bytes": 5480
+    },
+    {
+      "file": "evidence/PHASE2F_PRIVATE_PREVIEW_RECORD.md",
+      "sha256": "92c2b0ca76553e5192c5fb7984d14d53f75f9216e2bf46e6191680570b902f30",
+      "bytes": 1234
+    },
+    {
+      "file": "evidence/phase2f-planner-audit.json",
+      "sha256": "c84580837db65b898be7914b45d5d39e7bb9d6365d28839f7602082161e7187e",
+      "bytes": 3389
+    },
+    {
+      "file": "evidence/phase2f-verification.json",
+      "sha256": "de737846b5baf33ee5eaa85dff1ebe73d191634da02d16b07508b171d96adea0",
+      "bytes": 4141
+    },
+    {
+      "file": "evidence/phase2f-browser-qa.txt",
+      "sha256": "20f63ddf4737ff8929b5e85ea65d0d83f63b72f930f980158a39cb13d3ad98db",
+      "bytes": 4171
+    },
+    {
+      "file": "evidence/phase2f-visual-qa.md",
+      "sha256": "279ce591703b55c1af2a8461cf39bd0280b24e189d05cb579a4ea75b56d5ec87",
+      "bytes": 2247
+    },
+    {
+      "file": "evidence/screenshots/phase2f-home-premium-desktop.webp",
+      "sha256": "f4d514c21777b15ba4d4f87f8124ec6bda2910217ffe83d4132626cf3698b44e",
+      "bytes": 417530
+    },
+    {
+      "file": "internal/design-system/phase2f-premium-visual-system.md",
+      "sha256": "d86351f33b9e9a1e23d43e2aa4f5b241a91eeefd5579021b42ba997981a3df24",
+      "bytes": 5167
+    },
+    {
+      "file": "internal/commerce-readiness/phase2f-planner-version-and-qa.md",
+      "sha256": "a7c8f0c8f8d5dcc77e5b2d22419e20e45b02aaf30869a4246f7775444fc39e3a",
+      "bytes": 4205
+    },
+    {
+      "file": "internal/commerce-readiness/phase2f-pilot-decision-package.md",
+      "sha256": "2f4bbe5addd09f4593e4180655d5a45c94e226b6bed3d9da728b8ac9c0e34230",
+      "bytes": 6384
+    },
+    {
+      "file": "internal/commerce-pilot/execution-planner-v1/editable-source/01-execution-planner-customer-master.md",
+      "sha256": "07ed061120beaed97dac1907f27c86c1f01e9fdc75ebee6a4e66103e7c4d3cf4",
+      "bytes": 33106
+    },
+    {
+      "file": "internal/commerce-readiness/core-digital-bundle-candidate/NORTH_1-3-5_Execution_Planner_Core-Digital-v1.0_EN-US-Letter_private-release-candidate.pdf",
+      "sha256": "2b88849b096a980b8713f635f91eea8d870305a33085ad58b9c2c3cf385ccfe3",
+      "bytes": 84704
+    },
+    {
+      "file": "internal/commerce-readiness/core-digital-bundle-candidate/NORTH_1-3-5_Execution_Planner_Core-Digital-v1.0_EN-A4_private-release-candidate.pdf",
+      "sha256": "f02995b9238e82f9127586c63a960632ccadfa994405855e89213600f9aecb04",
+      "bytes": 82798
+    },
+    {
+      "file": "assets/brand/north-compass-official-512.png",
+      "sha256": "757c4d373c08ef08ca3a65436c6592ff8897292836e0f8241e4e72f1b3290a19",
+      "bytes": 351767
+    },
+    {
+      "file": "assets/brand/favicon/north-compass-32.png",
+      "sha256": "4ae95ebd5e61b72cfa0fe894c3b48ec3bc081eb277dddc8e5e24292ade9a6026",
+      "bytes": 1980
+    },
+    {
+      "file": "assets/product-visuals/execution-planner-cover-art.png",
+      "sha256": "d4bc1cea3cd6f6e39f7f8f13ece6baa767a2702ef13a947e4a7766e5bc53ecb6",
+      "bytes": 6570523
+    },
+    {
+      "file": "assets/product-visuals/execution-planner-open-spread.png",
+      "sha256": "de4dbfeb1180da239918c8dfa7041c34be1ae0775bb3540331b3eda64abec48d",
+      "bytes": 5070777
+    },
+    {
+      "file": "assets/product-visuals/execution-planner-desk-kit.png",
+      "sha256": "d731e2eabff7ae84b48fe68a8bb76e6e03de16e9caf2d50c2f9d15461d25577b",
+      "bytes": 5484497
+    },
+    {
+      "file": "assets/product-visuals/execution-planner-detail.png",
+      "sha256": "3277dd5bbdf85863af64e72fb9dcdb0ea5191faa1de6cc9ef5e216519b754d7e",
+      "bytes": 6474235
+    }
+  ]
+}

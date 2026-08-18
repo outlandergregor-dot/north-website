@@ -1,0 +1,116 @@
+{
+  "phase": "2F",
+  "source_revision": "0b5667b48adfa6708b75e0b5863845d43ce0f581",
+  "source": {
+    "file": "01-execution-planner-customer-master.md",
+    "sha256": "07ed061120beaed97dac1907f27c86c1f01e9fdc75ebee6a4e66103e7c4d3cf4",
+    "daily_sections": 14,
+    "weekly_reviews": 2,
+    "writable_field_cues": 313
+  },
+  "pdfs": {
+    "us_letter": {
+      "file": "NORTH_1-3-5_Execution_Planner_Core-Digital-v1.0_EN-US-Letter_private-release-candidate.pdf",
+      "pages": 27,
+      "page_size": "612 x 792 pts (letter)",
+      "normalized_text_characters": 21872,
+      "sha256": "2b88849b096a980b8713f635f91eea8d870305a33085ad58b9c2c3cf385ccfe3"
+    },
+    "a4": {
+      "file": "NORTH_1-3-5_Execution_Planner_Core-Digital-v1.0_EN-A4_private-release-candidate.pdf",
+      "pages": 24,
+      "page_size": "595.276 x 841.89 pts (A4)",
+      "normalized_text_characters": 21614,
+      "sha256": "f02995b9238e82f9127586c63a960632ccadfa994405855e89213600f9aecb04"
+    }
+  },
+  "passed": 17,
+  "total": 17,
+  "checks": [
+    {
+      "check": "editable_source_present",
+      "passed": true,
+      "evidence": "internal/commerce-pilot/execution-planner-v1/editable-source/01-execution-planner-customer-master.md"
+    },
+    {
+      "check": "exactly_14_daily_sections",
+      "passed": true,
+      "evidence": "14 Day headings"
+    },
+    {
+      "check": "exactly_2_weekly_reviews",
+      "passed": true,
+      "evidence": "2 weekly reset/review headings"
+    },
+    {
+      "check": "continuation_plan_present",
+      "passed": true,
+      "evidence": "Final Two-Week Review and Continuation Plan"
+    },
+    {
+      "check": "fictional_example_labeled",
+      "passed": true,
+      "evidence": "Fictional Worked Example heading"
+    },
+    {
+      "check": "writable_field_cues",
+      "passed": true,
+      "evidence": "313 underscore field cues"
+    },
+    {
+      "check": "non_guarantee_boundary",
+      "passed": true,
+      "evidence": "reviewed scope boundary language"
+    },
+    {
+      "check": "us_letter_exists",
+      "passed": true,
+      "evidence": "internal/commerce-readiness/core-digital-bundle-candidate/NORTH_1-3-5_Execution_Planner_Core-Digital-v1.0_EN-US-Letter_private-release-candidate.pdf"
+    },
+    {
+      "check": "us_letter_page_geometry",
+      "passed": true,
+      "evidence": "612 x 792 pts (letter)"
+    },
+    {
+      "check": "us_letter_page_count",
+      "passed": true,
+      "evidence": "27 pages"
+    },
+    {
+      "check": "us_letter_text_extractable",
+      "passed": true,
+      "evidence": "21872 normalized text characters"
+    },
+    {
+      "check": "us_letter_private_marker",
+      "passed": true,
+      "evidence": "private candidate marking"
+    },
+    {
+      "check": "a4_exists",
+      "passed": true,
+      "evidence": "internal/commerce-readiness/core-digital-bundle-candidate/NORTH_1-3-5_Execution_Planner_Core-Digital-v1.0_EN-A4_private-release-candidate.pdf"
+    },
+    {
+      "check": "a4_page_geometry",
+      "passed": true,
+      "evidence": "595.276 x 841.89 pts (A4)"
+    },
+    {
+      "check": "a4_page_count",
+      "passed": true,
+      "evidence": "24 pages"
+    },
+    {
+      "check": "a4_text_extractable",
+      "passed": true,
+      "evidence": "21614 normalized text characters"
+    },
+    {
+      "check": "a4_private_marker",
+      "passed": true,
+      "evidence": "private candidate marking"
+    }
+  ]
+}

@@ -11,3 +11,6 @@
 
 # Temporary Phase 2E closed-beta founder-preview credential; never commit.
 .phase2e-preview-password
+
+# Temporary Phase 2F pre-commerce founder-preview credential; never commit.
+.phase2f-preview-password

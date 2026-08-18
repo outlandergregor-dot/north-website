@@ -1,0 +1,159 @@
+{
+  "phase": "2F",
+  "head": "0b5667b48adfa6708b75e0b5863845d43ce0f581",
+  "phase2e_tag": "0b5667b48adfa6708b75e0b5863845d43ce0f581",
+  "passed": 30,
+  "total": 30,
+  "checks": [
+    {
+      "check": "phase2e_tag_preserved",
+      "passed": true,
+      "evidence": "north-web-phase2e-approved"
+    },
+    {
+      "check": "isolated_phase2f_branch",
+      "passed": true,
+      "evidence": "branch name"
+    },
+    {
+      "check": "brand_north-compass-official-512.png",
+      "passed": true,
+      "evidence": "assets/brand/north-compass-official-512.png"
+    },
+    {
+      "check": "brand_north-compass-16.png",
+      "passed": true,
+      "evidence": "assets/brand/favicon/north-compass-16.png"
+    },
+    {
+      "check": "brand_north-compass-32.png",
+      "passed": true,
+      "evidence": "assets/brand/favicon/north-compass-32.png"
+    },
+    {
+      "check": "brand_north-compass-180.png",
+      "passed": true,
+      "evidence": "assets/brand/favicon/north-compass-180.png"
+    },
+    {
+      "check": "brand_north-compass-192.png",
+      "passed": true,
+      "evidence": "assets/brand/favicon/north-compass-192.png"
+    },
+    {
+      "check": "brand_phase2f-premium-visual-system.md",
+      "passed": true,
+      "evidence": "internal/design-system/phase2f-premium-visual-system.md"
+    },
+    {
+      "check": "official_logo_public_shell",
+      "passed": true,
+      "evidence": "header/footer/hero/about"
+    },
+    {
+      "check": "official_logo_private_planner",
+      "passed": true,
+      "evidence": "private Planner"
+    },
+    {
+      "check": "premium_tokens",
+      "passed": true,
+      "evidence": "navy/ivory/gold tokens"
+    },
+    {
+      "check": "material_phase2f-planner-audit.json",
+      "passed": true,
+      "evidence": "evidence/phase2f-planner-audit.json"
+    },
+    {
+      "check": "material_phase2f-planner-version-and-qa.md",
+      "passed": true,
+      "evidence": "internal/commerce-readiness/phase2f-planner-version-and-qa.md"
+    },
+    {
+      "check": "material_phase2f-pilot-decision-package.md",
+      "passed": true,
+      "evidence": "internal/commerce-readiness/phase2f-pilot-decision-package.md"
+    },
+    {
+      "check": "material_phase2f-visual-qa.md",
+      "passed": true,
+      "evidence": "evidence/phase2f-visual-qa.md"
+    },
+    {
+      "check": "planner_audit_passed",
+      "passed": true,
+      "evidence": "17/17"
+    },
+    {
+      "check": "product_decision_not_ready_for_activation",
+      "passed": true,
+      "evidence": "explicit activation boundary"
+    },
+    {
+      "check": "pilot_price_private_only",
+      "passed": true,
+      "evidence": "founder decision only"
+    },
+    {
+      "check": "all_14_locale_structures",
+      "passed": true,
+      "evidence": "13 locale folders plus English root"
+    },
+    {
+      "check": "arabic_rtl_preserved",
+      "passed": true,
+      "evidence": "Arabic controls"
+    },
+    {
+      "check": "priority_safe_number_starter_kit",
+      "passed": true,
+      "evidence": "Safe Number Starter Kit"
+    },
+    {
+      "check": "priority_weekly_reset_kit",
+      "passed": true,
+      "evidence": "Weekly Reset Kit"
+    },
+    {
+      "check": "priority_focus_recovery_protocol",
+      "passed": true,
+      "evidence": "Focus Recovery Protocol"
+    },
+    {
+      "check": "priority_decision_clarity_toolkit",
+      "passed": true,
+      "evidence": "Decision Clarity Toolkit"
+    },
+    {
+      "check": "priority_family_money_meeting_kit",
+      "passed": true,
+      "evidence": "Family Money Meeting Kit"
+    },
+    {
+      "check": "finance_education_boundary",
+      "passed": true,
+      "evidence": "financial safety boundary"
+    },
+    {
+      "check": "no_payment_provider_scripts",
+      "passed": true,
+      "evidence": "no payment scripts"
+    },
+    {
+      "check": "no_active_checkout_urls",
+      "passed": true,
+      "evidence": "no active merchant URLs"
+    },
+    {
+      "check": "no_customer_forms",
+      "passed": true,
+      "evidence": "no customer forms"
+    },
+    {
+      "check": "closed_commerce_config",
+      "passed": true,
+      "evidence": "private renderer gates"
+    }
+  ]
+}
