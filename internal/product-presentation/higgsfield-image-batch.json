@@ -1,0 +1,108 @@
+{
+  "requests": [
+    {
+      "index": 1,
+      "params": {
+        "model": "marketing_studio_image",
+        "aspect_ratio": "16:9",
+        "resolution": "4k",
+        "medias": [
+          {"role": "image", "value": "1f83033d-f8c6-423c-a1b8-7897f5602b33"},
+          {"role": "image", "value": "21dbb029-b69b-4f1c-808b-9d72d4df9c51"}
+        ],
+        "prompt": "Create a premium text-free editorial hero composition for the real NORTH 1-3-5 Execution Planner Core Digital Edition. A refined midnight-navy digital planner cover, using the supplied gold compass mark unchanged, rests on a warm walnut and ivory desk in soft early-morning natural light. Tactile paper and linen texture, quiet natural shadow, clean negative space on the left for later website copy. No people, handwriting, generated planner pages, packaging, price, CTA, words, fake reviews, outcomes, app UI, checkout, or luxury props. This is illustrative digital product mockup imagery, not a physical product photograph."
+      }
+    },
+    {
+      "index": 2,
+      "params": {
+        "model": "marketing_studio_image",
+        "aspect_ratio": "16:9",
+        "resolution": "4k",
+        "medias": [
+          {"role": "image", "value": "1f83033d-f8c6-423c-a1b8-7897f5602b33"},
+          {"role": "image", "value": "21dbb029-b69b-4f1c-808b-9d72d4df9c51"}
+        ],
+        "prompt": "Create a text-free calm morning desk scene for the real NORTH 1-3-5 Execution Planner. Show the supplied navy-and-gold visual direction as a digital planner mockup beside a plain cream notebook, a single pencil, a ceramic cup, and warm natural window light. The composition should feel adult, practical, quiet, and genuinely usable, with no person and no readable page content. Do not invent planner pages, handwriting, text, price, app screens, testimonials, packaging, checkout, or outcomes. This is an illustrative lifestyle scene, not a physical product photograph."
+      }
+    },
+    {
+      "index": 3,
+      "params": {
+        "model": "marketing_studio_image",
+        "aspect_ratio": "16:9",
+        "resolution": "4k",
+        "medias": [
+          {"role": "image", "value": "1f83033d-f8c6-423c-a1b8-7897f5602b33"},
+          {"role": "image", "value": "21dbb029-b69b-4f1c-808b-9d72d4df9c51"}
+        ],
+        "prompt": "Create a text-free premium weekly-reset desk scene for the NORTH 1-3-5 Execution Planner visual system. Warm late-afternoon light on a refined walnut desk; a navy planner mockup with the supplied gold compass mark, a closed notebook, pencil, and a calm ivory paper texture. Subtle signs of reflection without writing or readable page content. No people, hands, fake Planner pages, product packaging, price, CTA, review, outcome, checkout, or app UI. Illustrative lifestyle scene only."
+      }
+    },
+    {
+      "index": 4,
+      "params": {
+        "model": "marketing_studio_image",
+        "aspect_ratio": "16:9",
+        "resolution": "4k",
+        "medias": [
+          {"role": "image", "value": "1f83033d-f8c6-423c-a1b8-7897f5602b33"},
+          {"role": "image", "value": "21dbb029-b69b-4f1c-808b-9d72d4df9c51"}
+        ],
+        "prompt": "Create a text-free editorial scene titled conceptually start your two-week rhythm for the NORTH 1-3-5 Execution Planner. Use a restrained navy, ivory, and gold palette, a digital planner mockup with the supplied official compass mark, a subtle two-week calendar-like rhythm represented only by abstract blocks with no letters or numbers, and generous natural light. No human, no hand, no fake Planner page, no visible text, no price, no CTA, no before-and-after claim, no app UI, and no checkout. Illustrative digital product presentation only."
+      }
+    },
+    {
+      "index": 5,
+      "params": {
+        "model": "marketing_studio_image",
+        "aspect_ratio": "16:9",
+        "resolution": "4k",
+        "medias": [
+          {"role": "image", "value": "1f83033d-f8c6-423c-a1b8-7897f5602b33"},
+          {"role": "image", "value": "21dbb029-b69b-4f1c-808b-9d72d4df9c51"}
+        ],
+        "prompt": "Create a text-free quiet weekly-review concept scene for the NORTH 1-3-5 Execution Planner. A navy planner mockup using the supplied official gold compass mark lies on a charcoal-blue and ivory textured desk surface, with calm light, a minimal pencil, and a small gold accent. Emphasize pause, review, and return to direction without depicting a readable page, person, or outcome. Avoid fake planner pages, handwritten notes, words, price, reviews, product packaging, app UI, checkout, or financial imagery. Illustrative lifestyle mockup only."
+      }
+    },
+    {
+      "index": 6,
+      "params": {
+        "model": "marketing_studio_image",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "medias": [
+          {"role": "image", "value": "1f83033d-f8c6-423c-a1b8-7897f5602b33"},
+          {"role": "image", "value": "21dbb029-b69b-4f1c-808b-9d72d4df9c51"}
+        ],
+        "prompt": "Create a text-free Instagram portrait product composition for the real NORTH 1-3-5 Execution Planner. Centered midnight-navy digital cover mockup with the supplied gold compass mark, surrounded by restrained ivory paper and warm directional light. Editorial, calm, adult, useful, trustworthy; clean safe negative space at top and bottom for later truthful copy. No people, readable text, invented planner pages, price, discount, CTA, customer review, result, app UI, checkout, or physical shipping box. Illustrative digital product presentation."
+      }
+    },
+    {
+      "index": 7,
+      "params": {
+        "model": "marketing_studio_image",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "medias": [
+          {"role": "image", "value": "1f83033d-f8c6-423c-a1b8-7897f5602b33"},
+          {"role": "image", "value": "21dbb029-b69b-4f1c-808b-9d72d4df9c51"}
+        ],
+        "prompt": "Create a text-free Instagram portrait visual for the NORTH 1-3-5 Execution Planner method. A premium navy planner mockup with the supplied official gold compass mark, three abstract ivory task cards, and five minimal gold directional dots; no text or numbers. Warm natural light, realistic matte paper and refined desk texture. The message should be practical direction, not hustle. No people, fake planner pages, handwriting, price, testimonials, claims, app UI, payment or checkout. Illustrative product presentation only."
+      }
+    },
+    {
+      "index": 8,
+      "params": {
+        "model": "marketing_studio_image",
+        "aspect_ratio": "9:16",
+        "resolution": "2k",
+        "medias": [
+          {"role": "image", "value": "1f83033d-f8c6-423c-a1b8-7897f5602b33"},
+          {"role": "image", "value": "21dbb029-b69b-4f1c-808b-9d72d4df9c51"}
+        ],
+        "prompt": "Create a text-free vertical Story or Reel cover for the NORTH 1-3-5 Execution Planner. A graceful navy planner mockup using the supplied gold compass mark rises from the lower third against a warm ivory and midnight-navy editorial composition with subtle tactile paper texture. Leave the upper half quiet for later non-commercial title placement. No people, no readable page, no text, no price, no discount, no CTA, no product box, no review, no outcome, no app screen, no checkout. Illustrative digital product presentation only."
+      }
+    }
+  ]
+}

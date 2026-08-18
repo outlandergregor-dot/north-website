@@ -14,3 +14,6 @@
 
 # Temporary Phase 2F pre-commerce founder-preview credential; never commit.
 .phase2f-preview-password
+
+# Temporary Phase 2F product-presentation founder-preview credential; never commit.
+.phase2f-presentation-preview-credentials

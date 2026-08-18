@@ -1,0 +1,99 @@
+{
+  "phase": "2F Premium Product Presentation Pilot",
+  "branch": "north-web-phase2f-product-presentation-pilot",
+  "passed": 18,
+  "total": 18,
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Correct isolated branch",
+      "pass": true,
+      "detail": "north-web-phase2f-product-presentation-pilot"
+    },
+    {
+      "name": "Eight recorded source assets",
+      "pass": true,
+      "detail": "8 assets in manifest"
+    },
+    {
+      "name": "All source files exist",
+      "pass": true,
+      "detail": "Source PNG presence"
+    },
+    {
+      "name": "All manifest disclosures are truthful",
+      "pass": true,
+      "detail": "Illustrative and physical-product limitation recorded"
+    },
+    {
+      "name": "All original asset hashes match manifest",
+      "pass": true,
+      "detail": "SHA-256 provenance verification"
+    },
+    {
+      "name": "All optimized web assets exist",
+      "pass": true,
+      "detail": "Responsive WebP delivery copies"
+    },
+    {
+      "name": "Hero uses optimized illustrative asset",
+      "pass": true,
+      "detail": "Hero asset reference"
+    },
+    {
+      "name": "Gallery includes all four illustrative presentation cards",
+      "pass": true,
+      "detail": "Four supporting image references"
+    },
+    {
+      "name": "Required hero disclosure exists",
+      "pass": true,
+      "detail": "Exact required disclosure"
+    },
+    {
+      "name": "Actual-page and illustrative evidence are separated",
+      "pass": true,
+      "detail": "Separate named sections"
+    },
+    {
+      "name": "Official compass remains the page brand anchor",
+      "pass": true,
+      "detail": "Official supplied asset reference"
+    },
+    {
+      "name": "Commerce is disabled in configuration",
+      "pass": true,
+      "detail": "Inactive configuration values"
+    },
+    {
+      "name": "No active checkout URL",
+      "pass": true,
+      "detail": "No merchant endpoint in renderer"
+    },
+    {
+      "name": "No email capture form added",
+      "pass": true,
+      "detail": "No collection surface in renderer"
+    },
+    {
+      "name": "Private route retains noindex",
+      "pass": true,
+      "detail": "Route metadata"
+    },
+    {
+      "name": "Responsive gallery rules exist",
+      "pass": true,
+      "detail": "Mobile single-column gallery"
+    },
+    {
+      "name": "Preview server confines root to current worktree",
+      "pass": true,
+      "detail": "Isolated root and port default"
+    },
+    {
+      "name": "Preview server sends private headers",
+      "pass": true,
+      "detail": "Authenticated no-cache noindex policy"
+    }
+  ]
+}

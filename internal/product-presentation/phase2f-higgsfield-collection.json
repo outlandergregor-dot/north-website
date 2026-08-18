@@ -1,0 +1,98 @@
+[
+  {
+    "id": "P01",
+    "file": "assets/product-presentation/higgsfield/planner-hero-illustrative.png",
+    "higgsfield_job_id": "671fbd8b-ada7-4d3b-985e-b10f600c9912",
+    "source": "Higgsfield marketing_studio_image using official NORTH compass and existing Planner cover references",
+    "prompt_file": "internal/product-presentation/higgsfield-image-batch.json",
+    "intended_usage": "Website hero",
+    "disclosure": "Illustrative AI-assisted digital product presentation; not a physical product photograph; no planner page content is claimed from this image.",
+    "alt_text": "Illustrative digital product mockup of the NORTH 1-3-5 Execution Planner on a warm refined desk.",
+    "bytes": 36792660,
+    "sha256": "a61c0f2633d0cbf69b93a890487b96c549cae00a6b13ead7c2890febeccccdb9"
+  },
+  {
+    "id": "P02",
+    "file": "assets/product-presentation/higgsfield/planner-morning-desk-illustrative.png",
+    "higgsfield_job_id": "eb8f2ee1-b9b7-4450-8a5f-0b51aafbbb99",
+    "source": "Higgsfield marketing_studio_image using official NORTH compass and existing Planner cover references",
+    "prompt_file": "internal/product-presentation/higgsfield-image-batch.json",
+    "intended_usage": "Product detail sequence",
+    "disclosure": "Illustrative AI-assisted digital product presentation; not a physical product photograph; no planner page content is claimed from this image.",
+    "alt_text": "Illustrative calm morning desk scene for the NORTH 1-3-5 Execution Planner.",
+    "bytes": 31102114,
+    "sha256": "bdfcb1cc9ddb535ffac728d948cdf46f75953ecfa3b3e9cc59a5871bd1ece123"
+  },
+  {
+    "id": "P03",
+    "file": "assets/product-presentation/higgsfield/planner-weekly-reset-illustrative.png",
+    "higgsfield_job_id": "a921b09c-5a4b-4574-9b84-d232b818e63d",
+    "source": "Higgsfield marketing_studio_image using official NORTH compass and existing Planner cover references",
+    "prompt_file": "internal/product-presentation/higgsfield-image-batch.json",
+    "intended_usage": "Product detail sequence",
+    "disclosure": "Illustrative AI-assisted digital product presentation; not a physical product photograph; no planner page content is claimed from this image.",
+    "alt_text": "Illustrative weekly reset desk scene for the NORTH 1-3-5 Execution Planner.",
+    "bytes": 31480748,
+    "sha256": "a73eccee4638d324df03000fc3916f49d11acfa99b5b725efd0c55b5d1c727a4"
+  },
+  {
+    "id": "P04",
+    "file": "assets/product-presentation/higgsfield/planner-two-week-rhythm-illustrative.png",
+    "higgsfield_job_id": "6318def5-61c0-4540-a5d2-28520a2bb6e2",
+    "source": "Higgsfield marketing_studio_image using official NORTH compass and existing Planner cover references",
+    "prompt_file": "internal/product-presentation/higgsfield-image-batch.json",
+    "intended_usage": "Two-week rhythm section",
+    "disclosure": "Illustrative AI-assisted digital product presentation; not a physical product photograph; no planner page content is claimed from this image.",
+    "alt_text": "Illustrative digital product presentation for starting a two-week Planner rhythm.",
+    "bytes": 27765347,
+    "sha256": "52658fcb0b3f35eb9abe5c0a7e204e51731d679932e83d871610be9fd371390c"
+  },
+  {
+    "id": "P05",
+    "file": "assets/product-presentation/higgsfield/planner-weekly-review-illustrative.png",
+    "higgsfield_job_id": "b2637a2e-c6e2-48d8-9c7f-3421f4428a9c",
+    "source": "Higgsfield marketing_studio_image using official NORTH compass and existing Planner cover references",
+    "prompt_file": "internal/product-presentation/higgsfield-image-batch.json",
+    "intended_usage": "Weekly review section",
+    "disclosure": "Illustrative AI-assisted digital product presentation; not a physical product photograph; no planner page content is claimed from this image.",
+    "alt_text": "Illustrative digital product presentation for a Planner weekly review.",
+    "bytes": 29468340,
+    "sha256": "3801f408575d2b71445a97a60bc376d6c91aa397307db8b5dce02c7500fd6383"
+  },
+  {
+    "id": "P06",
+    "file": "assets/product-presentation/higgsfield/social-calm-direction-illustrative.png",
+    "higgsfield_job_id": "fb0fe8f4-c638-48ab-9dae-e7f424309fcf",
+    "source": "Higgsfield marketing_studio_image using official NORTH compass and existing Planner cover references",
+    "prompt_file": "internal/product-presentation/higgsfield-image-batch.json",
+    "intended_usage": "Instagram portrait",
+    "disclosure": "Illustrative AI-assisted digital product presentation; not a physical product photograph; no planner page content is claimed from this image.",
+    "alt_text": "Illustrative portrait product presentation for the NORTH 1-3-5 Execution Planner.",
+    "bytes": 7110890,
+    "sha256": "7885e5e6e19a9254eda6470e3d85cc3aae8c3c8c918fe16a86210605fd12602d"
+  },
+  {
+    "id": "P07",
+    "file": "assets/product-presentation/higgsfield/social-method-illustrative.png",
+    "higgsfield_job_id": "4db32c1b-1f5d-4f2b-a41d-ddd9aa140b3a",
+    "source": "Higgsfield marketing_studio_image using official NORTH compass and existing Planner cover references",
+    "prompt_file": "internal/product-presentation/higgsfield-image-batch.json",
+    "intended_usage": "Instagram portrait",
+    "disclosure": "Illustrative AI-assisted digital product presentation; not a physical product photograph; no planner page content is claimed from this image.",
+    "alt_text": "Illustrative product presentation inspired by the 1-3-5 method.",
+    "bytes": 8532879,
+    "sha256": "a4d23251371ae5409f2f5a8ffcd98ca5ba33c374ab1ea3824e9e7505bcdf376f"
+  },
+  {
+    "id": "P08",
+    "file": "assets/product-presentation/higgsfield/story-reel-cover-illustrative.png",
+    "higgsfield_job_id": "95836871-6a9e-44e8-be6c-ececc7ff3fbf",
+    "source": "Higgsfield marketing_studio_image using official NORTH compass and existing Planner cover references",
+    "prompt_file": "internal/product-presentation/higgsfield-image-batch.json",
+    "intended_usage": "Story or Reel cover",
+    "disclosure": "Illustrative AI-assisted digital product presentation; not a physical product photograph; no planner page content is claimed from this image.",
+    "alt_text": "Illustrative vertical product presentation for the NORTH 1-3-5 Execution Planner.",
+    "bytes": 6198114,
+    "sha256": "e6ddd33853e40a421c7e0507cc8c4afda25f146e0d5ecf53e4447b1c42cec3f2"
+  }
+]
