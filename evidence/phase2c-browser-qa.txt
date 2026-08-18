@@ -1,0 +1,45 @@
+### Result
+{"total":28,"passed":28,"failed":[],"rtl":{"dir":"rtl","firstNav":"الرئيسية","overflow":false},"focus":{"tag":"A","visible":true,"readiness":true},"highZoom":{"overflow":false,"controls":10}}
+### Ran Playwright code
+```js
+await (async (page) => {
+  const base = 'http://localhost:4173';
+  const routes = [
+    '/', '/library', '/library/free-tools', '/library/resources', '/library/programs', '/library/books', '/library/money-education', '/library/item?product=1-3-5-execution-planner', '/about',
+    '/pt-BR/', '/es-419/', '/ar/', '/ar/library/free-tools', '/ar/library/item?product=decision-clarity-toolkit'
+  ];
+  const results = [];
+  const forbidden = /\b(buy now|add to cart|start trial|join waitlist|subscribe now|preorder now)\b/i;
+  for (const size of [{name:'desktop', width:1440, height:960}, {name:'mobile', width:390, height:844}]) {
+    await page.setViewportSize({width:size.width,height:size.height});
+    for (const route of routes) {
+      const response = await page.goto(base + route, {waitUntil:'networkidle'});
+      const outcome = await page.evaluate(() => ({
+        localeOptions: document.querySelectorAll('#localeSelect option, #libraryLocale option').length,
+        dir: document.documentElement.dir || 'ltr',
+        lang: document.documentElement.lang,
+        overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+        privateRef: Array.from(document.querySelectorAll('[href],[src]')).some(el => /(?:^|\/)internal\/|review-exports/i.test(el.getAttribute('href') || el.getAttribute('src') || '')),
+        commercial: Array.from(document.querySelectorAll('a,button')).map(x => (x.textContent || '').trim()).filter(text => /\b(buy now|add to cart|start trial|join waitlist|subscribe now|preorder now)\b/i.test(text)),
+        reviewState: document.body.innerText.includes('In founder review'),
+        languageNotice: document.body.innerText.includes('human review') || document.body.innerText.includes('revisão humana') || document.body.innerText.includes('المراجعة البشرية')
+      }));
+      results.push({view:size.name, route, status:response && response.status(), ...outcome, pass: Boolean(response && [200,304].includes(response.status())) && !outcome.overflow && !outcome.privateRef && outcome.commercial.length === 0 && outcome.localeOptions === 14});
+    }
+  }
+  await page.setViewportSize({width:390,height:844});
+  await page.goto(base + '/ar/', {waitUntil:'networkidle'});
+  const rtl = await page.evaluate(() => ({dir:document.documentElement.dir, firstNav:document.querySelector('.public-nav a')?.textContent.trim(), overflow:document.documentElement.scrollWidth > window.innerWidth + 1}));
+  await page.goto(base + '/library/item?product=decision-clarity-toolkit', {waitUntil:'networkidle'});
+  await page.keyboard.press('Tab');
+  const focus = await page.evaluate(() => ({tag:document.activeElement.tagName, visible:document.activeElement.matches(':focus-visible'), readiness:document.body.innerText.includes('CHECKOUT LANGUAGE') && document.body.innerText.includes('LEGAL / POLICY LANGUAGE')}));
+  await page.setViewportSize({width:320,height:720});
+  const highZoom = await page.evaluate(() => ({overflow:document.documentElement.scrollWidth > window.innerWidth + 1, controls:Array.from(document.querySelectorAll('a,button,select')).filter(x=>x.getBoundingClientRect().width>0).length}));
+  return {total:results.length, passed:results.filter(x=>x.pass).length, failed:results.filter(x=>!x.pass), rtl, focus, highZoom};
+}
+)(page);
+```
+### Page
+- Page URL: http://localhost:4173/library/item?product=decision-clarity-toolkit
+- Page Title: Release A Overview — NORTH
+- HTTP status: 304 Not Modified

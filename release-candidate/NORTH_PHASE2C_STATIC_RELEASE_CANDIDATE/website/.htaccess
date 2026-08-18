@@ -1,0 +1,37 @@
+# NORTH Phase 2C static release candidate — Apache / Namecheap shared hosting.
+# Candidate safety: no deployment has occurred. Keep the noindex header until founder-approved public launch.
+DirectoryIndex index.html
+Options -Indexes
+RewriteEngine On
+
+# Preserve direct files, directories, and static assets.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Canonical English clean routes.
+RewriteRule ^$ index.html [L]
+RewriteRule ^library/?$ library/index.html [L]
+RewriteRule ^library/free-tools/?$ library/free-tools/index.html [L]
+RewriteRule ^library/resources/?$ library/resources/index.html [L]
+RewriteRule ^library/programs/?$ library/programs/index.html [L]
+RewriteRule ^library/books/?$ library/books/index.html [L]
+RewriteRule ^library/money-education/?$ library/money-education/index.html [L]
+RewriteRule ^library/item/?$ library/item/index.html [QSA,L]
+RewriteRule ^about/?$ about/index.html [L]
+
+# Locale-aware governed routes. The 13 non-English routes are not product-language releases.
+RewriteRule ^(pt-BR|es-419|fr|de|it|ja|ko|zh-Hans|zh-Hant|ar|ru|pl|nl)/?$ $1/index.html [L]
+RewriteRule ^(pt-BR|es-419|fr|de|it|ja|ko|zh-Hans|zh-Hant|ar|ru|pl|nl)/library/?$ $1/library/index.html [L]
+RewriteRule ^(pt-BR|es-419|fr|de|it|ja|ko|zh-Hans|zh-Hant|ar|ru|pl|nl)/library/free-tools/?$ $1/library/free-tools/index.html [L]
+RewriteRule ^(pt-BR|es-419|fr|de|it|ja|ko|zh-Hans|zh-Hant|ar|ru|pl|nl)/library/resources/?$ $1/library/resources/index.html [L]
+RewriteRule ^(pt-BR|es-419|fr|de|it|ja|ko|zh-Hans|zh-Hant|ar|ru|pl|nl)/library/programs/?$ $1/library/programs/index.html [L]
+RewriteRule ^(pt-BR|es-419|fr|de|it|ja|ko|zh-Hans|zh-Hant|ar|ru|pl|nl)/library/books/?$ $1/library/books/index.html [L]
+RewriteRule ^(pt-BR|es-419|fr|de|it|ja|ko|zh-Hans|zh-Hant|ar|ru|pl|nl)/library/money-education/?$ $1/library/money-education/index.html [L]
+RewriteRule ^(pt-BR|es-419|fr|de|it|ja|ko|zh-Hans|zh-Hant|ar|ru|pl|nl)/library/item/?$ $1/library/item/index.html [QSA,L]
+RewriteRule ^(pt-BR|es-419|fr|de|it|ja|ko|zh-Hans|zh-Hant|ar|ru|pl|nl)/about/?$ $1/about/index.html [L]
+
+# Candidate-only search indexing safeguard. Remove only after separate founder approval for public launch.
+<IfModule mod_headers.c>
+  Header always set X-Robots-Tag "noindex, nofollow, noarchive"
+</IfModule>

@@ -2,3 +2,6 @@
 
 # Temporary Phase 2B founder-review credential; never commit.
 .phase2b-preview-password
+
+# Temporary Phase 2C static-candidate founder-preview credential; never commit.
+.phase2c-preview-password

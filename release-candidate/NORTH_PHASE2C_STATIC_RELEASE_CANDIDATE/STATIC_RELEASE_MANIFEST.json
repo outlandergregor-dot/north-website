@@ -1,0 +1,691 @@
+{
+  "phase": "2c",
+  "scope": "public-static-candidate-only",
+  "files": [
+    {
+      "path": ".htaccess",
+      "bytes": 2332,
+      "sha256": "969dddf3fa4fa935608d5a5e1158d0e28ecf40c637d3846acc751aa0ca9a6138"
+    },
+    {
+      "path": "about/index.html",
+      "bytes": 891,
+      "sha256": "bc8c9d112fd2e39efba8ca516535b94fafce8b0eb7af37b61f52b62467bde123"
+    },
+    {
+      "path": "ar/about/index.html",
+      "bytes": 898,
+      "sha256": "4da5d7f405ac049216037e1262f7705378e66120e657dffeadfddbc23658acc8"
+    },
+    {
+      "path": "ar/index.html",
+      "bytes": 938,
+      "sha256": "7f612a3dc93c076261bd8758f3a516361169a750801f835bcd116f74822342c8"
+    },
+    {
+      "path": "ar/library/books/index.html",
+      "bytes": 922,
+      "sha256": "bb344e052edff4c6e0a3b2da624c3991554565ab0d0382ce2ca51c6b09643cb8"
+    },
+    {
+      "path": "ar/library/free-tools/index.html",
+      "bytes": 831,
+      "sha256": "f8866d8106e3914b96c33d7daa6b6ceec4c73b074366c351ca023d3c9e1139af"
+    },
+    {
+      "path": "ar/library/index.html",
+      "bytes": 948,
+      "sha256": "d05127ba9ae9c204817f81150b7938320299fd6a8d8d49de86d0d892e754555c"
+    },
+    {
+      "path": "ar/library/item/index.html",
+      "bytes": 922,
+      "sha256": "951e06c9986ce9888bcc07a7ad74b4087382a26584a92700c78973783cdb203c"
+    },
+    {
+      "path": "ar/library/money-education/index.html",
+      "bytes": 920,
+      "sha256": "c3c2d8ab7b76bb55577e26fa37ec862433ff18a32efc0c08ac76b22000337849"
+    },
+    {
+      "path": "ar/library/programs/index.html",
+      "bytes": 916,
+      "sha256": "37df65568b9c8621fe79aca2ee23901cbe4ef3056e99c829be15ba4cf2d1c693"
+    },
+    {
+      "path": "ar/library/resources/index.html",
+      "bytes": 919,
+      "sha256": "1a435d658dce06251f7f69b896d1c6c9f22d3ca4410efa6108387181f5537f42"
+    },
+    {
+      "path": "assets/free-tools-config.js",
+      "bytes": 7089,
+      "sha256": "ae825660310b44df02fdef39289e1901573d26a889f3050e9c597de1fd269089"
+    },
+    {
+      "path": "assets/icons/favicon.png",
+      "bytes": 65654,
+      "sha256": "08c1f739c27b5f40b7e55f594d49b5ad5bd3ff2f27181e9119954b4e45136023"
+    },
+    {
+      "path": "assets/icons/north-icon.png",
+      "bytes": 476430,
+      "sha256": "c4edb734a5099ae797622a9bb452d46443147dd7bf993427e31cad46ba02aa0a"
+    },
+    {
+      "path": "assets/library.css",
+      "bytes": 13877,
+      "sha256": "613e792805febe2c599dbb90dd86bfdfc320b0d18a2a56fd58862953198a1384"
+    },
+    {
+      "path": "assets/library.js",
+      "bytes": 23927,
+      "sha256": "eb0155e619a5fa9e41f7195886a4c56a75152b5220a695ca74fd3b3372af6fd2"
+    },
+    {
+      "path": "assets/locale-system.js",
+      "bytes": 6179,
+      "sha256": "0295b8d305df2168f0bd9ec5e7e033a66c0e7ff901406956e89d6ea44e6d4b6d"
+    },
+    {
+      "path": "assets/public-catalog.js",
+      "bytes": 7627,
+      "sha256": "51427184a01087c80ddaab6743fc67bc8bb2eccbe886a5d5bea6e688cf6486bb"
+    },
+    {
+      "path": "assets/public-site.css",
+      "bytes": 14418,
+      "sha256": "3d6e9c80e4fe1667f948fd8c3cdd3e8d79b860ba666efd7d306ffd6bcf863062"
+    },
+    {
+      "path": "assets/public-site.js",
+      "bytes": 19863,
+      "sha256": "9012a45e04c52fc00061e845c550b7965d05ae1d94922d5972c0ded0897370f9"
+    },
+    {
+      "path": "de/about/index.html",
+      "bytes": 898,
+      "sha256": "c0bd3c59ca769f67d10eb9eb4fd2309f9bf32cae48e7363057f7f88b2da9b1e6"
+    },
+    {
+      "path": "de/index.html",
+      "bytes": 938,
+      "sha256": "39b883470192c5bbfabeb7d49b4f4e4d3f47aec1405e4e292d81bd0645e1618a"
+    },
+    {
+      "path": "de/library/books/index.html",
+      "bytes": 922,
+      "sha256": "ecbe93c791475d1ca468bd06cbfbbdaef2fa20d06e9319a3f930c7340f6e857f"
+    },
+    {
+      "path": "de/library/free-tools/index.html",
+      "bytes": 831,
+      "sha256": "bae7fd51fa2d266428707b33fb06503662ed0c4e74916c08999ddf0cbcfa09fb"
+    },
+    {
+      "path": "de/library/index.html",
+      "bytes": 948,
+      "sha256": "6ee7b24792f1d9a70fa011e62552ce8917c2482762125c770e27da85fb5e1b25"
+    },
+    {
+      "path": "de/library/item/index.html",
+      "bytes": 922,
+      "sha256": "c41eb33cbc9397f39400b09b8ae9e870da24e83e7f410c3af96f62731362c27e"
+    },
+    {
+      "path": "de/library/money-education/index.html",
+      "bytes": 920,
+      "sha256": "9f791172a0e78338afc5904c52eb180e5489b47fd2eb987207037e1dae9c3846"
+    },
+    {
+      "path": "de/library/programs/index.html",
+      "bytes": 916,
+      "sha256": "e4c96f18141c8a90e96e7bc77a21f6bfc4a65e17fad44c7245143e38f87ec9d2"
+    },
+    {
+      "path": "de/library/resources/index.html",
+      "bytes": 919,
+      "sha256": "629cd64d1aafa22cb9b908e33db92d20fac85163649deab8d2239371216dea19"
+    },
+    {
+      "path": "es-419/about/index.html",
+      "bytes": 902,
+      "sha256": "f812c84f1926d9aecd28e65fd3c17cf259f2d35fc813a035cd16f157b782193e"
+    },
+    {
+      "path": "es-419/index.html",
+      "bytes": 942,
+      "sha256": "8982f613fe75087545d82f660104515995cfd0b6c77aeef9dd79143b2f5ee186"
+    },
+    {
+      "path": "es-419/library/books/index.html",
+      "bytes": 926,
+      "sha256": "2c99e3eaca53b02b9473230b62c5958faf2f84d9843a5a87c501b7b1030d6fcc"
+    },
+    {
+      "path": "es-419/library/free-tools/index.html",
+      "bytes": 835,
+      "sha256": "a58eefb2052e17cb9ca4930fb3a1c3f1b0acf3c76a3c577714ce83a80ed62da9"
+    },
+    {
+      "path": "es-419/library/index.html",
+      "bytes": 952,
+      "sha256": "c23a87f276248406933c13a690cbe1214900c42d830d9581de9181d799ddc19b"
+    },
+    {
+      "path": "es-419/library/item/index.html",
+      "bytes": 926,
+      "sha256": "e05727e4d386cb72fd776c7ef2a992e1b340de7d70f0fcb5550365a12ee84c1f"
+    },
+    {
+      "path": "es-419/library/money-education/index.html",
+      "bytes": 924,
+      "sha256": "b55fefc2e74ac525f980b934624cc2b7ef1c38fedbfc26b2dbe62190488ad487"
+    },
+    {
+      "path": "es-419/library/programs/index.html",
+      "bytes": 920,
+      "sha256": "125640adec5727bbeee393f26531117639ee27310974812ee399f0e8f5171601"
+    },
+    {
+      "path": "es-419/library/resources/index.html",
+      "bytes": 923,
+      "sha256": "3eeb90be0ca9bbf87d6b64433a534ee388113aadb8b2abe1885272a886d97a92"
+    },
+    {
+      "path": "fr/about/index.html",
+      "bytes": 898,
+      "sha256": "add9652c58031eebfaa4383960c23e8d57f0e628241caf1b28ed97246c33e56e"
+    },
+    {
+      "path": "fr/index.html",
+      "bytes": 938,
+      "sha256": "eedfe7ae88dec32ddb736c4ce772cf2972c13aec6bcab2aab5a8774055db62a6"
+    },
+    {
+      "path": "fr/library/books/index.html",
+      "bytes": 922,
+      "sha256": "aa42de8adf3d2f06a44111c01f3e00fda7497f64fa0f2c009f2f754483c67804"
+    },
+    {
+      "path": "fr/library/free-tools/index.html",
+      "bytes": 831,
+      "sha256": "18d35545fe8a6e53d7f3f9f71916cabab2bca01fcebcb543189349de2617dc87"
+    },
+    {
+      "path": "fr/library/index.html",
+      "bytes": 948,
+      "sha256": "27c9ded71da7a97444db6b6f24cd2ba26befee69e86072f0dde11531da57c03c"
+    },
+    {
+      "path": "fr/library/item/index.html",
+      "bytes": 922,
+      "sha256": "7f76ee06d9f83573631783b3825fb7815e53785a883bddd64a934350fc8ad87f"
+    },
+    {
+      "path": "fr/library/money-education/index.html",
+      "bytes": 920,
+      "sha256": "9031ec751a50d55224d5979446cfd57ab6254d2323314be1f133a1989e8edeee"
+    },
+    {
+      "path": "fr/library/programs/index.html",
+      "bytes": 916,
+      "sha256": "9a76e0917fa95bb4b3146a86efd484fead112c0424cbeb2d6c5c684934218276"
+    },
+    {
+      "path": "fr/library/resources/index.html",
+      "bytes": 919,
+      "sha256": "140d00fa1830803e7e8b620f0a5a509271550baff32b46b12b26049f753bb4e7"
+    },
+    {
+      "path": "index.html",
+      "bytes": 931,
+      "sha256": "a12d0aedfaa0cb1efc1feabfa2194f49803ad22fe710072dba193fe86539cebb"
+    },
+    {
+      "path": "it/about/index.html",
+      "bytes": 898,
+      "sha256": "0db9f2867a511ac4ab1506a29c0786056dabfc13524bb370328f46cfd6ef0f67"
+    },
+    {
+      "path": "it/index.html",
+      "bytes": 938,
+      "sha256": "cb3d98d079d20c314b84e263a5bc67d1884257a01710c63e619b42dea68715ac"
+    },
+    {
+      "path": "it/library/books/index.html",
+      "bytes": 922,
+      "sha256": "bf84744bd2f75b0e411a1e5fc50bac05c8ab7feaa74e3dc822a1c39b1e084cb9"
+    },
+    {
+      "path": "it/library/free-tools/index.html",
+      "bytes": 831,
+      "sha256": "65c1a677e4a251ade07f3c327968db82ed14ba4df4a08d1eac9b69f77d2467ad"
+    },
+    {
+      "path": "it/library/index.html",
+      "bytes": 948,
+      "sha256": "f06871990b8980c636125549ba3213f3e7308af62111177e2457894463928459"
+    },
+    {
+      "path": "it/library/item/index.html",
+      "bytes": 922,
+      "sha256": "4385dc13b2ab89f403a9a5769dd638490a510e40a035d336f901789aa0f8cfd7"
+    },
+    {
+      "path": "it/library/money-education/index.html",
+      "bytes": 920,
+      "sha256": "82f2c596c62d903d8d09d8c35ea65b18c84c8aefaddcc8530e4fd3cd196064ef"
+    },
+    {
+      "path": "it/library/programs/index.html",
+      "bytes": 916,
+      "sha256": "735afed11f8d96e71f0baa61e176e35a4d6ea0fa7db377b42236f87fad044199"
+    },
+    {
+      "path": "it/library/resources/index.html",
+      "bytes": 919,
+      "sha256": "436ee77e124af1871c1f75b58cdf464059a15b3df69e1947283fbd1117ab168c"
+    },
+    {
+      "path": "ja/about/index.html",
+      "bytes": 898,
+      "sha256": "0cfe7345a3ab5a4e19a4a395402cc0e0585cf71a8b17ad61d1cc7a52948dd0b9"
+    },
+    {
+      "path": "ja/index.html",
+      "bytes": 938,
+      "sha256": "3609103a387abb247c44bc60d395abb3cefa473b0a4e0f3036ced6c3b16689f1"
+    },
+    {
+      "path": "ja/library/books/index.html",
+      "bytes": 922,
+      "sha256": "b009bd2bf971f8b9dc30f946af55c0f546904b65c6c7365c6dd0ea9382c6eb4e"
+    },
+    {
+      "path": "ja/library/free-tools/index.html",
+      "bytes": 831,
+      "sha256": "27575be49ff16c3026c5663810bca47ea7ab493af7952f6c9838872d01b09bf9"
+    },
+    {
+      "path": "ja/library/index.html",
+      "bytes": 948,
+      "sha256": "b8e927bacf7c4ecff97b292233281c3377723d947be15da50b2c71c574f0de00"
+    },
+    {
+      "path": "ja/library/item/index.html",
+      "bytes": 922,
+      "sha256": "90be2137cb037d359a4e1a1d579bb45f901f5f3328c302c1dcbc21fceaa91fcf"
+    },
+    {
+      "path": "ja/library/money-education/index.html",
+      "bytes": 920,
+      "sha256": "ca24e9c58fa5c7ccd3a49b533d534c4b921c583a6e0391ac640eecc6224a31d2"
+    },
+    {
+      "path": "ja/library/programs/index.html",
+      "bytes": 916,
+      "sha256": "a8b9931b951508a0f545f883299f69ed5e36d4b406f41f6831c72952918468f1"
+    },
+    {
+      "path": "ja/library/resources/index.html",
+      "bytes": 919,
+      "sha256": "844b1ca39a4445574adddd47d22690dc8f6cd6543016efbe0eb94d361c20c7c1"
+    },
+    {
+      "path": "ko/about/index.html",
+      "bytes": 898,
+      "sha256": "46625cef8e6137e8579d61ac15bfcc2ece8c3693c4cc2f6c33e5a7fd40bffe2f"
+    },
+    {
+      "path": "ko/index.html",
+      "bytes": 938,
+      "sha256": "b1bb554cb4463e90885f618c6f3fb7c1a04d1545e2e00a024cfb68e4c4e4d19f"
+    },
+    {
+      "path": "ko/library/books/index.html",
+      "bytes": 922,
+      "sha256": "1f56d2376d0b0ab8ef60c918c4af76a9a92b5ec775a8176cbba0369fd13501e8"
+    },
+    {
+      "path": "ko/library/free-tools/index.html",
+      "bytes": 831,
+      "sha256": "3959aec5ed1a9e2775282dabed9c3a0a406ef5915cfe1fcba845c52b8da04b4b"
+    },
+    {
+      "path": "ko/library/index.html",
+      "bytes": 948,
+      "sha256": "77d6fe97e5772fc103a858741c2f32ec96335e3b209235e455c5b65ea0f2481f"
+    },
+    {
+      "path": "ko/library/item/index.html",
+      "bytes": 922,
+      "sha256": "0ad226b5ba351f996b92fcd0801ac213974a1b32423935d0de36a791a0a6191d"
+    },
+    {
+      "path": "ko/library/money-education/index.html",
+      "bytes": 920,
+      "sha256": "62f7a281fa756f472ef6a7e11ab52849b04d0230a6fec97b199d4de87870ee20"
+    },
+    {
+      "path": "ko/library/programs/index.html",
+      "bytes": 916,
+      "sha256": "b661e8b60f95600f9c8540198e5d82260f3a07d822e8c7f4335959fe0b2163e9"
+    },
+    {
+      "path": "ko/library/resources/index.html",
+      "bytes": 919,
+      "sha256": "b839ea216f893378dd36a241a7909d6d5de8d217f3eabdec379b7a5030ac555b"
+    },
+    {
+      "path": "library/books/index.html",
+      "bytes": 915,
+      "sha256": "f811c0a0c9061f5ca757f8f19c7b3166ca2f4af6ab3170723dd07f50563f9e1b"
+    },
+    {
+      "path": "library/free-tools/index.html",
+      "bytes": 831,
+      "sha256": "118a10506e1ecf82699bb2c819aa532d5f0822d77a1b083a3f081ca0531cdf4d"
+    },
+    {
+      "path": "library/index.html",
+      "bytes": 941,
+      "sha256": "619dd866280d11aacfe1415bb0d1ddb0384a5dc87d77de841b92844306e94778"
+    },
+    {
+      "path": "library/item/index.html",
+      "bytes": 915,
+      "sha256": "5d5ed052f3be1bba03074c15faae55ceeee4bde03cc32fa7634e17d17b1d6781"
+    },
+    {
+      "path": "library/money-education/index.html",
+      "bytes": 913,
+      "sha256": "a9f14edd4cff22abed4b074d023a93398c86c4b18785ca3b2d18632d98971121"
+    },
+    {
+      "path": "library/programs/index.html",
+      "bytes": 909,
+      "sha256": "696baa97cdf6144fd72268185bfa427630185196c1187d99aca2824871f714d9"
+    },
+    {
+      "path": "library/resources/index.html",
+      "bytes": 912,
+      "sha256": "eefdc430e5de61a250a4b8ac52c4a9a652a1a559ae3566583eeff216d7b10370"
+    },
+    {
+      "path": "nl/about/index.html",
+      "bytes": 898,
+      "sha256": "cf712a98ab4222dc16f772c3e17956405faf8fb9747be9b2867a1063ed28b445"
+    },
+    {
+      "path": "nl/index.html",
+      "bytes": 938,
+      "sha256": "d347b211df44b3552309026117093f93183a90cd1690bde42f051de2cb047e64"
+    },
+    {
+      "path": "nl/library/books/index.html",
+      "bytes": 922,
+      "sha256": "ae6987f7ebc42eb90feaa7005cf848206507732cfcc3ca45be50ff55b921033c"
+    },
+    {
+      "path": "nl/library/free-tools/index.html",
+      "bytes": 831,
+      "sha256": "ce7791a79344ebf2a927037f81a52258bd280508200368d009dd23b2b318da27"
+    },
+    {
+      "path": "nl/library/index.html",
+      "bytes": 948,
+      "sha256": "b152a17a891ee72096817ea190e419891763b25a1180cf83d9bdde2daff72879"
+    },
+    {
+      "path": "nl/library/item/index.html",
+      "bytes": 922,
+      "sha256": "1ce5e491effc5ab30635ed797125854ba68789f73036259807de73ec9c87e37c"
+    },
+    {
+      "path": "nl/library/money-education/index.html",
+      "bytes": 920,
+      "sha256": "74e1988c80e242f78c1808563d2bf972e2863a4d554e2376411449bbbfa37f8f"
+    },
+    {
+      "path": "nl/library/programs/index.html",
+      "bytes": 916,
+      "sha256": "828fb8eaa116ec7a6b92f54bd96cb5276e6b63a25193a9262b22c1f75562f901"
+    },
+    {
+      "path": "nl/library/resources/index.html",
+      "bytes": 919,
+      "sha256": "02dad81d8dc52e87094fde8f310d6607b058ba26301b13b3f35c4fc7718bdc4f"
+    },
+    {
+      "path": "pl/about/index.html",
+      "bytes": 898,
+      "sha256": "e597c470eb59ff39d94d4669b338d70ec044f8b33ae32cdfc21378392f977125"
+    },
+    {
+      "path": "pl/index.html",
+      "bytes": 938,
+      "sha256": "7d4ce7ddd8204fe8e7a4023f7319f9874d0af2fc5dd448f0c31f4a621f31647b"
+    },
+    {
+      "path": "pl/library/books/index.html",
+      "bytes": 922,
+      "sha256": "8b3f2af099962e02e8709c7d7e446ad3471cfde68835117d0c4225a504facf6b"
+    },
+    {
+      "path": "pl/library/free-tools/index.html",
+      "bytes": 831,
+      "sha256": "3253470d976802bf2aa94f61053ee3b3c06dd88ad3da1d2f77a76a5f2ff5eb27"
+    },
+    {
+      "path": "pl/library/index.html",
+      "bytes": 948,
+      "sha256": "9879e721b7bf76190e5ca5d52303247c8015a0d7a14a79ab8e1313a588420611"
+    },
+    {
+      "path": "pl/library/item/index.html",
+      "bytes": 922,
+      "sha256": "2a6c10342462d44487c201c206723219553853ce733c27a38194610f1f4d5da1"
+    },
+    {
+      "path": "pl/library/money-education/index.html",
+      "bytes": 920,
+      "sha256": "23761c8975fd3de89563f82c082690999814f5b528ebc5af54a8f2e38acf6f92"
+    },
+    {
+      "path": "pl/library/programs/index.html",
+      "bytes": 916,
+      "sha256": "719493cb10b50e4d8f317d4e60fe4c765c53569dd43fcdc0d4fbea08c3301273"
+    },
+    {
+      "path": "pl/library/resources/index.html",
+      "bytes": 919,
+      "sha256": "dff06f8761d56063da9aebb1caf88157b4f1351fad084bd42d2f7478ba2206ee"
+    },
+    {
+      "path": "pt-BR/about/index.html",
+      "bytes": 901,
+      "sha256": "83bf0f409bf1034efdc9e0d47e48685e35d7e8b2c495050c4322efaf5229bb3a"
+    },
+    {
+      "path": "pt-BR/index.html",
+      "bytes": 941,
+      "sha256": "338f1f6d95389d58364cfc526c5e472872ca7049e85d89a4b1dc3613f79de05b"
+    },
+    {
+      "path": "pt-BR/library/books/index.html",
+      "bytes": 925,
+      "sha256": "d74ef3be173063021ca1b5eafc27be48b1a1889fb317be005c2d706c194c3935"
+    },
+    {
+      "path": "pt-BR/library/free-tools/index.html",
+      "bytes": 834,
+      "sha256": "89ad5f569436e268f95d3e67fc2fadfe021c0312bde47a44c82f4422c1b230c9"
+    },
+    {
+      "path": "pt-BR/library/index.html",
+      "bytes": 951,
+      "sha256": "6851dbb8c9ce312e52cb0f98ac6b49a7521d72b2ed3ea6ec2e7b2b308bf44a42"
+    },
+    {
+      "path": "pt-BR/library/item/index.html",
+      "bytes": 925,
+      "sha256": "bd64b6aced6c3579752d58ad2cacc973658a53a9e2b5893767da59298707058d"
+    },
+    {
+      "path": "pt-BR/library/money-education/index.html",
+      "bytes": 923,
+      "sha256": "7e80b28fab2373589e2966f73bbc0527b703c8292cf7228d5e74974dc7ec0aa8"
+    },
+    {
+      "path": "pt-BR/library/programs/index.html",
+      "bytes": 919,
+      "sha256": "ba9b93d668fae68d9c8a7af9b80f23c4f899ac27e88c22edf74328673aef0cae"
+    },
+    {
+      "path": "pt-BR/library/resources/index.html",
+      "bytes": 922,
+      "sha256": "743d72e6f76ebae697bed7a85da500a11e945b6e1e425179c8ba46aa06852431"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 121,
+      "sha256": "7880b1dbf724041b187c4b7ff03e9f1fe7aa3505e70bedd21e68e625314ea3d8"
+    },
+    {
+      "path": "ru/about/index.html",
+      "bytes": 898,
+      "sha256": "1a074fec8aea887b9954ce6012923f528d3f238d892ca838a1a4f2cbbbc8c0ab"
+    },
+    {
+      "path": "ru/index.html",
+      "bytes": 938,
+      "sha256": "aeb365bf9b7b3383c53355e34c0adb16197054206ea5def265fc08a2ab502acb"
+    },
+    {
+      "path": "ru/library/books/index.html",
+      "bytes": 922,
+      "sha256": "635f6b8adef8e40a41f3f229cd6004628a606e5a97b939b821841ace363e670b"
+    },
+    {
+      "path": "ru/library/free-tools/index.html",
+      "bytes": 831,
+      "sha256": "84bd73ba84a61e817763823f15adc54903346109f0cc9b0b524403be680194f0"
+    },
+    {
+      "path": "ru/library/index.html",
+      "bytes": 948,
+      "sha256": "0bb5fef4c7db6c0dc43457f7a59e60fbfb3b018f244204107764f38b7042dbe5"
+    },
+    {
+      "path": "ru/library/item/index.html",
+      "bytes": 922,
+      "sha256": "615feae712721225d9dac6ec6fdd4239705758793f707c60b5ee1680a2efba94"
+    },
+    {
+      "path": "ru/library/money-education/index.html",
+      "bytes": 920,
+      "sha256": "db579e184079e7ffbaa2ad0805952f275b0244750e5aaf00181caa62c873ac6f"
+    },
+    {
+      "path": "ru/library/programs/index.html",
+      "bytes": 916,
+      "sha256": "783dda4c21e0c895fc423d342264b9b2188cdb3bff5aa4b73892f5023c330898"
+    },
+    {
+      "path": "ru/library/resources/index.html",
+      "bytes": 919,
+      "sha256": "fd125e9417f413cf2f1bb05ce313f6480be764fb556a54fe120fcea00aadc9c6"
+    },
+    {
+      "path": "zh-Hans/about/index.html",
+      "bytes": 903,
+      "sha256": "93802f1f08970d1a6137ffae14d52b3a2530ad26ab9fe92c1674ca1209940d24"
+    },
+    {
+      "path": "zh-Hans/index.html",
+      "bytes": 943,
+      "sha256": "5590cfc988d321c310d2e6e12a6a74e39804ff3fad88c7c0d1b3d8abe35961c7"
+    },
+    {
+      "path": "zh-Hans/library/books/index.html",
+      "bytes": 927,
+      "sha256": "15394d0483cb7eb65b9ffa74dc4504cffcb6d69b00718e0f774e97eec783e579"
+    },
+    {
+      "path": "zh-Hans/library/free-tools/index.html",
+      "bytes": 836,
+      "sha256": "4ee3e3680520a8e547d0ac9e638b3654796ee33c7062a5b2601440a0b2187bf3"
+    },
+    {
+      "path": "zh-Hans/library/index.html",
+      "bytes": 953,
+      "sha256": "c851ec6a459ea30682184f6bacfaee84ba12d350054210410d52109a4d768449"
+    },
+    {
+      "path": "zh-Hans/library/item/index.html",
+      "bytes": 927,
+      "sha256": "581aef5908a9fb4843d6e0fce780c6d039811ad810c73ace61d9a8b83ab0515a"
+    },
+    {
+      "path": "zh-Hans/library/money-education/index.html",
+      "bytes": 925,
+      "sha256": "cb9be354bf4f51403dafd02767d21e153860f6fe6312f4b308e4b065f7a20c89"
+    },
+    {
+      "path": "zh-Hans/library/programs/index.html",
+      "bytes": 921,
+      "sha256": "a4b66d51f40db204fcdb6ec9f76d655f4b039e4408004556d2409a06873dba86"
+    },
+    {
+      "path": "zh-Hans/library/resources/index.html",
+      "bytes": 924,
+      "sha256": "ab2ad8506762f4e21644dcc5a4f1540ae8c0e8da1c6e8044daab304fd1ff7a79"
+    },
+    {
+      "path": "zh-Hant/about/index.html",
+      "bytes": 903,
+      "sha256": "6c83b91cd1b9795752f99ac00d770af5e0138d2764e0299957ab1457397c6532"
+    },
+    {
+      "path": "zh-Hant/index.html",
+      "bytes": 943,
+      "sha256": "e0af9651c5afb1dcfce3283f3d3a7dfe9d8f81c17beb30beef805e9886f54b4c"
+    },
+    {
+      "path": "zh-Hant/library/books/index.html",
+      "bytes": 927,
+      "sha256": "348718ddea4f7154f0d289a376a0662721e09aa8b4de25b050b25fc69aa9799f"
+    },
+    {
+      "path": "zh-Hant/library/free-tools/index.html",
+      "bytes": 836,
+      "sha256": "60ae2b75413d773f96f7d77a8f4880bbc2580924cf791de1600f83489b93f700"
+    },
+    {
+      "path": "zh-Hant/library/index.html",
+      "bytes": 953,
+      "sha256": "857fdb095fa9f178d1608cf3c8ad11ce2eb94444d0062bbc8b06875b236997a8"
+    },
+    {
+      "path": "zh-Hant/library/item/index.html",
+      "bytes": 927,
+      "sha256": "2c8e8f88eaab97bff5e1d2761041eccc7136fb715fad0c2b654e845c9e9da94a"
+    },
+    {
+      "path": "zh-Hant/library/money-education/index.html",
+      "bytes": 925,
+      "sha256": "7387e78e3743842b354afbe9405b01bb805a47baa2e34b2fb8cbc0c8e94bd669"
+    },
+    {
+      "path": "zh-Hant/library/programs/index.html",
+      "bytes": 921,
+      "sha256": "d8e66db87624f64a33a7b056b21bc2cf6a64fceafb54cf351f07c9baf307150c"
+    },
+    {
+      "path": "zh-Hant/library/resources/index.html",
+      "bytes": 924,
+      "sha256": "14b40a86800e5d92957524691811c7ed9d94bd890372fcb0851deeafe2ba3b69"
+    }
+  ]
+}

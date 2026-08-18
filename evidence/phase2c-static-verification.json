@@ -1,0 +1,807 @@
+{
+  "total": 160,
+  "passed": 160,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "candidate_directory",
+      "passed": true,
+      "detail": "/home/ubuntu/north-phase2c/release-candidate/NORTH_PHASE2C_STATIC_RELEASE_CANDIDATE/website"
+    },
+    {
+      "check": "no_internal_directory",
+      "passed": true,
+      "detail": "Internal founder-review paths must never be included."
+    },
+    {
+      "check": "english_index.html",
+      "passed": true,
+      "detail": "index.html"
+    },
+    {
+      "check": "english_library/index.html",
+      "passed": true,
+      "detail": "library/index.html"
+    },
+    {
+      "check": "english_library/free-tools/index.html",
+      "passed": true,
+      "detail": "library/free-tools/index.html"
+    },
+    {
+      "check": "english_library/resources/index.html",
+      "passed": true,
+      "detail": "library/resources/index.html"
+    },
+    {
+      "check": "english_library/programs/index.html",
+      "passed": true,
+      "detail": "library/programs/index.html"
+    },
+    {
+      "check": "english_library/books/index.html",
+      "passed": true,
+      "detail": "library/books/index.html"
+    },
+    {
+      "check": "english_library/money-education/index.html",
+      "passed": true,
+      "detail": "library/money-education/index.html"
+    },
+    {
+      "check": "english_library/item/index.html",
+      "passed": true,
+      "detail": "library/item/index.html"
+    },
+    {
+      "check": "english_about/index.html",
+      "passed": true,
+      "detail": "about/index.html"
+    },
+    {
+      "check": "locale_pt-BR_index.html",
+      "passed": true,
+      "detail": "pt-BR/index.html"
+    },
+    {
+      "check": "locale_pt-BR_library/index.html",
+      "passed": true,
+      "detail": "pt-BR/library/index.html"
+    },
+    {
+      "check": "locale_pt-BR_library/free-tools/index.html",
+      "passed": true,
+      "detail": "pt-BR/library/free-tools/index.html"
+    },
+    {
+      "check": "locale_pt-BR_library/resources/index.html",
+      "passed": true,
+      "detail": "pt-BR/library/resources/index.html"
+    },
+    {
+      "check": "locale_pt-BR_library/programs/index.html",
+      "passed": true,
+      "detail": "pt-BR/library/programs/index.html"
+    },
+    {
+      "check": "locale_pt-BR_library/books/index.html",
+      "passed": true,
+      "detail": "pt-BR/library/books/index.html"
+    },
+    {
+      "check": "locale_pt-BR_library/money-education/index.html",
+      "passed": true,
+      "detail": "pt-BR/library/money-education/index.html"
+    },
+    {
+      "check": "locale_pt-BR_library/item/index.html",
+      "passed": true,
+      "detail": "pt-BR/library/item/index.html"
+    },
+    {
+      "check": "locale_pt-BR_about/index.html",
+      "passed": true,
+      "detail": "pt-BR/about/index.html"
+    },
+    {
+      "check": "locale_es-419_index.html",
+      "passed": true,
+      "detail": "es-419/index.html"
+    },
+    {
+      "check": "locale_es-419_library/index.html",
+      "passed": true,
+      "detail": "es-419/library/index.html"
+    },
+    {
+      "check": "locale_es-419_library/free-tools/index.html",
+      "passed": true,
+      "detail": "es-419/library/free-tools/index.html"
+    },
+    {
+      "check": "locale_es-419_library/resources/index.html",
+      "passed": true,
+      "detail": "es-419/library/resources/index.html"
+    },
+    {
+      "check": "locale_es-419_library/programs/index.html",
+      "passed": true,
+      "detail": "es-419/library/programs/index.html"
+    },
+    {
+      "check": "locale_es-419_library/books/index.html",
+      "passed": true,
+      "detail": "es-419/library/books/index.html"
+    },
+    {
+      "check": "locale_es-419_library/money-education/index.html",
+      "passed": true,
+      "detail": "es-419/library/money-education/index.html"
+    },
+    {
+      "check": "locale_es-419_library/item/index.html",
+      "passed": true,
+      "detail": "es-419/library/item/index.html"
+    },
+    {
+      "check": "locale_es-419_about/index.html",
+      "passed": true,
+      "detail": "es-419/about/index.html"
+    },
+    {
+      "check": "locale_fr_index.html",
+      "passed": true,
+      "detail": "fr/index.html"
+    },
+    {
+      "check": "locale_fr_library/index.html",
+      "passed": true,
+      "detail": "fr/library/index.html"
+    },
+    {
+      "check": "locale_fr_library/free-tools/index.html",
+      "passed": true,
+      "detail": "fr/library/free-tools/index.html"
+    },
+    {
+      "check": "locale_fr_library/resources/index.html",
+      "passed": true,
+      "detail": "fr/library/resources/index.html"
+    },
+    {
+      "check": "locale_fr_library/programs/index.html",
+      "passed": true,
+      "detail": "fr/library/programs/index.html"
+    },
+    {
+      "check": "locale_fr_library/books/index.html",
+      "passed": true,
+      "detail": "fr/library/books/index.html"
+    },
+    {
+      "check": "locale_fr_library/money-education/index.html",
+      "passed": true,
+      "detail": "fr/library/money-education/index.html"
+    },
+    {
+      "check": "locale_fr_library/item/index.html",
+      "passed": true,
+      "detail": "fr/library/item/index.html"
+    },
+    {
+      "check": "locale_fr_about/index.html",
+      "passed": true,
+      "detail": "fr/about/index.html"
+    },
+    {
+      "check": "locale_de_index.html",
+      "passed": true,
+      "detail": "de/index.html"
+    },
+    {
+      "check": "locale_de_library/index.html",
+      "passed": true,
+      "detail": "de/library/index.html"
+    },
+    {
+      "check": "locale_de_library/free-tools/index.html",
+      "passed": true,
+      "detail": "de/library/free-tools/index.html"
+    },
+    {
+      "check": "locale_de_library/resources/index.html",
+      "passed": true,
+      "detail": "de/library/resources/index.html"
+    },
+    {
+      "check": "locale_de_library/programs/index.html",
+      "passed": true,
+      "detail": "de/library/programs/index.html"
+    },
+    {
+      "check": "locale_de_library/books/index.html",
+      "passed": true,
+      "detail": "de/library/books/index.html"
+    },
+    {
+      "check": "locale_de_library/money-education/index.html",
+      "passed": true,
+      "detail": "de/library/money-education/index.html"
+    },
+    {
+      "check": "locale_de_library/item/index.html",
+      "passed": true,
+      "detail": "de/library/item/index.html"
+    },
+    {
+      "check": "locale_de_about/index.html",
+      "passed": true,
+      "detail": "de/about/index.html"
+    },
+    {
+      "check": "locale_it_index.html",
+      "passed": true,
+      "detail": "it/index.html"
+    },
+    {
+      "check": "locale_it_library/index.html",
+      "passed": true,
+      "detail": "it/library/index.html"
+    },
+    {
+      "check": "locale_it_library/free-tools/index.html",
+      "passed": true,
+      "detail": "it/library/free-tools/index.html"
+    },
+    {
+      "check": "locale_it_library/resources/index.html",
+      "passed": true,
+      "detail": "it/library/resources/index.html"
+    },
+    {
+      "check": "locale_it_library/programs/index.html",
+      "passed": true,
+      "detail": "it/library/programs/index.html"
+    },
+    {
+      "check": "locale_it_library/books/index.html",
+      "passed": true,
+      "detail": "it/library/books/index.html"
+    },
+    {
+      "check": "locale_it_library/money-education/index.html",
+      "passed": true,
+      "detail": "it/library/money-education/index.html"
+    },
+    {
+      "check": "locale_it_library/item/index.html",
+      "passed": true,
+      "detail": "it/library/item/index.html"
+    },
+    {
+      "check": "locale_it_about/index.html",
+      "passed": true,
+      "detail": "it/about/index.html"
+    },
+    {
+      "check": "locale_ja_index.html",
+      "passed": true,
+      "detail": "ja/index.html"
+    },
+    {
+      "check": "locale_ja_library/index.html",
+      "passed": true,
+      "detail": "ja/library/index.html"
+    },
+    {
+      "check": "locale_ja_library/free-tools/index.html",
+      "passed": true,
+      "detail": "ja/library/free-tools/index.html"
+    },
+    {
+      "check": "locale_ja_library/resources/index.html",
+      "passed": true,
+      "detail": "ja/library/resources/index.html"
+    },
+    {
+      "check": "locale_ja_library/programs/index.html",
+      "passed": true,
+      "detail": "ja/library/programs/index.html"
+    },
+    {
+      "check": "locale_ja_library/books/index.html",
+      "passed": true,
+      "detail": "ja/library/books/index.html"
+    },
+    {
+      "check": "locale_ja_library/money-education/index.html",
+      "passed": true,
+      "detail": "ja/library/money-education/index.html"
+    },
+    {
+      "check": "locale_ja_library/item/index.html",
+      "passed": true,
+      "detail": "ja/library/item/index.html"
+    },
+    {
+      "check": "locale_ja_about/index.html",
+      "passed": true,
+      "detail": "ja/about/index.html"
+    },
+    {
+      "check": "locale_ko_index.html",
+      "passed": true,
+      "detail": "ko/index.html"
+    },
+    {
+      "check": "locale_ko_library/index.html",
+      "passed": true,
+      "detail": "ko/library/index.html"
+    },
+    {
+      "check": "locale_ko_library/free-tools/index.html",
+      "passed": true,
+      "detail": "ko/library/free-tools/index.html"
+    },
+    {
+      "check": "locale_ko_library/resources/index.html",
+      "passed": true,
+      "detail": "ko/library/resources/index.html"
+    },
+    {
+      "check": "locale_ko_library/programs/index.html",
+      "passed": true,
+      "detail": "ko/library/programs/index.html"
+    },
+    {
+      "check": "locale_ko_library/books/index.html",
+      "passed": true,
+      "detail": "ko/library/books/index.html"
+    },
+    {
+      "check": "locale_ko_library/money-education/index.html",
+      "passed": true,
+      "detail": "ko/library/money-education/index.html"
+    },
+    {
+      "check": "locale_ko_library/item/index.html",
+      "passed": true,
+      "detail": "ko/library/item/index.html"
+    },
+    {
+      "check": "locale_ko_about/index.html",
+      "passed": true,
+      "detail": "ko/about/index.html"
+    },
+    {
+      "check": "locale_zh-Hans_index.html",
+      "passed": true,
+      "detail": "zh-Hans/index.html"
+    },
+    {
+      "check": "locale_zh-Hans_library/index.html",
+      "passed": true,
+      "detail": "zh-Hans/library/index.html"
+    },
+    {
+      "check": "locale_zh-Hans_library/free-tools/index.html",
+      "passed": true,
+      "detail": "zh-Hans/library/free-tools/index.html"
+    },
+    {
+      "check": "locale_zh-Hans_library/resources/index.html",
+      "passed": true,
+      "detail": "zh-Hans/library/resources/index.html"
+    },
+    {
+      "check": "locale_zh-Hans_library/programs/index.html",
+      "passed": true,
+      "detail": "zh-Hans/library/programs/index.html"
+    },
+    {
+      "check": "locale_zh-Hans_library/books/index.html",
+      "passed": true,
+      "detail": "zh-Hans/library/books/index.html"
+    },
+    {
+      "check": "locale_zh-Hans_library/money-education/index.html",
+      "passed": true,
+      "detail": "zh-Hans/library/money-education/index.html"
+    },
+    {
+      "check": "locale_zh-Hans_library/item/index.html",
+      "passed": true,
+      "detail": "zh-Hans/library/item/index.html"
+    },
+    {
+      "check": "locale_zh-Hans_about/index.html",
+      "passed": true,
+      "detail": "zh-Hans/about/index.html"
+    },
+    {
+      "check": "locale_zh-Hant_index.html",
+      "passed": true,
+      "detail": "zh-Hant/index.html"
+    },
+    {
+      "check": "locale_zh-Hant_library/index.html",
+      "passed": true,
+      "detail": "zh-Hant/library/index.html"
+    },
+    {
+      "check": "locale_zh-Hant_library/free-tools/index.html",
+      "passed": true,
+      "detail": "zh-Hant/library/free-tools/index.html"
+    },
+    {
+      "check": "locale_zh-Hant_library/resources/index.html",
+      "passed": true,
+      "detail": "zh-Hant/library/resources/index.html"
+    },
+    {
+      "check": "locale_zh-Hant_library/programs/index.html",
+      "passed": true,
+      "detail": "zh-Hant/library/programs/index.html"
+    },
+    {
+      "check": "locale_zh-Hant_library/books/index.html",
+      "passed": true,
+      "detail": "zh-Hant/library/books/index.html"
+    },
+    {
+      "check": "locale_zh-Hant_library/money-education/index.html",
+      "passed": true,
+      "detail": "zh-Hant/library/money-education/index.html"
+    },
+    {
+      "check": "locale_zh-Hant_library/item/index.html",
+      "passed": true,
+      "detail": "zh-Hant/library/item/index.html"
+    },
+    {
+      "check": "locale_zh-Hant_about/index.html",
+      "passed": true,
+      "detail": "zh-Hant/about/index.html"
+    },
+    {
+      "check": "locale_ar_index.html",
+      "passed": true,
+      "detail": "ar/index.html"
+    },
+    {
+      "check": "locale_ar_library/index.html",
+      "passed": true,
+      "detail": "ar/library/index.html"
+    },
+    {
+      "check": "locale_ar_library/free-tools/index.html",
+      "passed": true,
+      "detail": "ar/library/free-tools/index.html"
+    },
+    {
+      "check": "locale_ar_library/resources/index.html",
+      "passed": true,
+      "detail": "ar/library/resources/index.html"
+    },
+    {
+      "check": "locale_ar_library/programs/index.html",
+      "passed": true,
+      "detail": "ar/library/programs/index.html"
+    },
+    {
+      "check": "locale_ar_library/books/index.html",
+      "passed": true,
+      "detail": "ar/library/books/index.html"
+    },
+    {
+      "check": "locale_ar_library/money-education/index.html",
+      "passed": true,
+      "detail": "ar/library/money-education/index.html"
+    },
+    {
+      "check": "locale_ar_library/item/index.html",
+      "passed": true,
+      "detail": "ar/library/item/index.html"
+    },
+    {
+      "check": "locale_ar_about/index.html",
+      "passed": true,
+      "detail": "ar/about/index.html"
+    },
+    {
+      "check": "locale_ru_index.html",
+      "passed": true,
+      "detail": "ru/index.html"
+    },
+    {
+      "check": "locale_ru_library/index.html",
+      "passed": true,
+      "detail": "ru/library/index.html"
+    },
+    {
+      "check": "locale_ru_library/free-tools/index.html",
+      "passed": true,
+      "detail": "ru/library/free-tools/index.html"
+    },
+    {
+      "check": "locale_ru_library/resources/index.html",
+      "passed": true,
+      "detail": "ru/library/resources/index.html"
+    },
+    {
+      "check": "locale_ru_library/programs/index.html",
+      "passed": true,
+      "detail": "ru/library/programs/index.html"
+    },
+    {
+      "check": "locale_ru_library/books/index.html",
+      "passed": true,
+      "detail": "ru/library/books/index.html"
+    },
+    {
+      "check": "locale_ru_library/money-education/index.html",
+      "passed": true,
+      "detail": "ru/library/money-education/index.html"
+    },
+    {
+      "check": "locale_ru_library/item/index.html",
+      "passed": true,
+      "detail": "ru/library/item/index.html"
+    },
+    {
+      "check": "locale_ru_about/index.html",
+      "passed": true,
+      "detail": "ru/about/index.html"
+    },
+    {
+      "check": "locale_pl_index.html",
+      "passed": true,
+      "detail": "pl/index.html"
+    },
+    {
+      "check": "locale_pl_library/index.html",
+      "passed": true,
+      "detail": "pl/library/index.html"
+    },
+    {
+      "check": "locale_pl_library/free-tools/index.html",
+      "passed": true,
+      "detail": "pl/library/free-tools/index.html"
+    },
+    {
+      "check": "locale_pl_library/resources/index.html",
+      "passed": true,
+      "detail": "pl/library/resources/index.html"
+    },
+    {
+      "check": "locale_pl_library/programs/index.html",
+      "passed": true,
+      "detail": "pl/library/programs/index.html"
+    },
+    {
+      "check": "locale_pl_library/books/index.html",
+      "passed": true,
+      "detail": "pl/library/books/index.html"
+    },
+    {
+      "check": "locale_pl_library/money-education/index.html",
+      "passed": true,
+      "detail": "pl/library/money-education/index.html"
+    },
+    {
+      "check": "locale_pl_library/item/index.html",
+      "passed": true,
+      "detail": "pl/library/item/index.html"
+    },
+    {
+      "check": "locale_pl_about/index.html",
+      "passed": true,
+      "detail": "pl/about/index.html"
+    },
+    {
+      "check": "locale_nl_index.html",
+      "passed": true,
+      "detail": "nl/index.html"
+    },
+    {
+      "check": "locale_nl_library/index.html",
+      "passed": true,
+      "detail": "nl/library/index.html"
+    },
+    {
+      "check": "locale_nl_library/free-tools/index.html",
+      "passed": true,
+      "detail": "nl/library/free-tools/index.html"
+    },
+    {
+      "check": "locale_nl_library/resources/index.html",
+      "passed": true,
+      "detail": "nl/library/resources/index.html"
+    },
+    {
+      "check": "locale_nl_library/programs/index.html",
+      "passed": true,
+      "detail": "nl/library/programs/index.html"
+    },
+    {
+      "check": "locale_nl_library/books/index.html",
+      "passed": true,
+      "detail": "nl/library/books/index.html"
+    },
+    {
+      "check": "locale_nl_library/money-education/index.html",
+      "passed": true,
+      "detail": "nl/library/money-education/index.html"
+    },
+    {
+      "check": "locale_nl_library/item/index.html",
+      "passed": true,
+      "detail": "nl/library/item/index.html"
+    },
+    {
+      "check": "locale_nl_about/index.html",
+      "passed": true,
+      "detail": "nl/about/index.html"
+    },
+    {
+      "check": "locale_directory_count",
+      "passed": true,
+      "detail": "13 non-English directories plus canonical English root equals 14 governed locales."
+    },
+    {
+      "check": "free_tools_config_only",
+      "passed": true,
+      "detail": "Public candidate carries only minimal verified Free Tools configuration."
+    },
+    {
+      "check": "language_readiness_websiteLanguage",
+      "passed": true,
+      "detail": "One explicit field for each Release A product."
+    },
+    {
+      "check": "language_readiness_productContentLanguage",
+      "passed": true,
+      "detail": "One explicit field for each Release A product."
+    },
+    {
+      "check": "language_readiness_checkoutLanguage",
+      "passed": true,
+      "detail": "One explicit field for each Release A product."
+    },
+    {
+      "check": "language_readiness_deliveryLanguage",
+      "passed": true,
+      "detail": "One explicit field for each Release A product."
+    },
+    {
+      "check": "language_readiness_supportLanguage",
+      "passed": true,
+      "detail": "One explicit field for each Release A product."
+    },
+    {
+      "check": "language_readiness_legalPolicyLanguage",
+      "passed": true,
+      "detail": "One explicit field for each Release A product."
+    },
+    {
+      "check": "private_term_absent_proposedPrice",
+      "passed": true,
+      "detail": "proposedPrice"
+    },
+    {
+      "check": "private_term_absent_reviewExport",
+      "passed": true,
+      "detail": "reviewExport"
+    },
+    {
+      "check": "private_term_absent_sourcePackage",
+      "passed": true,
+      "detail": "sourcePackage"
+    },
+    {
+      "check": "private_term_absent_checkoutStatus",
+      "passed": true,
+      "detail": "checkoutStatus"
+    },
+    {
+      "check": "private_term_absent_merchant",
+      "passed": true,
+      "detail": "merchant"
+    },
+    {
+      "check": "private_term_absent_northfounder",
+      "passed": true,
+      "detail": "northfounder"
+    },
+    {
+      "check": "private_term_absent_Gumroad",
+      "passed": true,
+      "detail": "Gumroad"
+    },
+    {
+      "check": "private_term_absent_purchaseRequirements",
+      "passed": true,
+      "detail": "purchaseRequirements"
+    },
+    {
+      "check": "private_term_absent_priceCurrency",
+      "passed": true,
+      "detail": "priceCurrency"
+    },
+    {
+      "check": "private_term_absent_refundPolicy",
+      "passed": true,
+      "detail": "refundPolicy"
+    },
+    {
+      "check": "forbidden_action_absent_Buy now",
+      "passed": true,
+      "detail": "Buy now"
+    },
+    {
+      "check": "forbidden_action_absent_Add to cart",
+      "passed": true,
+      "detail": "Add to cart"
+    },
+    {
+      "check": "forbidden_action_absent_Start trial",
+      "passed": true,
+      "detail": "Start trial"
+    },
+    {
+      "check": "forbidden_action_absent_Join waitlist",
+      "passed": true,
+      "detail": "Join waitlist"
+    },
+    {
+      "check": "forbidden_action_absent_Subscribe now",
+      "passed": true,
+      "detail": "Subscribe now"
+    },
+    {
+      "check": "forbidden_action_absent_Enter email",
+      "passed": true,
+      "detail": "Enter email"
+    },
+    {
+      "check": "forbidden_action_absent_Preorder now",
+      "passed": true,
+      "detail": "Preorder now"
+    },
+    {
+      "check": "no_email_input",
+      "passed": true,
+      "detail": "No email capture field."
+    },
+    {
+      "check": "no_payment_form",
+      "passed": true,
+      "detail": "No payment or checkout integration; the required checkout-language readiness labels are allowed."
+    },
+    {
+      "check": "apache_routes",
+      "passed": true,
+      "detail": "Clean English and locale rewrites are included."
+    },
+    {
+      "check": "candidate_noindex",
+      "passed": true,
+      "detail": "Candidate indexing safeguards retained."
+    },
+    {
+      "check": "manual_handoff",
+      "passed": true,
+      "detail": "Manual Namecheap document included."
+    },
+    {
+      "check": "staging_checklist",
+      "passed": true,
+      "detail": "Staging checklist included."
+    },
+    {
+      "check": "localization_record",
+      "passed": true,
+      "detail": "14-locale governance record included."
+    }
+  ]
+}

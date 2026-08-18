@@ -1,0 +1,3 @@
+# NORTH Phase 2C static release candidate. Do not index before founder-approved public launch.
+User-agent: *
+Disallow: /
