@@ -12,6 +12,7 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 USERNAME = os.environ.get('NORTH_PREVIEW_USER', 'northfounder')
 PASSWORD = os.environ.get('NORTH_PREVIEW_PASSWORD')
+PORT = int(os.environ.get('NORTH_PREVIEW_PORT', '4176'))
 if not PASSWORD:
     raise SystemExit('NORTH_PREVIEW_PASSWORD must be set')
 ROUTES = {
@@ -21,6 +22,7 @@ ROUTES = {
     '/library/programs': '/library-programs.html',
     '/library/books': '/library-books.html',
     '/library/item': '/library-item.html',
+    '/internal/founder-review': '/internal/founder-review.html',
 }
 
 class Handler(SimpleHTTPRequestHandler):
@@ -31,7 +33,7 @@ class Handler(SimpleHTTPRequestHandler):
 
     def _challenge(self) -> None:
         self.send_response(401)
-        self.send_header('WWW-Authenticate', 'Basic realm="NORTH Phase 2A Private Preview"')
+        self.send_header('WWW-Authenticate', 'Basic realm="NORTH Phase 2B Founder Review"')
         self.send_header('Cache-Control', 'no-store')
         self.end_headers()
 
@@ -55,5 +57,5 @@ class Handler(SimpleHTTPRequestHandler):
 
 if __name__ == '__main__':
     os.chdir(ROOT)
-    print('Private preview listening on http://0.0.0.0:4174')
-    ThreadingHTTPServer(('0.0.0.0', 4174), Handler).serve_forever()
+    print(f'Private preview listening on http://0.0.0.0:{PORT}')
+    ThreadingHTTPServer(('0.0.0.0', PORT), Handler).serve_forever()

@@ -74,7 +74,9 @@
       audience: 'Adults who want a practical, bounded planning rhythm after trying the free 1-3-5 Daily Page.',
       notFor: 'Not for project management, medical/mental-health treatment, or a promise of productivity outcomes.',
       deliverables: ['Fillable 14-day planner — US Letter', 'Fillable 14-day planner — A4', 'Printable 14-day planner — US Letter', 'Printable 14-day planner — A4', 'Concise method guide'],
-      ...defaultReleaseControl('private_preview', ['Founder-approved original content', 'final editable source files', 'print and fillable QA', 'delivery system', 'support owner', 'refund policy', 'merchant-of-record approval'], 'Founder + ChatGPT')
+      reviewDraft: { version: 'v0.1', artifactStem: 'execution-planner', lastUpdated: '2026-08-18', sourcePackage: 'internal/review-drafts/release-a/execution-planner-v0.1', reviewExport: 'internal/review-exports/release-a/execution-planner-review.html', contentCompletionPercent: 100, coverArtStatus: 'not_started', rightsStatus: 'original_text_only_no_external_visuals', accessibilityChecklistStatus: 'drafted_pending_layout_qa', founderApprovalStatus: 'pending_founder_review', expertReviewRequired: false, expertReviewStatus: 'not_required_if_non_regulated_scope_remains', reviewNotes: 'Founder to review daily-page sequence, worked example, and final layout direction.', draftAssetInventory: ['Editable product brief', 'Editable 24-page source manuscript', 'Private HTML review export', 'US Letter / A4 print-review checklist'] },
+      saleGateLocked: true,
+      ...defaultReleaseControl('private_preview', ['Founder content approval', 'final editable layout source', 'US Letter / A4 page-break QA', 'fillable-form QA if implemented', 'delivery system', 'support owner', 'refund policy', 'merchant-of-record approval'], 'Founder + ChatGPT')
     }),
     'decision-clarity-toolkit': product({
       id: 'north.release-a.decision-clarity-toolkit', category: 'resources', releaseFamily: 'Release A', slug: 'decision-clarity-toolkit',
@@ -83,7 +85,9 @@
       audience: 'Adults facing a meaningful personal or professional decision who want a structured reflection process.',
       notFor: 'Not for legal, medical, financial, investment, tax, or other professional advice.',
       deliverables: ['Decision Filter', 'Trade-off Map', 'Pre-mortem', 'Captain’s Brief', 'Plain-language instructions'],
-      ...defaultReleaseControl('private_preview', ['Founder-approved original content', 'final layouts', 'sample review', 'delivery system', 'support owner', 'refund policy', 'merchant-of-record approval'], 'Founder + ChatGPT')
+      reviewDraft: { version: 'v0.1', artifactStem: 'decision-clarity-toolkit', lastUpdated: '2026-08-18', sourcePackage: 'internal/review-drafts/release-a/decision-clarity-toolkit-v0.1', reviewExport: 'internal/review-exports/release-a/decision-clarity-toolkit-review.html', contentCompletionPercent: 100, coverArtStatus: 'not_started', rightsStatus: 'original_text_only_no_external_visuals', accessibilityChecklistStatus: 'drafted_pending_layout_qa', founderApprovalStatus: 'pending_founder_review', expertReviewRequired: false, expertReviewStatus: 'not_required_if_non_regulated_scope_remains', reviewNotes: 'Founder to review examples, reflection boundaries, and one-page Captain’s Brief.', draftAssetInventory: ['Editable product brief', 'Editable 20-page source manuscript', 'Private HTML review export', 'Print and accessibility checklist'] },
+      saleGateLocked: true,
+      ...defaultReleaseControl('private_preview', ['Founder content approval', 'final layouts', 'claim boundary review', 'accessible-form QA if implemented', 'delivery system', 'support owner', 'refund policy', 'merchant-of-record approval'], 'Founder + ChatGPT')
     }),
     'focus-recovery-program': product({
       id: 'north.release-a.focus-recovery-program', category: 'programs', releaseFamily: 'Release A', slug: 'focus-recovery-program',
@@ -92,7 +96,9 @@
       audience: 'Adults who want a defined short reset around priorities and attention.',
       notFor: 'Not for clinical treatment, burnout treatment, therapy, crisis support, or guaranteed performance results.',
       deliverables: ['Seven short daily lessons/actions', 'Seven daily mission sheets', 'Reset workbook', 'Weekly reflection', 'Completion plan'],
-      ...defaultReleaseControl('private_preview', ['Founder-approved original curriculum', 'lesson manuscripts', 'workbook content', 'non-clinical claim review', 'delivery system', 'support owner', 'refund policy', 'merchant-of-record approval'], 'Founder + ChatGPT')
+      reviewDraft: { version: 'v0.1', artifactStem: 'focus-recovery-program', lastUpdated: '2026-08-18', sourcePackage: 'internal/review-drafts/release-a/focus-recovery-program-v0.1', reviewExport: 'internal/review-exports/release-a/focus-recovery-program-review.html', contentCompletionPercent: 100, coverArtStatus: 'not_started', rightsStatus: 'original_text_only_no_external_visuals', accessibilityChecklistStatus: 'drafted_pending_layout_qa', founderApprovalStatus: 'pending_founder_review', expertReviewRequired: false, expertReviewStatus: 'not_required_if_non_clinical_boundary_remains', reviewNotes: 'Founder to review every day for practical usefulness and non-clinical language.', draftAssetInventory: ['Editable product brief', 'Editable 22-page source manuscript', 'Private HTML review export', 'Print and accessibility checklist'] },
+      saleGateLocked: true,
+      ...defaultReleaseControl('private_preview', ['Founder curriculum approval', 'non-clinical claim boundary review', 'final layouts', 'accessible-form QA if implemented', 'delivery system', 'support owner', 'refund policy', 'merchant-of-record approval'], 'Founder + ChatGPT')
     }),
     'weekly-compass-journal': product({
       id: 'north.release-b.weekly-compass-journal', category: 'resources', releaseFamily: 'Release B', slug: 'weekly-compass-journal',
@@ -245,7 +251,7 @@
   function catalog() { return Object.values(products); }
 
   window.NORTH_PRODUCT_STUDIO = Object.freeze({
-    phase: 'phase-2a-private',
+    phase: 'phase-2b-private-founder-review',
     productStatuses: PRODUCT_STATUSES,
     safePublicStates: SAFE_PUBLIC_STATES,
     localeRegistry,

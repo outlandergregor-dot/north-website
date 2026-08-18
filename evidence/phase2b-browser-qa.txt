@@ -1,0 +1,36 @@
+### Result
+{"results":[{"route":"/internal/founder-review.html","title":"Founder Review — NORTH Internal","desktopOverflow":false,"mobileOverflow":false,"mobileViewport":390,"hasNotForSale":true,"hasLiveCommerceCTA":false},{"route":"/internal/founder-review.html?product=1-3-5-execution-planner","title":"Founder Review — NORTH Internal","desktopOverflow":false,"mobileOverflow":false,"mobileViewport":390,"hasNotForSale":true,"hasLiveCommerceCTA":false},{"route":"/internal/founder-review.html?product=decision-clarity-toolkit","title":"Founder Review — NORTH Internal","desktopOverflow":false,"mobileOverflow":false,"mobileViewport":390,"hasNotForSale":true,"hasLiveCommerceCTA":false},{"route":"/internal/founder-review.html?product=focus-recovery-program","title":"Founder Review — NORTH Internal","desktopOverflow":false,"mobileOverflow":false,"mobileViewport":390,"hasNotForSale":true,"hasLiveCommerceCTA":false},{"route":"/internal/review-exports/release-a/execution-planner-review.html","title":"1-3-5 Execution Planner — Founder Review Draft","desktopOverflow":false,"mobileOverflow":false,"mobileViewport":390,"hasNotForSale":true,"hasLiveCommerceCTA":false},{"route":"/internal/review-exports/release-a/decision-clarity-toolkit-review.html","title":"Decision Clarity Toolkit — Founder Review Draft","desktopOverflow":false,"mobileOverflow":false,"mobileViewport":390,"hasNotForSale":true,"hasLiveCommerceCTA":false},{"route":"/internal/review-exports/release-a/focus-recovery-program-review.html","title":"Focus Recovery Program — Founder Review Draft","desktopOverflow":false,"mobileOverflow":false,"mobileViewport":390,"hasNotForSale":true,"hasLiveCommerceCTA":false}],"keyboard":{"tag":"A","text":"✦ NORTH Founder Review","outline":"solid","outlineWidth":"3px","boxShadow":"none"},"draftNotes":{"exists":true,"disabled":true,"hasForm":false,"hasAction":false},"errors":[],"pass":true}
+### Ran Playwright code
+```js
+await (async (page) => {
+  const base = 'http://localhost:4173';
+  const urls = [
+    '/internal/founder-review.html',
+    '/internal/founder-review.html?product=1-3-5-execution-planner',
+    '/internal/founder-review.html?product=decision-clarity-toolkit',
+    '/internal/founder-review.html?product=focus-recovery-program',
+    '/internal/review-exports/release-a/execution-planner-review.html',
+    '/internal/review-exports/release-a/decision-clarity-toolkit-review.html',
+    '/internal/review-exports/release-a/focus-recovery-program-review.html'
+  ];
+  const results = [];
+  for (const route of urls) {
+    await page.setViewportSize({ width: 1440, height: 920 });
+    await page.goto(base + route, { waitUntil: 'networkidle' });
+    const desktop = await page.evaluate(() => ({ title: document.title, overflow: document.documentElement.scrollWidth > window.innerWidth, text: document.body.innerText, hasLiveCommerceCTA: Boolean([...document.querySelectorAll('a,button,form')].find((node) => /buy now|purchase|checkout|add to cart|pay\\b|get access/i.test((node.textContent || '') + ' ' + (node.getAttribute('action') || '')))) }));
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.reload({ waitUntil: 'networkidle' });
+    const mobile = await page.evaluate(() => ({ overflow: document.documentElement.scrollWidth > window.innerWidth, viewport: window.innerWidth }));
+    results.push({ route, title: desktop.title, desktopOverflow: desktop.overflow, mobileOverflow: mobile.overflow, mobileViewport: mobile.viewport, hasNotForSale: /founder review draft\s*[—-]?\s*not for sale/i.test(desktop.text), hasLiveCommerceCTA: desktop.hasLiveCommerceCTA });
+  }
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(base + '/internal/founder-review.html?product=focus-recovery-program', { waitUntil: 'networkidle' });
+  await page.keyboard.press('Tab');
+  const keyboard = await page.evaluate(() => { const el = document.activeElement; const cs = getComputedStyle(el); return { tag: el.tagName, text: (el.textContent || '').trim(), outline: cs.outlineStyle, outlineWidth: cs.outlineWidth, boxShadow: cs.boxShadow }; });
+  const draftNotes = await page.evaluate(() => { const note = document.querySelector('textarea'); return { exists: Boolean(note), disabled: note ? note.disabled : null, hasForm: Boolean(document.querySelector('form')), hasAction: Boolean(document.querySelector('[action]')) }; });
+  const errors = [];
+  page.on('console', (msg) => { if (msg.type() === 'error') errors.push(msg.text()); });
+  return { results, keyboard, draftNotes, errors, pass: results.every((r) => !r.desktopOverflow && !r.mobileOverflow && r.hasNotForSale && !r.hasLiveCommerceCTA) && draftNotes.exists && draftNotes.disabled && !draftNotes.hasForm && !draftNotes.hasAction && keyboard.tag === 'A' };
+}
+)(page);
+```

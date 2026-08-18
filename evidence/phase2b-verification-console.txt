@@ -1,0 +1,209 @@
+{
+  "phase": "2B",
+  "timestamp": "2026-08-18T14:08:55.666Z",
+  "checks": [
+    {
+      "id": "registry_has_three_release_a_review_records",
+      "pass": true,
+      "detail": "3 review records found"
+    },
+    {
+      "id": "registry_phase_is_private_phase_2b",
+      "pass": true,
+      "detail": "phase-2b-private-founder-review"
+    },
+    {
+      "id": "1-3-5-execution-planner_sale_gate_locked",
+      "pass": true,
+      "detail": "saleGateLocked=true"
+    },
+    {
+      "id": "1-3-5-execution-planner_render_policy_is_not_eligible",
+      "pass": true,
+      "detail": "{\"eligible\":false,\"displayState\":\"private_preview\",\"allowPrice\":false,\"allowSavingsClaim\":false,\"allowPurchaseCTA\":false,\"allowCheckout\":false,\"allowDeliveryPromise\":false,\"allowAppEntitlement\":false,\"displayPrice\":null}"
+    },
+    {
+      "id": "1-3-5-execution-planner_review_state_is_private",
+      "pass": true,
+      "detail": "false/private_preview"
+    },
+    {
+      "id": "1-3-5-execution-planner_complete_draft_metadata",
+      "pass": true,
+      "detail": "{\"version\":\"v0.1\",\"artifactStem\":\"execution-planner\",\"lastUpdated\":\"2026-08-18\",\"sourcePackage\":\"internal/review-drafts/release-a/execution-planner-v0.1\",\"reviewExport\":\"internal/review-exports/release-a/execution-planner-review.html\",\"contentCompletionPercent\":100,\"coverArtStatus\":\"not_started\",\"rightsStatus\":\"original_text_only_no_external_visuals\",\"accessibilityChecklistStatus\":\"drafted_pending_layout_qa\",\"founderApprovalStatus\":\"pending_founder_review\",\"expertReviewRequired\":false,\"expertReviewStatus\":\"not_required_if_non_regulated_scope_remains\",\"reviewNotes\":\"Founder to review daily-page sequence, worked example, and final layout direction.\",\"draftAssetInventory\":[\"Editable product brief\",\"Editable 24-page source manuscript\",\"Private HTML review export\",\"US Letter / A4 print-review checklist\"]}"
+    },
+    {
+      "id": "1-3-5-execution-planner_editable_source_exists",
+      "pass": true,
+      "detail": "internal/review-drafts/release-a/execution-planner-v0.1/01-draft-content.md; internal/review-drafts/release-a/execution-planner-v0.1/00-package-overview.md"
+    },
+    {
+      "id": "1-3-5-execution-planner_source_is_substantive",
+      "pass": true,
+      "detail": "3417 words"
+    },
+    {
+      "id": "1-3-5-execution-planner_private_export_exists",
+      "pass": true,
+      "detail": "internal/review-exports/release-a/execution-planner-review.html"
+    },
+    {
+      "id": "1-3-5-execution-planner_export_is_marked_not_for_sale",
+      "pass": true,
+      "detail": "draft notice present"
+    },
+    {
+      "id": "1-3-5-execution-planner_export_has_no_customer_price_or_checkout",
+      "pass": true,
+      "detail": "no customer commerce text"
+    },
+    {
+      "id": "1-3-5-execution-planner_US-Letter_print_review_exists",
+      "pass": true,
+      "detail": "internal/print-review/release-a/execution-planner_US-Letter_PRINT-REVIEW-NOT-FOR-SALE.pdf"
+    },
+    {
+      "id": "1-3-5-execution-planner_A4_print_review_exists",
+      "pass": true,
+      "detail": "internal/print-review/release-a/execution-planner_A4_PRINT-REVIEW-NOT-FOR-SALE.pdf"
+    },
+    {
+      "id": "decision-clarity-toolkit_sale_gate_locked",
+      "pass": true,
+      "detail": "saleGateLocked=true"
+    },
+    {
+      "id": "decision-clarity-toolkit_render_policy_is_not_eligible",
+      "pass": true,
+      "detail": "{\"eligible\":false,\"displayState\":\"private_preview\",\"allowPrice\":false,\"allowSavingsClaim\":false,\"allowPurchaseCTA\":false,\"allowCheckout\":false,\"allowDeliveryPromise\":false,\"allowAppEntitlement\":false,\"displayPrice\":null}"
+    },
+    {
+      "id": "decision-clarity-toolkit_review_state_is_private",
+      "pass": true,
+      "detail": "false/private_preview"
+    },
+    {
+      "id": "decision-clarity-toolkit_complete_draft_metadata",
+      "pass": true,
+      "detail": "{\"version\":\"v0.1\",\"artifactStem\":\"decision-clarity-toolkit\",\"lastUpdated\":\"2026-08-18\",\"sourcePackage\":\"internal/review-drafts/release-a/decision-clarity-toolkit-v0.1\",\"reviewExport\":\"internal/review-exports/release-a/decision-clarity-toolkit-review.html\",\"contentCompletionPercent\":100,\"coverArtStatus\":\"not_started\",\"rightsStatus\":\"original_text_only_no_external_visuals\",\"accessibilityChecklistStatus\":\"drafted_pending_layout_qa\",\"founderApprovalStatus\":\"pending_founder_review\",\"expertReviewRequired\":false,\"expertReviewStatus\":\"not_required_if_non_regulated_scope_remains\",\"reviewNotes\":\"Founder to review examples, reflection boundaries, and one-page Captain’s Brief.\",\"draftAssetInventory\":[\"Editable product brief\",\"Editable 20-page source manuscript\",\"Private HTML review export\",\"Print and accessibility checklist\"]}"
+    },
+    {
+      "id": "decision-clarity-toolkit_editable_source_exists",
+      "pass": true,
+      "detail": "internal/review-drafts/release-a/decision-clarity-toolkit-v0.1/01-draft-content.md; internal/review-drafts/release-a/decision-clarity-toolkit-v0.1/00-package-overview.md"
+    },
+    {
+      "id": "decision-clarity-toolkit_source_is_substantive",
+      "pass": true,
+      "detail": "2096 words"
+    },
+    {
+      "id": "decision-clarity-toolkit_private_export_exists",
+      "pass": true,
+      "detail": "internal/review-exports/release-a/decision-clarity-toolkit-review.html"
+    },
+    {
+      "id": "decision-clarity-toolkit_export_is_marked_not_for_sale",
+      "pass": true,
+      "detail": "draft notice present"
+    },
+    {
+      "id": "decision-clarity-toolkit_export_has_no_customer_price_or_checkout",
+      "pass": true,
+      "detail": "no customer commerce text"
+    },
+    {
+      "id": "decision-clarity-toolkit_US-Letter_print_review_exists",
+      "pass": true,
+      "detail": "internal/print-review/release-a/decision-clarity-toolkit_US-Letter_PRINT-REVIEW-NOT-FOR-SALE.pdf"
+    },
+    {
+      "id": "decision-clarity-toolkit_A4_print_review_exists",
+      "pass": true,
+      "detail": "internal/print-review/release-a/decision-clarity-toolkit_A4_PRINT-REVIEW-NOT-FOR-SALE.pdf"
+    },
+    {
+      "id": "focus-recovery-program_sale_gate_locked",
+      "pass": true,
+      "detail": "saleGateLocked=true"
+    },
+    {
+      "id": "focus-recovery-program_render_policy_is_not_eligible",
+      "pass": true,
+      "detail": "{\"eligible\":false,\"displayState\":\"private_preview\",\"allowPrice\":false,\"allowSavingsClaim\":false,\"allowPurchaseCTA\":false,\"allowCheckout\":false,\"allowDeliveryPromise\":false,\"allowAppEntitlement\":false,\"displayPrice\":null}"
+    },
+    {
+      "id": "focus-recovery-program_review_state_is_private",
+      "pass": true,
+      "detail": "false/private_preview"
+    },
+    {
+      "id": "focus-recovery-program_complete_draft_metadata",
+      "pass": true,
+      "detail": "{\"version\":\"v0.1\",\"artifactStem\":\"focus-recovery-program\",\"lastUpdated\":\"2026-08-18\",\"sourcePackage\":\"internal/review-drafts/release-a/focus-recovery-program-v0.1\",\"reviewExport\":\"internal/review-exports/release-a/focus-recovery-program-review.html\",\"contentCompletionPercent\":100,\"coverArtStatus\":\"not_started\",\"rightsStatus\":\"original_text_only_no_external_visuals\",\"accessibilityChecklistStatus\":\"drafted_pending_layout_qa\",\"founderApprovalStatus\":\"pending_founder_review\",\"expertReviewRequired\":false,\"expertReviewStatus\":\"not_required_if_non_clinical_boundary_remains\",\"reviewNotes\":\"Founder to review every day for practical usefulness and non-clinical language.\",\"draftAssetInventory\":[\"Editable product brief\",\"Editable 22-page source manuscript\",\"Private HTML review export\",\"Print and accessibility checklist\"]}"
+    },
+    {
+      "id": "focus-recovery-program_editable_source_exists",
+      "pass": true,
+      "detail": "internal/review-drafts/release-a/focus-recovery-program-v0.1/01-draft-content.md; internal/review-drafts/release-a/focus-recovery-program-v0.1/00-package-overview.md"
+    },
+    {
+      "id": "focus-recovery-program_source_is_substantive",
+      "pass": true,
+      "detail": "2000 words"
+    },
+    {
+      "id": "focus-recovery-program_private_export_exists",
+      "pass": true,
+      "detail": "internal/review-exports/release-a/focus-recovery-program-review.html"
+    },
+    {
+      "id": "focus-recovery-program_export_is_marked_not_for_sale",
+      "pass": true,
+      "detail": "draft notice present"
+    },
+    {
+      "id": "focus-recovery-program_export_has_no_customer_price_or_checkout",
+      "pass": true,
+      "detail": "no customer commerce text"
+    },
+    {
+      "id": "focus-recovery-program_US-Letter_print_review_exists",
+      "pass": true,
+      "detail": "internal/print-review/release-a/focus-recovery-program_US-Letter_PRINT-REVIEW-NOT-FOR-SALE.pdf"
+    },
+    {
+      "id": "focus-recovery-program_A4_print_review_exists",
+      "pass": true,
+      "detail": "internal/print-review/release-a/focus-recovery-program_A4_PRINT-REVIEW-NOT-FOR-SALE.pdf"
+    },
+    {
+      "id": "dashboard_has_noindex",
+      "pass": true,
+      "detail": "robots directive"
+    },
+    {
+      "id": "dashboard_has_no_form_submission",
+      "pass": true,
+      "detail": "no form"
+    },
+    {
+      "id": "internal_folder_has_access_guard",
+      "pass": true,
+      "detail": "Apache deny rule"
+    },
+    {
+      "id": "review_notes_are_disabled_and_noncollecting",
+      "pass": true,
+      "detail": "disabled note placeholder"
+    },
+    {
+      "id": "no_external_review_assets",
+      "pass": true,
+      "detail": "no remote URLs in review renderer"
+    }
+  ],
+  "passed": 40,
+  "failed": 0,
+  "status": "PASS"
+}

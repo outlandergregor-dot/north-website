@@ -1,0 +1,31 @@
+(function (window, document) {
+  'use strict';
+  const studio = window.NORTH_PRODUCT_STUDIO;
+  if (!studio) return;
+  const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+  const titleCase = (value) => String(value || '').replaceAll('_', ' ').replace(/\b\w/g, (match) => match.toUpperCase());
+  const reviews = studio.catalog().filter((item) => item.reviewDraft);
+  const query = new URLSearchParams(window.location.search);
+  const selected = reviews.find((item) => item.slug === query.get('product'));
+
+  function header() {
+    return `<header class="studio-header"><div class="studio-shell studio-header-inner"><a class="studio-brand" href="/library"><strong>✦ NORTH</strong> <span>Founder Review</span></a><nav class="studio-nav" aria-label="Founder review navigation"><a href="/internal/founder-review.html">Release A review</a><a href="/internal/studio-control.html">Release control</a><a href="/library">Library preview</a></nav></div></header>`;
+  }
+  function footer() {
+    return `<footer class="studio-footer"><div class="studio-shell"><p>Founder review draft environment. No customer data or commercial controls.</p><p>Phase 2B · not for sale</p></div></footer>`;
+  }
+  function card(item) {
+    const review = item.reviewDraft;
+    return `<article class="founder-review-card"><div class="founder-card-top"><span class="studio-status in_production">Founder review</span><span>${esc(review.version)} · ${esc(review.lastUpdated)}</span></div><h2>${esc(item.title)}</h2><p>${esc(item.outcome)}</p><dl><div><dt>Draft completion</dt><dd>${esc(review.contentCompletionPercent)}%</dd></div><div><dt>Approval</dt><dd>${esc(titleCase(review.founderApprovalStatus))}</dd></div><div><dt>Accessibility</dt><dd>${esc(titleCase(review.accessibilityChecklistStatus))}</dd></div></dl><a class="studio-link" href="/internal/founder-review.html?product=${encodeURIComponent(item.slug)}">Review draft assets <span>→</span></a></article>`;
+  }
+  function overview() {
+    const dashboard = document.getElementById('founder-review-root');
+    dashboard.innerHTML = `${header()}<main class="founder-review-main"><div class="studio-shell"><section class="founder-review-hero"><p class="studio-eyebrow">NORTH / Release A</p><h1>Real draft work, ready for founder judgment.</h1><p>These are editable, private source packages—not product listings. Review the actual worksheets, lessons, examples, and release blockers before any later commerce decision.</p><div class="founder-review-callout"><strong>Founder review draft — not for sale.</strong><span>No price, checkout, delivery, entitlement, email capture, or public release control exists in this environment.</span></div></section><section class="founder-review-grid">${reviews.map(card).join('')}</section><section class="founder-review-protocol"><p class="studio-eyebrow">Founder review protocol</p><h2>Read the source before choosing the release path.</h2><ol><li>Read the editable draft and the premium HTML review export.</li><li>Decide whether the outcome, boundaries, examples, and tone meet the NORTH standard.</li><li>Record content, cover, policy, delivery, localization, and support decisions outside this static preview.</li><li>Keep the product in private review until a separately approved commerce phase exists.</li></ol></section></div></main>${footer()}`;
+  }
+  function detail(item) {
+    const review = item.reviewDraft;
+    const dashboard = document.getElementById('founder-review-root');
+    dashboard.innerHTML = `${header()}<main class="founder-review-main"><div class="studio-shell"><p class="founder-breadcrumb"><a href="/internal/founder-review.html">Founder Review</a> / ${esc(item.title)}</p><section class="founder-detail-head"><div><p class="studio-eyebrow">${esc(item.releaseFamily)} / ${esc(review.version)}</p><h1>${esc(item.title)}</h1><p>${esc(item.outcome)}</p><p class="founder-draft-notice">Founder review draft — not for sale</p></div><aside><span>Content</span><strong>${esc(review.contentCompletionPercent)}% drafted</strong><span>Last updated</span><strong>${esc(review.lastUpdated)}</strong><span>Approval</span><strong>${esc(titleCase(review.founderApprovalStatus))}</strong></aside></section><section class="founder-asset-section"><div><p class="studio-eyebrow">Draft asset inventory</p><h2>Read the actual working material.</h2><ul>${review.draftAssetInventory.map((asset) => `<li>${esc(asset)}</li>`).join('')}</ul></div><div class="founder-actions"><a class="studio-primary" href="/${esc(review.reviewExport)}" target="_blank" rel="noopener">Open premium review export <span>↗</span></a><a class="studio-secondary" href="/${esc(review.sourcePackage)}/01-draft-content.md" target="_blank" rel="noopener">Open editable source <span>↗</span></a></div></section><section class="founder-detail-grid"><article><p class="studio-eyebrow">Founder review note</p><h2>Decision space</h2><p>This local placeholder does not save, transmit, or collect notes. Record final decisions in the founder review checklist.</p><textarea disabled aria-label="Founder review notes placeholder" placeholder="Founder notes are not collected or stored here."></textarea></article><article><p class="studio-eyebrow">Release blockers</p><h2>What stays closed</h2><ul>${item.blockers.map((blocker) => `<li>${esc(blocker)}</li>`).join('')}</ul></article><article><p class="studio-eyebrow">Rights and accessibility</p><h2>Review conditions</h2><dl><div><dt>Art / cover</dt><dd>${esc(titleCase(review.coverArtStatus))}</dd></div><div><dt>Rights</dt><dd>${esc(titleCase(review.rightsStatus))}</dd></div><div><dt>Accessibility</dt><dd>${esc(titleCase(review.accessibilityChecklistStatus))}</dd></div><div><dt>Expert review</dt><dd>${esc(titleCase(review.expertReviewStatus))}</dd></div></dl></article></section><section class="founder-boundary"><strong>Not for sale in Phase 2B.</strong><p>Price, savings, checkout, delivery, entitlement, customer data collection, and availability promises remain disabled until founder approval, final assets, policy, delivery, support, language, and all required reviews are complete in a separate phase.</p></section></div></main>${footer()}`;
+  }
+  selected ? detail(selected) : overview();
+})(window, document);
