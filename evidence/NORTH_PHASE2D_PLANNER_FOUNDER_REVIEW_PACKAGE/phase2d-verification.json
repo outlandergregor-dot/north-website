@@ -1,0 +1,252 @@
+{
+  "phase": "2D",
+  "passed": 49,
+  "total": 49,
+  "checks": [
+    {
+      "check": "editable_customer_master",
+      "passed": true,
+      "detail": "32980 characters"
+    },
+    {
+      "check": "fourteen_distinct_daily_pages",
+      "passed": true,
+      "detail": "14 daily pages"
+    },
+    {
+      "check": "two_week_reviews",
+      "passed": true,
+      "detail": "weekly and final review sections present"
+    },
+    {
+      "check": "fictional_example_labelled",
+      "passed": true,
+      "detail": "fictional example boundary present"
+    },
+    {
+      "check": "package_artifact_00-product-package-specification.md",
+      "passed": true,
+      "detail": "00-product-package-specification.md"
+    },
+    {
+      "check": "package_artifact_03-product-quality-checklist.md",
+      "passed": true,
+      "detail": "03-product-quality-checklist.md"
+    },
+    {
+      "check": "package_artifact_policy-drafts/01-personal-use-license-draft.md",
+      "passed": true,
+      "detail": "policy-drafts/01-personal-use-license-draft.md"
+    },
+    {
+      "check": "package_artifact_policy-drafts/02-support-and-refund-information-draft.md",
+      "passed": true,
+      "detail": "policy-drafts/02-support-and-refund-information-draft.md"
+    },
+    {
+      "check": "package_artifact_delivery-architecture/01-inactive-commerce-architecture.md",
+      "passed": true,
+      "detail": "delivery-architecture/01-inactive-commerce-architecture.md"
+    },
+    {
+      "check": "package_artifact_delivery-architecture/02-pricing-and-packaging-options.md",
+      "passed": true,
+      "detail": "delivery-architecture/02-pricing-and-packaging-options.md"
+    },
+    {
+      "check": "package_artifact_private-review/execution-planner-customer-review.html",
+      "passed": true,
+      "detail": "private-review/execution-planner-customer-review.html"
+    },
+    {
+      "check": "package_artifact_print-review/NORTH_1-3-5_Execution_Planner_US-Letter_PRIVATE-REVIEW.pdf",
+      "passed": true,
+      "detail": "print-review/NORTH_1-3-5_Execution_Planner_US-Letter_PRIVATE-REVIEW.pdf"
+    },
+    {
+      "check": "package_artifact_print-review/NORTH_1-3-5_Execution_Planner_A4_PRIVATE-REVIEW.pdf",
+      "passed": true,
+      "detail": "print-review/NORTH_1-3-5_Execution_Planner_A4_PRIVATE-REVIEW.pdf"
+    },
+    {
+      "check": "visual_asset_execution-planner-cover-art.png",
+      "passed": true,
+      "detail": "assets/product-visuals/execution-planner-cover-art.png"
+    },
+    {
+      "check": "visual_asset_execution-planner-open-spread.png",
+      "passed": true,
+      "detail": "assets/product-visuals/execution-planner-open-spread.png"
+    },
+    {
+      "check": "visual_asset_execution-planner-desk-kit.png",
+      "passed": true,
+      "detail": "assets/product-visuals/execution-planner-desk-kit.png"
+    },
+    {
+      "check": "visual_asset_execution-planner-detail.png",
+      "passed": true,
+      "detail": "assets/product-visuals/execution-planner-detail.png"
+    },
+    {
+      "check": "print_proof_US Letter",
+      "passed": true,
+      "detail": "31 pages; expected geometry 612 x 792"
+    },
+    {
+      "check": "print_proof_A4",
+      "passed": true,
+      "detail": "27 pages; expected geometry 595.276 x 841.89"
+    },
+    {
+      "check": "commerce_disabled",
+      "passed": true,
+      "detail": "inactive commercePilot metadata present"
+    },
+    {
+      "check": "merchant_null",
+      "passed": true,
+      "detail": "no merchant or checkout URL configured"
+    },
+    {
+      "check": "planner_sale_gate_locked",
+      "passed": true,
+      "detail": "Planner sale gate locked"
+    },
+    {
+      "check": "other_release_a_preserved",
+      "passed": true,
+      "detail": "other products remain in registry"
+    },
+    {
+      "check": "private_pilot_route",
+      "passed": true,
+      "detail": "private page metadata and renderer loaded"
+    },
+    {
+      "check": "phase2c_preserved_index.html",
+      "passed": true,
+      "detail": "index.html"
+    },
+    {
+      "check": "phase2c_preserved_library.html",
+      "passed": true,
+      "detail": "library.html"
+    },
+    {
+      "check": "phase2c_preserved_library-free-tools.html",
+      "passed": true,
+      "detail": "library-free-tools.html"
+    },
+    {
+      "check": "phase2c_preserved_library-resources.html",
+      "passed": true,
+      "detail": "library-resources.html"
+    },
+    {
+      "check": "phase2c_preserved_library-programs.html",
+      "passed": true,
+      "detail": "library-programs.html"
+    },
+    {
+      "check": "phase2c_preserved_library-books.html",
+      "passed": true,
+      "detail": "library-books.html"
+    },
+    {
+      "check": "phase2c_preserved_library-money-education.html",
+      "passed": true,
+      "detail": "library-money-education.html"
+    },
+    {
+      "check": "phase2c_preserved_library-item.html",
+      "passed": true,
+      "detail": "library-item.html"
+    },
+    {
+      "check": "phase2c_preserved_about.html",
+      "passed": true,
+      "detail": "about.html"
+    },
+    {
+      "check": "phase2c_preserved_assets/locale-system.js",
+      "passed": true,
+      "detail": "assets/locale-system.js"
+    },
+    {
+      "check": "phase2c_preserved_assets/public-site.js",
+      "passed": true,
+      "detail": "assets/public-site.js"
+    },
+    {
+      "check": "phase2c_preserved_assets/public-site.css",
+      "passed": true,
+      "detail": "assets/public-site.css"
+    },
+    {
+      "check": "locale_preserved_pt-BR",
+      "passed": true,
+      "detail": "pt-BR/index.html"
+    },
+    {
+      "check": "locale_preserved_es-419",
+      "passed": true,
+      "detail": "es-419/index.html"
+    },
+    {
+      "check": "locale_preserved_fr",
+      "passed": true,
+      "detail": "fr/index.html"
+    },
+    {
+      "check": "locale_preserved_de",
+      "passed": true,
+      "detail": "de/index.html"
+    },
+    {
+      "check": "locale_preserved_it",
+      "passed": true,
+      "detail": "it/index.html"
+    },
+    {
+      "check": "locale_preserved_ja",
+      "passed": true,
+      "detail": "ja/index.html"
+    },
+    {
+      "check": "locale_preserved_ko",
+      "passed": true,
+      "detail": "ko/index.html"
+    },
+    {
+      "check": "locale_preserved_zh-Hans",
+      "passed": true,
+      "detail": "zh-Hans/index.html"
+    },
+    {
+      "check": "locale_preserved_zh-Hant",
+      "passed": true,
+      "detail": "zh-Hant/index.html"
+    },
+    {
+      "check": "locale_preserved_ar",
+      "passed": true,
+      "detail": "ar/index.html"
+    },
+    {
+      "check": "locale_preserved_ru",
+      "passed": true,
+      "detail": "ru/index.html"
+    },
+    {
+      "check": "locale_preserved_pl",
+      "passed": true,
+      "detail": "pl/index.html"
+    },
+    {
+      "check": "locale_preserved_nl",
+      "passed": true,
+      "detail": "nl/index.html"
+    }
+  ]
+}

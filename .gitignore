@@ -5,3 +5,6 @@
 
 # Temporary Phase 2C static-candidate founder-preview credential; never commit.
 .phase2c-preview-password
+
+# Temporary Phase 2D commerce-pilot founder-preview credential; never commit.
+.phase2d-preview-password

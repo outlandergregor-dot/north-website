@@ -1,0 +1,55 @@
+### Result
+{"passed":21,"total":21,"results":[{"name":"pilot_1440_title","passed":true,"detail":"1-3-5 Execution Planner"},{"name":"pilot_1440_review_label","passed":true,"detail":"Founder review label"},{"name":"pilot_1440_disabled_controls","passed":true,"detail":"all proposed-option buttons disabled"},{"name":"pilot_1440_no_commerce_links","passed":true,"detail":"[]"},{"name":"pilot_1440_no_overflow","passed":true,"detail":"scroll overflow=false"},{"name":"pilot_1440_images","passed":true,"detail":"3 loaded images"},{"name":"pilot_1440_gate_copy","passed":true,"detail":"closed gate text"},{"name":"pilot_1440_readiness_rows","passed":true,"detail":"6 readiness rows"},{"name":"pilot_390_title","passed":true,"detail":"1-3-5 Execution Planner"},{"name":"pilot_390_review_label","passed":true,"detail":"Founder review label"},{"name":"pilot_390_disabled_controls","passed":true,"detail":"all proposed-option buttons disabled"},{"name":"pilot_390_no_commerce_links","passed":true,"detail":"[]"},{"name":"pilot_390_no_overflow","passed":true,"detail":"scroll overflow=false"},{"name":"pilot_390_images","passed":true,"detail":"3 loaded images"},{"name":"pilot_390_gate_copy","passed":true,"detail":"closed gate text"},{"name":"pilot_390_readiness_rows","passed":true,"detail":"6 readiness rows"},{"name":"public_planner_preserves_founder_review","passed":true,"detail":"{\"review\":true,\"commerceControls\":0,\"noPrivate\":true}"},{"name":"public_planner_no_commerce_or_private_link","passed":true,"detail":"{\"review\":true,\"commerceControls\":0,\"noPrivate\":true}"},{"name":"arabic_rtl_preserved","passed":true,"detail":"{\"dir\":\"rtl\",\"lang\":\"ar\",\"overflow\":false,\"notice\":true}"},{"name":"arabic_no_overflow","passed":true,"detail":"{\"dir\":\"rtl\",\"lang\":\"ar\",\"overflow\":false,\"notice\":true}"},{"name":"keyboard_focus_visible","passed":true,"detail":"{\"tag\":\"A\",\"visible\":true}"}]}
+### Ran Playwright code
+```js
+await (async (page) => {
+  const origin = 'http://localhost:4173';
+  const results = [];
+  const record = (name, passed, detail) => results.push({name, passed: Boolean(passed), detail});
+  const checkPilot = async (width) => {
+    await page.setViewportSize({width, height: 900});
+    await page.goto(`${origin}/internal/commerce-pilot.html`, {waitUntil:'networkidle'});
+    const r = await page.evaluate(() => ({
+      title: document.querySelector('h1')?.textContent,
+      review: /Founder review draft\s*—\s*not for sale/i.test(document.body.innerText),
+      disabled: [...document.querySelectorAll('button')].every((b) => b.disabled && /no checkout/i.test(b.textContent)),
+      commerceLinks: [...document.querySelectorAll('a')].filter((a)=>/checkout|buy|purchase|payment|download/i.test(`${a.textContent} ${a.href}`)).map(a=>a.href),
+      overflow: document.documentElement.scrollWidth > window.innerWidth,
+      images: [...document.images].filter(i=>i.naturalWidth>0).length,
+      gates: document.body.innerText.includes('Sale gate remains closed.'),
+      readyRows: document.querySelectorAll('.readiness-table tbody tr').length
+    }));
+    record(`pilot_${width}_title`, r.title === '1-3-5 Execution Planner', r.title);
+    record(`pilot_${width}_review_label`, r.review, 'Founder review label');
+    record(`pilot_${width}_disabled_controls`, r.disabled, 'all proposed-option buttons disabled');
+    record(`pilot_${width}_no_commerce_links`, r.commerceLinks.length === 0, JSON.stringify(r.commerceLinks));
+    record(`pilot_${width}_no_overflow`, !r.overflow, `scroll overflow=${r.overflow}`);
+    record(`pilot_${width}_images`, r.images >= 3, `${r.images} loaded images`);
+    record(`pilot_${width}_gate_copy`, r.gates, 'closed gate text');
+    record(`pilot_${width}_readiness_rows`, r.readyRows === 6, `${r.readyRows} readiness rows`);
+  };
+  await checkPilot(1440);
+  await checkPilot(390);
+  await page.goto(`${origin}/library/item?product=1-3-5-execution-planner`, {waitUntil:'networkidle'});
+  const publicState = await page.evaluate(() => ({
+    review: /In founder review/i.test(document.body.innerText),
+    commerceControls: [...document.querySelectorAll('a,button,form,input[type="submit"]')].filter((node) => /buy now|checkout|preorder|join waitlist|download now/i.test(`${node.textContent} ${node.getAttribute('href')||''} ${node.getAttribute('action')||''}`)).length,
+    noPrivate: ![...document.querySelectorAll('a')].some(a => /internal\/|commerce-pilot/i.test(a.href))
+  }));
+  record('public_planner_preserves_founder_review', publicState.review, JSON.stringify(publicState));
+  record('public_planner_no_commerce_or_private_link', publicState.commerceControls === 0 && publicState.noPrivate, JSON.stringify(publicState));
+  await page.goto(`${origin}/ar/library/item?product=1-3-5-execution-planner`, {waitUntil:'networkidle'});
+  const ar = await page.evaluate(() => ({dir:document.documentElement.dir, lang:document.documentElement.lang, overflow:document.documentElement.scrollWidth > window.innerWidth, notice:document.body.innerText.includes('English source')}));
+  record('arabic_rtl_preserved', ar.dir==='rtl' && ar.lang==='ar', JSON.stringify(ar));
+  record('arabic_no_overflow', !ar.overflow, JSON.stringify(ar));
+  await page.goto(`${origin}/internal/commerce-pilot.html`, {waitUntil:'networkidle'});
+  await page.keyboard.press('Tab');
+  const focus = await page.evaluate(() => ({tag:document.activeElement?.tagName, visible: document.activeElement ? getComputedStyle(document.activeElement).outlineStyle !== 'none' || getComputedStyle(document.activeElement).boxShadow !== 'none' : false}));
+  record('keyboard_focus_visible', Boolean(focus.tag) && focus.visible, JSON.stringify(focus));
+  return {passed:results.filter(r=>r.passed).length,total:results.length,results};
+}
+)(page);
+```
+### Page
+- Page URL: http://localhost:4173/internal/commerce-pilot.html
+- Page Title: NORTH 1-3-5 Execution Planner — Private Commerce Pilot
