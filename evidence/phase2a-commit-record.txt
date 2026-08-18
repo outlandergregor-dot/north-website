@@ -1,0 +1,7 @@
+[33mcommit f5f66ef1908485889b60393b09ef163cb232edd1[m
+Author:     outlandergregor-dot <2.25775239e+08+outlandergregor-dot@users.noreply.github.com>
+AuthorDate: Tue Aug 18 12:46:58 2026 +0000
+Commit:     outlandergregor-dot <2.25775239e+08+outlandergregor-dot@users.noreply.github.com>
+CommitDate: Tue Aug 18 12:46:58 2026 +0000
+
+    feat(north-web): add private Phase 2A product studio
