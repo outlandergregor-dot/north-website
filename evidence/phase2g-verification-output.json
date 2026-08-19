@@ -1,0 +1,176 @@
+{
+  "phase": "Phase 2G",
+  "passed": true,
+  "checks": [
+    {
+      "id": "branch",
+      "title": "Isolated Phase 2G branch",
+      "passed": true,
+      "detail": "Current branch: north-web-phase2g-product-truth"
+    },
+    {
+      "id": "required_docs",
+      "title": "Required Phase 2G governance documents",
+      "passed": true,
+      "detail": "8/8 documents exist"
+    },
+    {
+      "id": "proof_files",
+      "title": "Five source-controlled real Planner proof exports",
+      "passed": true,
+      "detail": "All required source-PDF exports exist and are nonempty"
+    },
+    {
+      "id": "actual_proof_sequence",
+      "title": "Flagship proof sequence uses real PDF exports",
+      "passed": true,
+      "detail": "Start Here, intention, daily, and final-review proof cards are referenced"
+    },
+    {
+      "id": "proof_label",
+      "title": "Actual product proof has a persistent private-source label",
+      "passed": true,
+      "detail": "Actual proof label is present in private renderer"
+    },
+    {
+      "id": "illustrative_label",
+      "title": "Generated editorial visual has digital-only disclosure",
+      "passed": true,
+      "detail": "Persistent illustrative disclosure is present"
+    },
+    {
+      "id": "no_physical_mockup_primary_proof",
+      "title": "Physical-looking mockups are removed from primary proof renderer",
+      "passed": true,
+      "detail": "Old physical-looking visual paths are not referenced by the private proof page"
+    },
+    {
+      "id": "digital_only",
+      "title": "Future bundle is explicitly digital-only",
+      "passed": true,
+      "detail": "Private buyer copy sets the digital-versus-physical boundary"
+    },
+    {
+      "id": "no_fillable_claim",
+      "title": "No unsupported fillable claim is made",
+      "passed": true,
+      "detail": "Renderer states fillable capability is not established"
+    },
+    {
+      "id": "no_accessibility_completion_claim",
+      "title": "No unsupported PDF accessibility completion claim is made",
+      "passed": true,
+      "detail": "Renderer states current proof-file limits"
+    },
+    {
+      "id": "print_proof_metadata",
+      "title": "Actual print proof metadata remains truthful",
+      "passed": true,
+      "detail": "US Letter = 31 pages; A4 = 27 pages"
+    },
+    {
+      "id": "pdf_status",
+      "title": "Current PDF limitations are documented",
+      "passed": true,
+      "detail": "Both private proof PDFs are untagged and non-form PDFs"
+    },
+    {
+      "id": "closed_commerceEnabled",
+      "title": "Closed commerce configuration: commerceEnabled: false",
+      "passed": true,
+      "detail": "commerceEnabled: false is explicitly retained"
+    },
+    {
+      "id": "closed_merchantProduct",
+      "title": "Closed commerce configuration: merchantProduct: null",
+      "passed": true,
+      "detail": "merchantProduct: null is explicitly retained"
+    },
+    {
+      "id": "closed_checkoutUrl",
+      "title": "Closed commerce configuration: checkoutUrl: null",
+      "passed": true,
+      "detail": "checkoutUrl: null is explicitly retained"
+    },
+    {
+      "id": "closed_deliveryEnabled",
+      "title": "Closed commerce configuration: deliveryEnabled: false",
+      "passed": true,
+      "detail": "deliveryEnabled: false is explicitly retained"
+    },
+    {
+      "id": "no_commerce_integrations",
+      "title": "No payment, merchant, or tracking integration endpoints",
+      "passed": true,
+      "detail": "No prohibited payment or tracking endpoint found"
+    },
+    {
+      "id": "no_public_price",
+      "title": "No public price appears in the public catalog or public renderer",
+      "passed": true,
+      "detail": "Founder-only price is not placed on public candidate routes"
+    },
+    {
+      "id": "asset_register",
+      "title": "Asset-and-claim register documents approved, illustrative, and quarantined visual status",
+      "passed": true,
+      "detail": "Asset register contains required approval and disclosure controls"
+    },
+    {
+      "id": "product_truth_route",
+      "title": "Private product-truth and launch-gate route exists",
+      "passed": true,
+      "detail": "Private governance page is present and linked from private review"
+    },
+    {
+      "id": "locale_registry",
+      "title": "All 14 verified mobile-app locales remain in source registry",
+      "passed": true,
+      "detail": "14 expected locale codes found"
+    },
+    {
+      "id": "arabic_rtl",
+      "title": "Arabic retains RTL metadata and QA state",
+      "passed": true,
+      "detail": "Arabic route remains declared RTL with QA requirement"
+    },
+    {
+      "id": "canonical_hreflang",
+      "title": "Canonical and hreflang creation remains intact",
+      "passed": true,
+      "detail": "Canonical, all-locale hreflang, and x-default logic remain"
+    },
+    {
+      "id": "language_availability_copy",
+      "title": "Locale architecture does not imply localized product availability",
+      "passed": true,
+      "detail": "Product-language and route-readiness states remain distinct"
+    },
+    {
+      "id": "focus_and_skip",
+      "title": "Visible focus and skip-link controls remain",
+      "passed": true,
+      "detail": "Public and private styles include focus treatments"
+    },
+    {
+      "id": "reduced_motion",
+      "title": "Reduced-motion controls remain on public and private styles",
+      "passed": true,
+      "detail": "Both style systems declare reduced-motion behavior"
+    },
+    {
+      "id": "responsive_390",
+      "title": "390px mobile rule exists on public and private styles",
+      "passed": true,
+      "detail": "Public and private mobile rules are present"
+    },
+    {
+      "id": "image_budget",
+      "title": "Proof and hero delivery assets satisfy private page size budget",
+      "passed": true,
+      "detail": "Proof PNGs < 400KB each; optimized hero WebP < 800KB"
+    }
+  ],
+  "passed_count": 28,
+  "total_count": 28
+}

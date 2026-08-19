@@ -1,5 +1,5 @@
 (function (window) { 'use strict'; window.NORTH_PUBLIC_CATALOG = Object.freeze({
-  "phase": "phase-2c-static-candidate",
+  "phase": "phase-2g-private-product-truth-candidate",
   "sourceLanguage": "en",
   "appStoreUrl": "https://apps.apple.com/us/app/north-find-your-north/id6757988392",
   "freeTools": [
@@ -49,11 +49,11 @@
       "audience": "Adults who want a practical, bounded planning rhythm after trying the free 1-3-5 Daily Page.",
       "notFor": "Not for project management, medical/mental-health treatment, or a promise of productivity outcomes.",
       "formatIntent": [
-        "Fillable 14-day planner",
-        "Fillable 14-day planner",
-        "Printable 14-day planner",
-        "Printable 14-day planner",
-        "Concise method guide"
+        "English private founder-review source",
+        "Actual source-page proof exports",
+        "US Letter and A4 private print-review PDFs",
+        "Future digital bundle candidate only",
+        "No customer delivery or fillable-file claim"
       ],
       "timeCommitment": "Designed around a 14-day rhythm",
       "state": "in_founder_review",
@@ -65,7 +65,7 @@
       ],
       "languageReadiness": {
         "websiteLanguage": "English complete source; 13 governed locale routes pending human review.",
-        "productContentLanguage": "English founder review draft only; no customer product-language release.",
+        "productContentLanguage": "English private founder-review candidate only; no customer product-language release.",
         "checkoutLanguage": "Not enabled.",
         "deliveryLanguage": "Not enabled.",
         "supportLanguage": "Not release-ready.",
@@ -96,7 +96,7 @@
       ],
       "languageReadiness": {
         "websiteLanguage": "English complete source; 13 governed locale routes pending human review.",
-        "productContentLanguage": "English founder review draft only; no customer product-language release.",
+        "productContentLanguage": "English private founder-review candidate only; no customer product-language release.",
         "checkoutLanguage": "Not enabled.",
         "deliveryLanguage": "Not enabled.",
         "supportLanguage": "Not release-ready.",
@@ -127,7 +127,7 @@
       ],
       "languageReadiness": {
         "websiteLanguage": "English complete source; 13 governed locale routes pending human review.",
-        "productContentLanguage": "English founder review draft only; no customer product-language release.",
+        "productContentLanguage": "English private founder-review candidate only; no customer product-language release.",
         "checkoutLanguage": "Not enabled.",
         "deliveryLanguage": "Not enabled.",
         "supportLanguage": "Not release-ready.",

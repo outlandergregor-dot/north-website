@@ -1,0 +1,9 @@
+assets/commerce-pilot.css|10915
+assets/commerce-pilot.js|13388
+assets/product-proof/planner-start-here-us-letter.png|264412
+assets/product-proof/planner-two-week-intention-us-letter.png|116681
+assets/product-proof/planner-daily-page-us-letter.png|126329
+assets/product-proof/planner-final-review-us-letter.png|94957
+assets/product-proof/planner-start-here-a4.png|39584
+assets/product-presentation/web/planner-hero-illustrative.webp|485800
+TOTAL_KEY_DELIVERY_BYTES|1152066

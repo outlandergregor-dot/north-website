@@ -1,0 +1,15 @@
+AUTHENTICATED_GET
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.3
+Cache-Control: no-store, max-age=0
+X-Robots-Tag: noindex, nofollow, noarchive
+X-Content-Type-Options: nosniff
+Referrer-Policy: no-referrer
+UNAUTHENTICATED_GET
+HTTP/1.0 401 Unauthorized
+Server: SimpleHTTP/0.6 Python/3.12.3
+WWW-Authenticate: Basic realm="NORTH Phase 2G Founder Review"
+Cache-Control: no-store
+X-Robots-Tag: noindex, nofollow, noarchive
+Cache-Control: no-store, max-age=0
+X-Robots-Tag: noindex, nofollow, noarchive
